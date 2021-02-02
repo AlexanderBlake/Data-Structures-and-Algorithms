@@ -17,6 +17,8 @@ class Miner {
                 walker = walker.next;
             }
             this.ledger.add(walker);
+
+            // this.ledger.add(this.account.historyHead);
         }
     }
 
@@ -70,15 +72,22 @@ function main() {
 
     let miners = [];
     miners.push(new Miner(accountCounter++, 100, transactionCounter++));
-    miners.push(new Miner(accountCounter++, 100, transactionCounter++, miners[0]));
+    for (let i = 1; i < 3; i++) {
+        miners.push(new Miner(accountCounter++, 1000 * i + 1000, transactionCounter++, miners[0]));
+        if (i == 3) {
+            miners[1].add(miners[2].historyHead);
+        }
+    }
 
-    console.log(miners[0].ledger);
-    console.log("\n\n");
-    console.log(miners[1].ledger);
+    for (let i = 0; i < 3; i++) {
+        console.log(miners[i].ledger);
+        console.log("\n\n");
+    }
 
-    console.log("\n\n");
-    console.log(miners[0].account);
-    console.log(miners[1].account);
+    for (let i = 0; i < 3; i++) {
+        console.log(miners[i].account);
+        console.log("\n\n");
+    }
 }
 
 main();
