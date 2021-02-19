@@ -6,6 +6,61 @@ class Person {
     }
 }
 
+class ArrayQueue {
+    constructor() {
+        this.a = [];
+        this.n = 0;
+        this.j = 0;
+    }
+
+    resize() {
+        let size = this.n;
+
+        if (size == 0) {
+            size = 1;
+        }
+
+        for (let i = 0; i < size; i++) {
+            this.a.push(null);
+        }
+
+        if (this.j != 0) {
+            let temp;
+            for (let i = 0; i < size; i++) {
+                temp = this.a[i];
+                this.a[i] = this.a[this.j];
+                this.a[this.j] = temp;
+            }
+            this.j = 0;
+        }
+    }
+
+    push(value) {
+        if (this.n == this.a.length) {
+            this.resize();
+        }
+        this.a[(this.j + this.n) % this.a.length] = value;
+        this.n += 1;
+    }
+
+    pop() {
+        let poppedValue = this.a[this.j];
+        this.a[this.j] = null;
+        this.j = (this.j + 1) % this.a.length;
+        this.n -= 1;
+        return poppedValue;
+    }
+
+    display() {
+        let displayString = "n: " + this.n + ", a.length: " + this.a.length + ", j: " + this.j + "\n[";
+
+        for (let i = 0; i < this.n - 1; i++) {
+            displayString += this.a[(i + this.j) % this.a.length] + ", ";
+        }
+        console.log(displayString + this.a[(this.j + this.n - 1) % this.a.length] + "]\n");
+    }
+}
+
 class ArrayBST {
     constructor() {
         this.a = [];
@@ -128,7 +183,7 @@ class ArrayBST {
 }
 
 function main() {
-    tree = new ArrayBST();
+    /*tree = new ArrayBST();
 
     tree.insert(4);
     tree.insert(2);
@@ -141,6 +196,55 @@ function main() {
     tree.inOrderDisplay();
     tree.preOrderDisplay();
     tree.postOrderDisplay();
+    */
+
+    queue = new ArrayQueue();
+
+    /*queue.push(12);
+    queue.push(20);
+    queue.push(48);
+    queue.push(24);
+    queue.display();
+    // console.log(queue.a, "\n");
+
+    queue.pop();
+    queue.display();
+    // console.log(queue.a, "\n");
+
+    queue.push(50);
+    queue.display();
+    // console.log(queue.a, "\n");
+
+    queue.push(100);
+
+    queue.display();
+    console.log(queue.a, "\n");*/
+
+    queue.push(20);
+    queue.push(48);
+    queue.pop();
+    queue.push(24);
+    queue.push(50);
+    queue.display();
+    console.log(queue.a, "\n")
+
+    queue.push(1000);
+    queue.display();
+    console.log(queue.a, "\n");
+
+    queue.pop();
+    queue.pop();
+    queue.pop();
+    queue.push(800);
+    queue.push(700);
+    queue.push(500);
+    queue.display();
+    console.log(queue.a, "\n");
+
+    queue.push(-24);
+    queue.display();
+    console.log(queue.a, "\n");
+
 }
 
 main();
