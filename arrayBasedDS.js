@@ -6,6 +6,62 @@ class Person {
     }
 }
 
+class ArrayStack {
+    constructor() {
+        this.a = [];
+        this.n = 0;
+        this.overflowLimit = 1024;
+    }
+
+    resize() {
+        let size = this.n;
+
+        if (size == 0) {
+            size = 1;
+        }
+
+        for (let i = 0; i < size; i++) {
+            this.a.push(null);
+        }
+    }
+
+    push(value) {
+        if (this.n == this.overflowLimit) {
+            console.log("Stack cannot push in " + value + ". It will cause an overflow.");
+        } else {
+            if (this.n == this.a.length) {
+                this.resize();
+            }
+            this.a[this.n++] = value;
+        }
+    }
+
+    pop() {
+        if (this.n) {
+            let poppedValue = this.a[this.n];
+            this.a[this.n--] = null;
+
+            return poppedValue;
+        }
+        return null;
+    }
+
+    display() {
+        let displayString = "Stack is Empty";
+
+        if (this.n) {
+            displayString = "[";
+            for (let i = 0; i < this.n - 1; i++) {
+                displayString += this.a[i] + ", ";
+            }
+            displayString += this.a[this.n - 1] + "]";
+        }
+
+        console.log(displayString);
+    }
+}
+
+
 class ArrayQueue {
     constructor() {
         this.a = [];
@@ -182,9 +238,9 @@ class ArrayBST {
     }*/
 }
 
-function main() {
-    /*tree = new ArrayBST();
-
+function testBST() {
+    tree = new ArrayBST();
+    
     tree.insert(4);
     tree.insert(2);
     tree.insert(1);
@@ -196,8 +252,9 @@ function main() {
     tree.inOrderDisplay();
     tree.preOrderDisplay();
     tree.postOrderDisplay();
-    */
+}
 
+function testQueue() {
     queue = new ArrayQueue();
 
     /*queue.push(12);
@@ -244,7 +301,180 @@ function main() {
     queue.push(-24);
     queue.display();
     console.log(queue.a, "\n");
+}
 
+function testStack() {
+    stack = new ArrayStack();
+    stack.display();
+
+    stack.push(24);
+    stack.push(12);
+    stack.push(48);
+    stack.display();
+
+    stack.pop();
+    stack.display();
+
+    stack.pop();
+    stack.pop();
+    stack.display();
+    stack.pop();
+    stack.display();
+
+    for (let i = 1; i <= 1025; i++) {
+        stack.push(i);
+    }
+}
+
+// You can only trade if you have a full week of trading data
+// You start with $1,000
+// You cannot transact on worthless equities
+// You can do multiple transaction in a day
+// You can only buy in whole share increments
+// You can only hold long positions (you want the stock to go up)
+// Return 0 if you there is an error in the dataset or you couldn't make any money
+function maximizeLongProfit(a) {
+    let start = 1000;
+    let bankroll = 1000;
+    let positions = 0;
+    if(a.length == 5) {
+        
+        for(let i = 0; i < a.length; i ++) {
+            if(a[i] != 0) {
+                let currentPrice = a[i];
+                if(currentPrice < a[i+1]) {
+                    buy(Math.floor(bankroll / currentPrice),currentPrice);
+                } else if (currentPrice > a[i+1]) {
+                    sell(positions, currentPrice);
+                }
+            } else {
+                return 0;
+            }
+            console.log("Bankroll: $" + bankroll);
+        }
+        if(positions){
+            sell(positions, a[a.length-1]);
+        }
+    }
+    return bankroll - start;
+
+    function sell(count, price) {
+        positions = positions - count;
+        bankroll = bankroll + (count * price);
+    }
+    function buy(count , price) {
+        if(count * price <= bankroll) {
+            positions = positions + count;
+
+            bankroll = bankroll - (count * price);
+        }
+    }
+}
+
+// You can only trade if you have a full week of trading data
+// You cannot hold more than 1 share
+// You start with $1000
+// You can do multiple transaction in a day
+// You cannot transact on worthless equities
+// You can only buy in whole share increments
+// You can only hold short positions (you want the stock to go down)
+// Borrowing Fee of $10 per day unless you do not have any positions
+// Return 0 if you there is an error in the dataset or you couldn't make any money
+function maximizeShortProfit(a) {
+    let start = 1000;
+    let bankroll = 1000;
+    let positions = 0;
+    if(a.length == 5) {
+        
+        for(let i = 0; i < a.length; i ++) {
+            if(a[i] != 0) {
+                let currentPrice = a[i];
+
+                if (positions) {
+                    bankroll -= positions * currentPrice;
+                    positions = 0;
+                }
+
+                if(currentPrice > a[i+1] + 10) {
+                    // sell(Math.floor(bankroll / currentPrice), currentPrice);
+
+                    positions += Math.floor(bankroll / currentPrice);
+                    bankroll += Math.floor(bankroll / currentPrice) * currentPrice;
+                    
+                    bankroll -= 10;
+                }
+            } else {
+                return 0;
+            }
+            // console.log("Bankroll: $" + bankroll);
+        }
+        if(positions){
+            sell(positions, a[a.length-1]);
+        }
+    }
+    return bankroll - start;
+
+    function sell(count, price) {
+        positions = positions - count;
+        bankroll = bankroll + (count * price);
+    }
+    function buy(count , price) {
+        if(count * price <= bankroll) {
+            positions = positions + count;
+
+            bankroll = bankroll - (count * price);
+        }
+    }
+}
+
+// You can only trade if you have a full week of trading data
+// You can start with $1,000
+// You can do multiple transaction in a day
+// You cannot transact on worthless equities
+// You can only buy in whole share increments
+// You can only hold long/short positions (you want the stock to go up/down)
+// Commision Fees: $5 per transaction open or close (long or short)
+// Return 0 if you there is an error in the dataset or you couldn't make any money
+function maximizeProfit(a) {
+    return 0;
+}
+
+function main() {
+    // testBST();
+    // testQueue();
+    // testStack();
+
+    /*
+    console.log(maximizeLongProfit([]));
+    console.log(maximizeLongProfit([0, 0, 0, 0]));
+    console.log(maximizeLongProfit([0, 0, 0, 0, 0]));
+    console.log(maximizeLongProfit([100, 100, 100, 100, 100]));
+
+    console.log(maximizeLongProfit([1, 100, 1, 100, 1]));
+    console.log(maximizeLongProfit([24, 12, 48, 100, 72]));
+    console.log(maximizeLongProfit([12, 24, 72, 48, 100]));
+    console.log(maximizeLongProfit([100, 72, 48, 24, 12]));
+    */
+
+    console.log(maximizeShortProfit([]));
+    console.log(maximizeShortProfit([0, 0, 0, 0]));
+    console.log(maximizeShortProfit([0, 0, 0, 0, 0]));
+    console.log(maximizeShortProfit([100, 100, 100, 100, 100]));
+    console.log(maximizeShortProfit([1, 100, 1, 100, 1]));
+    console.log(maximizeShortProfit([24, 12, 48, 100, 72]));
+    console.log(maximizeShortProfit([12, 24, 72, 48, 100]));
+    console.log(maximizeShortProfit([100, 72, 48, 24, 12]));
+
+    /*
+    console.log(maximizeProfit([]));
+    console.log(maximizeProfit([0, 0, 0, 0]));
+    console.log(maximizeProfit([0, 0, 0, 0, 0]));
+    console.log(maximizeProfit([100, 100, 100, 100, 100]));
+    console.log(maximizeProfit([1, 100, 1, 100, 1]));
+    console.log(maximizeProfit([24, 12, 48, 100, 72]));
+    console.log(maximizeProfit([12, 24, 72, 48, 100]));
+    console.log(maximizeProfit([100, 72, 48, 24, 12]));
+    */
 }
 
 main();
