@@ -1,0 +1,4 @@
+12:20:04 From Lemuel Herg to Everyone : gonna brb for a sec, but wanted to get into the zoom so I'm in when I get back
+12:24:13 From Chad Martinez to Everyone : sorry.  my wifi is spotty.  if it kicks me again, I won't rejoin.  sorry about that.
+12:34:43 From Stephen Snow to Everyone : I was able to get it to run inside VS code, via the terminal, changing directory to where the file was, then running node filename.js
+13:31:34 From Mariana Cueto to Everyone : the story of my life !! hahahaha being upset for not finding it

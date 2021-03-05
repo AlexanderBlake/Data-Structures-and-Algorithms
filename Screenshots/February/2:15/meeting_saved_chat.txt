@@ -1,0 +1,10 @@
+12:57:25 From Stephen Snow to Everyone : bubble
+12:57:53 From Stephen Snow to Everyone : I can pass
+12:58:07 From Stephen Snow to Everyone : ok selection
+13:06:19 From Noah Mirabal to Everyone : Audio?
+13:06:41 From Noah Mirabal to Everyone : Am I only one not hearing Alex?
+13:07:05 From Alexander Blake to Everyone : I think so, because some other people mentioned they can still hear
+13:07:12 From Stephen Snow to Everyone : cycle your audio settings
+14:03:08 From Stephen Snow to Everyone : 12 days of Christmas = O n^2 if you add up every single iteration of each verse - it's a double for loop, and looks a lot like this insertion sort mechanics
+14:09:15 From Stephen Snow to Everyone : want an interesting fact about the unchanging nature of the computer?
+14:12:05 From Noah Mirabal to Everyone : If you didn’t attend college for cs I recommend reading the book code by Charles Petzold. Gives a good idea as to why and how we do things
