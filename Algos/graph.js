@@ -8,7 +8,6 @@ class Node {
         let myString = "Name: " + this.name + "\nEdges: {";
 
         let iter = this.edgesMap.keys();
-        // console.log(iter);
 
         for (let key of iter) {
             myString += key + ": " + this.edgesMap.get(key) + ", ";
@@ -32,16 +31,6 @@ class Graph {
     addConnection(name1, name2, edgeLength) {
         this.nodes.get(name1).edgesMap.set(name2, edgeLength);
         this.nodes.get(name2).edgesMap.set(name1, edgeLength);
-
-        /*
-        for (let i = 0; i < this.nodes.length; i++) {
-            if (name1 == this.nodes[i].name) {
-                this.nodes[i].edgesMap.set(name2, edgeLength);
-            } else if (name2 == this.nodes[i].name) {
-                this.nodes[i].edgesMap.set(name1, edgeLength);
-            }
-        }
-        */
     }
 
     display() {
@@ -60,7 +49,7 @@ class Graph {
 
             for (let key of this.nodes.get(walker.name).edgesMap.keys()) {
                 if (key == name2) {
-                    walker = this.nodes.get(key);
+                    shortestNode = key;
                     break;
                 } else if (shortestNode == null) {
                     shortestNode = key;
@@ -68,6 +57,8 @@ class Graph {
                     shortestNode = key;
                 }
             }
+
+            walker = this.nodes.get(shortestNode);
         }
 
         console.log(myString + walker.name);
@@ -91,9 +82,6 @@ function main() {
     graph.addConnection("B", "E", 7);
     graph.addConnection("C", "D", 4);
     graph.addConnection("D", "E", 5);
-
-    // console.log(graph);
-    // graph.display();
 
     graph.nearestNeighborAlgo("A", "D");
     graph.nearestNeighborAlgo("C", "A");
