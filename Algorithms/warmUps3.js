@@ -24,26 +24,12 @@ function isPalindrome(word) {
         return false;
     }
 
-    // let wordReverse = "";
     for (let i = 0; i < word.length / 2; i++) {
         if (toLowerCase(word[i]) != toLowerCase(word[word.length - 1 - i])) {
             return false;
         }
-        // wordReverse += word[i].toLowerCase();
-        // what if the wordReverse is empty? 
     }
     return true;
-
-    /*
-    for (let i = 0; i < word.length / 2; i++) {
-        if (word[i].toLowerCase() != wordReverse[i]) {
-            return false;
-        }
-        // what about casing?
-    }
-
-    return true;
-    */
 }
 
 // Time Complexity: O(log n)
@@ -63,21 +49,15 @@ function isPrime(n) {
         }
         count += 6;
     }
-
-    /*
-    for (let i = 3; i < n / 2; i+=2) {
-        if (n % i == 0) {
-            return false;
-        }
-    }
-    */
     return true;
 }
 
+// Time Compelexity: O(n^2)
+// Space Complexity: O(1) Constant Space
 function reorder(str1, str2, str3) {
     let temp;
-    let count = 1;
 
+    // Bubble Sort
     if (str2.length > str1.length) {
         temp = str1;
         str1 = str2;
@@ -95,57 +75,58 @@ function reorder(str1, str2, str3) {
         str1 = str2;
         str2 = temp;
     }
+    
+    return str1 + " " + str2 + " " + str3;
+}
 
-    if (str1.length == str2.length) {
-        count = 2;
+function test() {
+    while (true) {
+        console.log("Hello World");
+    }
+}
+
+// Space Compexity: O(n) Total, O(1) Constant
+// Time Complexity: O(n)
+function secondHighest(arr) {
+    if (arr.length <= 1) {
+        return -1;
     }
 
-    if (str2.length == str3.length) {
-        if (count < 1) {
-            count = 2;
-        } else {
-            count = 3;
+    let highest;
+    let secondHighest;
+
+    if (arr[0] < arr[1]) {
+        secondHighest = arr[0];
+        highest = arr[1];
+    } else {
+        secondHighest = arr[1];
+        highest = arr[0];
+    }
+    
+    for (let i = 2; i < arr.length; i++) {
+        if (arr[i] > highest) {
+            secondHighest = highest;
+            highest = arr[i];
+        } else if (arr[i] > secondHighest) {
+            secondHighest = arr[i];
         }
     }
 
-    if (count < 2) {
-        console.log(str1, str2, str3);
-    }
-
-    return count;
+    return secondHighest;
 
     /*
-    if (str1.length == str2.length) {
-        if (str2.length == str3.length) {
-            return 3;
-        }
-        return 2;
-    }
-
-    if (str2.length == str3.length || str1.length == str3.length) {
-        return 2;
-    }
-
-    if (str1.length > str2.length) {
-        if (str3.length > str2.length) {
-            if (str3.length > str1.length) {
-                console.log(str1, str3, str2);
+    let temp;
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] > arr[j]) {
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
             }
         }
-    } else if (str2.length > str1.length) {
-        if (str1.length > str3.length) {
-            console.log(str2, str1, str3);
-        } else {
-            console.log(str2, str3, str1);
-        }
-    } else if (str3.length > str1.length) {
-        if (str2.length > str1.length) {
-            console.log(str3, str2, str1);
-        } else {
-            console.log(str3, str1, str2);
-        }
     }
-    return 1;
+
+    return arr[arr.length - 2];
     */
 }
 
@@ -165,7 +146,6 @@ function isPalindromeTests() {
     console.assert(isPalindrome("dad"), "dad");
     console.assert(isPalindrome("racecar"), "racecar");
     console.assert(isPalindrome("abba"), "abba");
-    // console.assert(isPalindrome(121), "abba");
     console.assert(!isPalindrome("-121"), "-121");
     console.assert(isPalindrome("121"), "121");
 }
@@ -182,14 +162,28 @@ function isPrimeTests() {
 }
 
 function reorderTests() {
-    console.assert(reorder("", "", "") == 3);
-    console.assert(reorder("a", "a", "a") == 3);
-    console.assert(reorder("ab", "bc", "a") == 2);
-    console.assert(reorder("ab", "a", "az") == 2);
-    console.assert(reorder("a", "22", "aa") == 2);
-    console.assert(reorder("ab", "cde", "zzzzzzzz") == 1);
-    console.assert(reorder("ab", "zzzzzzzz", "cde") == 1);
-    console.assert(reorder("abasdkljfkdjlsafjklsadfkjlfsd", "z", "cde") == 1);
+    console.assert(reorder("", "", "") == "  ", "3 Empty Strings");
+    console.assert(reorder("a", "a", "a") == "a a a", "3 Non-empty Strings of the Same Length");
+    console.assert(reorder("a", "ab", "ab") == "ab ab a", "2 Strings of the same length 1");
+    console.assert(reorder("ab", "a", "ab") == "ab ab a",  "2 Strings of the same length 2");
+    console.assert(reorder("ab", "ab", "a") == "ab ab a",  "2 Strings of the same length 3");
+    console.assert(reorder("a", "ab", "abc") == "abc ab a", "All three different length 1");
+    console.assert(reorder("a", "abc", "ab") == "abc ab a", "All three different length 2");
+    console.assert(reorder("ab", "a", "abc") == "abc ab a", "All three different length 3");
+    console.assert(reorder("ab", "abc", "a") == "abc ab a", "All three different length 4");
+    console.assert(reorder("abc", "a", "ab") == "abc ab a", "All three different length 5");
+    console.assert(reorder("abc", "ab", "a") == "abc ab a", "All three different length 6");
+}
+
+function secondHighestTests() {
+    console.assert(secondHighest([]) == -1, "Empty Array");
+    console.assert(secondHighest([1]) == -1, "Array with one value");
+    console.assert(secondHighest([1, 2]) == 1, "Array with two values 1");
+    console.assert(secondHighest([2, 1]) == 1, "Array with two values 2");
+    console.assert(secondHighest([1, 2, 3, 4]) == 3, "Array with multiple values 1");
+    console.assert(secondHighest([1, 3, 2, 4]) == 3, "Array with multiple values 2");
+    console.assert(secondHighest([3, 2, 1, 4]) == 3, "Array with multiple values 3");
+    console.assert(secondHighest([11, 22, 44, 33]) == 33, "Array with multiple values 4");
 }
 
 function main() {
@@ -197,12 +191,8 @@ function main() {
     isPalindromeTests();
     isPrimeTests();
     reorderTests();
-
-    /* console.log("2" == 2);
-    console.log(2 == "2.0");
-    console.log(2 === 2);
-    console.log(2 === "2.0");
-    console.log(2 === "2");*/
+    secondHighestTests();
+    // test();
 }
 
 main();
