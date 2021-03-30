@@ -79,7 +79,7 @@ function reorder(str1, str2, str3) {
     return str1 + " " + str2 + " " + str3;
 }
 
-function test() {
+function infiniteLoop() {
     while (true) {
         console.log("Hello World");
     }
@@ -113,21 +113,77 @@ function secondHighest(arr) {
     }
 
     return secondHighest;
+}
 
-    /*
+// Time Complexity: O(n) Linear Time
+// Space Complexity: O(1) Constant Space
+function fizzBuzz(n) {
+    let myString = "";
+
+    for (let i = 1; i <= n; i++) {
+        if (i % 3 === 0 || i % 5 === 0) {
+            if (i % 15 == 0) {
+                myString += "fizzbuzz";
+            } else if (i % 3 == 0) {
+                myString += "fizz";
+            } else {
+                myString += "buzz";
+            }
+        } else {
+            myString += i;
+        }
+
+        if (i < n) {
+            myString += " ";
+        }
+    }
+
+    return myString;
+}
+
+function topTwo(arr) {
     let temp;
+    let currentChar;
+
     for (let i = 0; i < arr.length - 1; i++) {
         for (let j = i + 1; j < arr.length; j++) {
-            if (arr[i] > arr[j]) {
-                temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+            if (arr[j] < arr[i]) {
+                temp = arr[j];
+                arr[j] = arr[i];
+                arr[i] = temp;
             }
         }
     }
 
-    return arr[arr.length - 2];
-    */
+    let topTwoArr = [arr[0], arr[1]];
+    currentChar = arr[0];
+    currentCount = 2;
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] === arr[i + 1]) {
+            currentCount += 1;
+        } else {
+            currentCount -= 1;
+        }
+    }
+
+    console.log(arr);
+    return ["", ""];
+}
+
+function toBinary(num) {
+
+}
+
+function toDecimal(num) {
+
+}
+
+function reverseString() {
+    return 0;
+}
+
+function stocks(arr) {
+    return 0;
 }
 
 function toLowerCaseTests() {
@@ -186,13 +242,53 @@ function secondHighestTests() {
     console.assert(secondHighest([11, 22, 44, 33]) == 33, "Array with multiple values 4");
 }
 
+function fizzBuzzTests() {
+    console.assert(fizzBuzz(0) == "", 0);
+    console.assert(fizzBuzz(1) == "1", 1);
+    console.assert(fizzBuzz(2) == "1 2", 2);
+    console.assert(fizzBuzz(3) == "1 2 fizz", 3);
+    console.assert(fizzBuzz(4) == "1 2 fizz 4", 4);
+    console.assert(fizzBuzz(5) == "1 2 fizz 4 buzz", 5);
+    console.assert(fizzBuzz(6) == "1 2 fizz 4 buzz fizz", 6);
+    console.assert(fizzBuzz(7) == "1 2 fizz 4 buzz fizz 7", 7);
+    console.assert(fizzBuzz(15) == "1 2 fizz 4 buzz fizz 7 8 fizz buzz 11 fizz 13 14 fizzbuzz", 15);
+}
+
+function topTwoTestsHelper(arr, value1, value2) {
+    return arr[0] == value1 && arr[1] == value2;
+}
+
+function topTwoTests() {
+    let arr = topTwo(["A", "B"]);
+    console.assert(topTwoTestsHelper(arr, "A", "B"));
+
+    arr = topTwo(["A", "B", "B"]);
+    console.assert(topTwoTestsHelper(arr, "B", "A"));
+
+    arr = topTwo(["A", "B", "B", "A"]);
+    console.assert(topTwoTestsHelper(arr, "A", "B"));
+
+    arr = topTwo(["A", "B", "C", "C"]);
+    console.assert(topTwoTestsHelper(arr, "C", "A"));
+
+    arr = topTwo(["A", "B", "C", "C", "D", "D", "D"]);
+    console.assert(topTwoTestsHelper(arr, "D", "C"));
+
+    arr = topTwo(["A", "D", "D", "C", "D", "B", "C"]);
+    console.assert(topTwoTestsHelper(arr, "D", "C"));
+}
+
 function main() {
     toLowerCaseTests();
     isPalindromeTests();
     isPrimeTests();
     reorderTests();
     secondHighestTests();
-    // test();
+    // infiniteLoop();
+    fizzBuzzTests();
+    // topTwoTests();
+
+    topTwo(["A", "D", "D", "C", "D", "B", "C"]);
 }
 
 main();
