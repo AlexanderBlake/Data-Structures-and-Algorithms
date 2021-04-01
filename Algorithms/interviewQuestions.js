@@ -141,33 +141,48 @@ function fizzBuzz(n) {
     return myString;
 }
 
+// Time Complexity: O(n)
 function topTwo(arr) {
     let temp;
-    let currentChar;
+    let topVal;
+    let secondHighestVal;
+    let topTwoKeys = [];
+    let occurencesMap = new Map();
 
-    for (let i = 0; i < arr.length - 1; i++) {
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[j] < arr[i]) {
-                temp = arr[j];
-                arr[j] = arr[i];
-                arr[i] = temp;
-            }
-        }
-    }
-
-    let topTwoArr = [arr[0], arr[1]];
-    currentChar = arr[0];
-    currentCount = 2;
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] === arr[i + 1]) {
-            currentCount += 1;
+    for (let i = 0; i < arr.length; i++) {
+        if (occurencesMap.has(arr[i])) {
+            occurencesMap.set(arr[i], occurencesMap.get(arr[i]) + 1);
         } else {
-            currentCount -= 1;
+            occurencesMap.set(arr[i], 1);
         }
     }
 
-    console.log(arr);
-    return ["", ""];
+    for (const keyVal of occurencesMap) {
+        topVal = occurencesMap.get(topTwoKeys[0]);
+        secondHighestVal = occurencesMap.get(topTwoKeys[1]);
+
+        if (topTwoKeys.length < 2) {
+            topTwoKeys.push(keyVal[0]);
+
+            if (topTwoKeys.length == 2 && (topVal < keyVal[1] || (topVal == keyVal[1] && keyVal[0] < topTwoKeys[0]))) {
+                temp = topTwoKeys[0];
+                topTwoKeys[0] = topTwoKeys[1];
+                topTwoKeys[1] = temp;
+            }
+        } else if (keyVal[1] > topVal || (keyVal[1] == topVal && keyVal[0] < topTwoKeys[0])) {
+            temp = topTwoKeys[0];
+            topTwoKeys[0] = topTwoKeys[1];
+            topTwoKeys[1] = temp;
+
+            topTwoKeys[0] = keyVal[0];
+        } else if (keyVal[1] == topVal && keyVal[0] > topTwoKeys[0] && (keyVal[1] > secondHighestVal || keyVal[0] < topTwoKeys[1])) {
+            topTwoKeys[1] = keyVal[0];
+        } else if (keyVal[1] > secondHighestVal || (keyVal[1] == secondHighestVal && keyVal[0] < topTwoKeys[1])) {
+            topTwoKeys[1] = keyVal[0];
+        }
+    }
+
+    return topTwoKeys;
 }
 
 function toBinary(num) {
@@ -260,22 +275,22 @@ function topTwoTestsHelper(arr, value1, value2) {
 
 function topTwoTests() {
     let arr = topTwo(["A", "B"]);
-    console.assert(topTwoTestsHelper(arr, "A", "B"));
+    console.assert(topTwoTestsHelper(arr, "A", "B"), "Test 1: " + arr);
 
     arr = topTwo(["A", "B", "B"]);
-    console.assert(topTwoTestsHelper(arr, "B", "A"));
+    console.assert(topTwoTestsHelper(arr, "B", "A"), "Test 2: " + arr);
 
     arr = topTwo(["A", "B", "B", "A"]);
-    console.assert(topTwoTestsHelper(arr, "A", "B"));
+    console.assert(topTwoTestsHelper(arr, "A", "B"), "Test 3: " + arr);
 
     arr = topTwo(["A", "B", "C", "C"]);
-    console.assert(topTwoTestsHelper(arr, "C", "A"));
+    console.assert(topTwoTestsHelper(arr, "C", "A"), "Test 4: " + arr);
 
     arr = topTwo(["A", "B", "C", "C", "D", "D", "D"]);
-    console.assert(topTwoTestsHelper(arr, "D", "C"));
+    console.assert(topTwoTestsHelper(arr, "D", "C"), "Test 5: " + arr);
 
     arr = topTwo(["A", "D", "D", "C", "D", "B", "C"]);
-    console.assert(topTwoTestsHelper(arr, "D", "C"));
+    console.assert(topTwoTestsHelper(arr, "D", "C"), "Test 6: " + arr);
 }
 
 function main() {
@@ -286,9 +301,7 @@ function main() {
     secondHighestTests();
     // infiniteLoop();
     fizzBuzzTests();
-    // topTwoTests();
-
-    topTwo(["A", "D", "D", "C", "D", "B", "C"]);
+    topTwoTests();
 }
 
 main();
