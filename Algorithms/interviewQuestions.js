@@ -185,15 +185,79 @@ function topTwo(arr) {
     return topTwoKeys;
 }
 
-function toBinary(num) {
+function toBinary(decimalNum) {
+    if (decimalNum == 0) {
+        return "0";
+    }
 
+    let temp;
+    let binaryString = "";
+
+    for (let i = Math.floor(Math.log2(decimalNum)); i >= 0; i--) {
+        temp = Math.pow(2, i);
+        if (temp <= decimalNum) {
+            binaryString += "1";
+            decimalNum -= temp;
+        } else {
+            binaryString += "0";
+        }
+    }
+
+    return binaryString;
 }
 
-function toDecimal(num) {
+function toDecimal(numString, base = 2) {
+    let decimal = 0;
+    let len = numString.length;
+    let temp;
+    for (let i = 0; i < len; i++) {
 
+        switch (numString[len - i - 1]) {
+            case "A": {
+                temp = 10;
+                break;
+            } case "B": {
+                temp = 11;
+                break;
+            } case "C": {
+                temp = 12;
+                break;
+            } case "D": {
+                temp = 13;
+                break;
+            } case "E": {
+                temp = 14;
+                break;
+            } case "F": {
+                temp = 15;
+                break;
+            } default: {
+                temp = numString[len - i - 1];
+            }
+        }
+
+        decimal += temp * Math.pow(base, i);
+    }
+    return decimal;
 }
 
-function reverseString() {
+function powFunctionRec(base, power) {
+    return 0;
+}
+
+function powFunctionIter(base, power) {
+    return 0;
+}
+
+function fibonacciRec(n) {
+    return 0;
+}
+
+function fibonacciIter(n) {
+    return 0;
+}
+
+function reverseString(myString) {
     return 0;
 }
 
@@ -293,6 +357,38 @@ function topTwoTests() {
     console.assert(topTwoTestsHelper(arr, "D", "C"), "Test 6: " + arr);
 }
 
+function toBinaryTests() {
+    let result = toBinary(0);
+    console.assert(result === "0", "Returned: " + result + ", Expected: " + 0);
+    result = toBinary(1);
+    console.assert(result === "1", "Returned: " + result + ", Expected: " + 1);
+    result = toBinary(2);
+    console.assert(result === "10", "Returned: " + result + ", Expected: " + 10);
+    result = toBinary(3);
+    console.assert(result === "11", "Returned: " + result + ", Expected: " + 11);
+    result = toBinary(4);
+    console.assert(result === "100", "Returned: " + result + ", Expected: " + 100);
+}
+
+function toDecimalTests() {
+    let result = toDecimal("0");
+    console.assert(result === 0, "Returned: " + result + ", Expected: " + 0);
+    result = toDecimal("1");
+    console.assert(result === 1, "Returned: " + result + ", Expected: " + 1);
+    result = toDecimal("10");
+    console.assert(result === 2, "Returned: " + result + ", Expected: " + 2);
+    result = toDecimal("11");
+    console.assert(result === 3, "Returned: " + result + ", Expected: " + 3);
+    result = toDecimal("100");
+    console.assert(result === 4, "Returned: " + result + ", Expected: " + 4);
+
+    result = toDecimal("753", 8);
+    console.assert(result === 491, "Returned: " + result + ", Expected: " + 491);
+
+    result = toDecimal("F5", 16);
+    console.assert(result === 245, "Returned: " + result + ", Expected: " + 245);
+}
+
 function main() {
     toLowerCaseTests();
     isPalindromeTests();
@@ -302,6 +398,8 @@ function main() {
     // infiniteLoop();
     fizzBuzzTests();
     topTwoTests();
+    toBinaryTests();
+    toDecimalTests();
 }
 
 main();
