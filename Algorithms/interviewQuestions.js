@@ -241,12 +241,20 @@ function toDecimal(numString, base = 2) {
     return decimal;
 }
 
-function powFunctionRec(base, power) {
-    return 0;
+function powFunctionRec(base, exponent) {
+    if (exponent == 0) {
+        return 1;
+    }
+    
+    return base * powFunctionRec(base, exponent - 1);
 }
 
-function powFunctionIter(base, power) {
-    return 0;
+function powFunctionIter(base, exponent) {
+    let result = 1;
+    for (let i = 0; i < exponent; i++) {
+        result *= base;
+    }
+    return result;
 }
 
 function fibonacciRec(n) {
@@ -389,6 +397,122 @@ function toDecimalTests() {
     console.assert(result === 245, "Returned: " + result + ", Expected: " + 245);
 }
 
+function powFunctionIterTests() {
+    let result = powFunctionIter(0, 0);
+    console.assert(result == 1, "Returned: " + result + ", Expected: 1");
+    result = powFunctionIter(0, 1);
+    console.assert(result == 0, "Returned: " + result + ", Expected: 0");
+
+    result = powFunctionIter(1, 0);
+    console.assert(result == 1, "Returned: " + result + ", Expected: 1");
+    result = powFunctionIter(1, 1);
+    console.assert(result == 1, "Returned: " + result + ", Expected: 1");
+    result = powFunctionIter(1, 2);
+    console.assert(result == 1, "Returned: " + result + ", Expected: 1");
+
+    result = powFunctionIter(2, 0);
+    console.assert(result == 1, "Returned: " + result + ", Expected: 1");
+    result = powFunctionIter(2, 1);
+    console.assert(result == 2, "Returned: " + result + ", Expected: 2");
+    result = powFunctionIter(2, 2);
+    console.assert(result == 4, "Returned: " + result + ", Expected: 4");
+    result = powFunctionIter(2, 3);
+    console.assert(result == 8, "Returned: " + result + ", Expected: 8");
+
+    result = powFunctionIter(.25, 0);
+    console.assert(result == 1, "Returned: " + result + ", Expected: 1");
+    result = powFunctionIter(.25, 1);
+    console.assert(result == 0.25, "Returned: " + result + ", Expected: 0.25");
+    result = powFunctionIter(.25, 2);
+    console.assert(result == 0.0625, "Returned: " + result + ", Expected: 0.0625");
+    result = powFunctionIter(.25, 3);
+    console.assert(result == 0.015625, "Returned: " + result + ", Expected: 0.015625");
+
+    result = powFunctionIter(-3, 0);
+    let expected = 1
+    console.assert(result == expected, "Returned: " + result + ", Expected: " + expected);
+    result = powFunctionIter(-3, 1);
+    expected = -3
+    console.assert(result == expected, "Returned: " + result + ", Expected: " + expected);
+    result = powFunctionIter(-3, 2);
+    expected = 9
+    console.assert(result == expected, "Returned: " + result + ", Expected: " + expected);
+    result = powFunctionIter(-3, 3);
+    expected = -27
+    console.assert(result == expected, "Returned: " + result + ", Expected: " + expected);
+
+    result = powFunctionIter(-.2, 0);
+    expected = 1
+    console.assert(result == expected, "Returned: " + result + ", Expected: " + expected);
+    result = powFunctionIter(-.2, 1);
+    expected = -.2
+    console.assert(result == expected, "Returned: " + result + ", Expected: " + expected);
+    result = Math.round(powFunctionIter(-.2, 2) * 100) / 100;
+    expected = .04
+    console.assert(result == expected, "Returned: " + result + ", Expected: " + expected);
+    result = Math.round(powFunctionIter(-.2, 3) * 1000) / 1000;
+    expected = -.008
+    console.assert(result == expected, "Returned: " + result + ", Expected: " + expected);
+}
+
+function powFunctionRecTests() {
+    let result = powFunctionRec(0, 0);
+    console.assert(result == 1, "Returned: " + result + ", Expected: 1");
+    result = powFunctionRec(0, 1);
+    console.assert(result == 0, "Returned: " + result + ", Expected: 0");
+
+    result = powFunctionRec(1, 0);
+    console.assert(result == 1, "Returned: " + result + ", Expected: 1");
+    result = powFunctionRec(1, 1);
+    console.assert(result == 1, "Returned: " + result + ", Expected: 1");
+    result = powFunctionRec(1, 2);
+    console.assert(result == 1, "Returned: " + result + ", Expected: 1");
+
+    result = powFunctionRec(2, 0);
+    console.assert(result == 1, "Returned: " + result + ", Expected: 1");
+    result = powFunctionRec(2, 1);
+    console.assert(result == 2, "Returned: " + result + ", Expected: 2");
+    result = powFunctionRec(2, 2);
+    console.assert(result == 4, "Returned: " + result + ", Expected: 4");
+    result = powFunctionRec(2, 3);
+    console.assert(result == 8, "Returned: " + result + ", Expected: 8");
+
+    result = powFunctionRec(.25, 0);
+    console.assert(result == 1, "Returned: " + result + ", Expected: 1");
+    result = powFunctionRec(.25, 1);
+    console.assert(result == 0.25, "Returned: " + result + ", Expected: 0.25");
+    result = powFunctionRec(.25, 2);
+    console.assert(result == 0.0625, "Returned: " + result + ", Expected: 0.0625");
+    result = powFunctionRec(.25, 3);
+    console.assert(result == 0.015625, "Returned: " + result + ", Expected: 0.015625");
+
+    result = powFunctionRec(-3, 0);
+    let expected = 1
+    console.assert(result == expected, "Returned: " + result + ", Expected: " + expected);
+    result = powFunctionRec(-3, 1);
+    expected = -3
+    console.assert(result == expected, "Returned: " + result + ", Expected: " + expected);
+    result = powFunctionRec(-3, 2);
+    expected = 9
+    console.assert(result == expected, "Returned: " + result + ", Expected: " + expected);
+    result = powFunctionRec(-3, 3);
+    expected = -27
+    console.assert(result == expected, "Returned: " + result + ", Expected: " + expected);
+
+    result = powFunctionRec(-.2, 0);
+    expected = 1
+    console.assert(result == expected, "Returned: " + result + ", Expected: " + expected);
+    result = powFunctionRec(-.2, 1);
+    expected = -.2
+    console.assert(result == expected, "Returned: " + result + ", Expected: " + expected);
+    result = Math.round(powFunctionRec(-.2, 2) * 100) / 100;
+    expected = .04
+    console.assert(result == expected, "Returned: " + result + ", Expected: " + expected);
+    result = Math.round(powFunctionRec(-.2, 3) * 1000) / 1000;
+    expected = -.008
+    console.assert(result == expected, "Returned: " + result + ", Expected: " + expected);
+}
+
 function main() {
     toLowerCaseTests();
     isPalindromeTests();
@@ -400,6 +524,8 @@ function main() {
     topTwoTests();
     toBinaryTests();
     toDecimalTests();
+    powFunctionIterTests();
+    powFunctionRecTests();
 }
 
 main();
