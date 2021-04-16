@@ -258,19 +258,27 @@ function powFunctionIter(base, exponent) {
 }
 
 function fibonacciRec(n) {
-    return 0;
+    if (n < 3) {
+        return 1;
+    }
+    return fibonacciRec(n - 1) + fibonacciRec(n - 2);
 }
 
 function fibonacciIter(n) {
-    return 0;
-}
+    if (n < 3) {
+        return 1;
+    }
 
-function reverseString(myString) {
-    return 0;
-}
+    let result;
+    let prev = 1;
+    let curr = 1;
+    for (let i = 2; i < n; i++) {
+        result = prev + curr;
+        prev = curr;
+        curr = result;
+    }
 
-function stocks(arr) {
-    return 0;
+    return result;
 }
 
 function toLowerCaseTests() {
@@ -513,6 +521,26 @@ function powFunctionRecTests() {
     console.assert(result == expected, "Returned: " + result + ", Expected: " + expected);
 }
 
+function fibonacciIterTests() {
+    console.assert(fibonacciIter(1) == 1, 1);
+    console.assert(fibonacciIter(2) == 1, 2);
+    console.assert(fibonacciIter(3) == 2, 3);
+    console.assert(fibonacciIter(4) == 3, 4);
+    console.assert(fibonacciIter(5) == 5, 5);
+    console.assert(fibonacciIter(6) == 8, 6);
+    console.assert(fibonacciIter(7) == 13, 7);
+}
+
+function fibonacciRecTests() {
+    console.assert(fibonacciRec(1) == 1);
+    console.assert(fibonacciRec(2) == 1);
+    console.assert(fibonacciRec(3) == 2);
+    console.assert(fibonacciRec(4) == 3);
+    console.assert(fibonacciRec(5) == 5);
+    console.assert(fibonacciRec(6) == 8);
+    console.assert(fibonacciRec(7) == 13);
+}
+
 function main() {
     toLowerCaseTests();
     isPalindromeTests();
@@ -526,6 +554,8 @@ function main() {
     toDecimalTests();
     powFunctionIterTests();
     powFunctionRecTests();
+    fibonacciRecTests();
+    fibonacciIterTests();
 }
 
 main();
