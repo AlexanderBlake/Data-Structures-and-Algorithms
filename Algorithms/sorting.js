@@ -1,6 +1,24 @@
 // Time Complexity: O(n^2) Quadratic Time
 // Space Complexity: O(n) Total, O(1) Auxillary
 function selectionSort(arr) {
+    let smallestIndex;
+    let temp;
+
+    for (let i = 0; i < arr.length; i++) {
+        smallestIndex = i;
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[j] < arr[smallestIndex]) {
+                smallestIndex = j;
+            }
+        }
+
+        if (smallestIndex != i) {
+            temp = arr[i];
+            arr[i] = arr[smallestIndex];
+            arr[smallestIndex] = temp;
+        }
+    }
+
     return arr;
 }
 
