@@ -281,6 +281,58 @@ function fibonacciIter(n) {
     return result;
 }
 
+// Return the max profit
+// stockPrices are the prices for the week
+// You can only buy 1 share and sell 1 share if you own it (no short selling)
+// At the end of the week you must close all positions
+// There are no transaction/commission fees
+// You have a infinite amount of money (money is not a constraint)
+// You should only trade if you have a full week of data (5 trading days required, the company must be listed for all the days/no errors with the data)
+// If we reach an inclusive result (due to an error) we should return -1
+// You can always do nothing
+// You can do multiple transactions in a day (buy and sell)
+// As many transactions as you desire
+function maxProfit(stockPrices) {
+    if (stockPrices.length != 5) {
+        return -1;
+    }
+
+    let profit = 0;
+    let costBasis = 0;
+
+    for (let i = 0; i < stockPrices.length - 1; i++) {
+        if (stockPrices[i] <= 0) {
+            return -1;
+        }
+
+        // Sell
+        if (costBasis != 0) {
+            profit += stockPrices[i] - costBasis;
+            costBasis = 0;
+        }
+
+        // Buy
+        if (stockPrices[i] < stockPrices[i + 1]) {
+            costBasis = stockPrices[i];
+        }
+    }
+
+    if (costBasis != 0) {
+        profit += stockPrices[stockPrices.length - 1] - costBasis;
+    }
+
+    return profit;
+}
+
+function maxProfitTests() {
+    console.assert(maxProfit([10, 20, 30, 40, 50]) == 40);
+    console.assert(maxProfit([50, 40, 30, 20, 10]) == 0);
+    console.assert(maxProfit([30, 50, 10, 20, 40]) == 50);
+    console.assert(maxProfit([-1, 50, 10, 20, 40]) == -1);
+    console.assert(maxProfit([10, 20, 30, 40]) == -1);
+    console.assert(maxProfit([10, 0, 20, 30, 40]) == -1);
+}
+
 function toLowerCaseTests() {
     console.assert(toLowerCase("M") == "m");
     console.assert(toLowerCase("A") == "a");
@@ -556,6 +608,7 @@ function main() {
     powFunctionRecTests();
     fibonacciRecTests();
     fibonacciIterTests();
+    maxProfitTests();
 }
 
 main();

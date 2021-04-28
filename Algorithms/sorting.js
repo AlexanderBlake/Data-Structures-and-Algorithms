@@ -4,6 +4,9 @@ function selectionSort(arr) {
     let smallestIndex;
     let temp;
 
+    console.log("Selection Sort");
+    console.log(arr);
+
     for (let i = 0; i < arr.length; i++) {
         smallestIndex = i;
         for (let j = i + 1; j < arr.length; j++) {
@@ -17,6 +20,7 @@ function selectionSort(arr) {
             arr[i] = arr[smallestIndex];
             arr[smallestIndex] = temp;
         }
+        console.log(arr);
     }
 
     return arr;
@@ -25,6 +29,42 @@ function selectionSort(arr) {
 // Time Complexity: O(n^2) Quadratic Time
 // Space Complexity: O(n) Total, O(1) Auxillary
 function insertionSort(arr) {
+    let j;
+    let temp;
+
+    console.log("Insertion Sort");
+    console.log(arr);
+
+    for (let i = 0; i < arr.length - 1; i++) {
+        j = i + 1;
+
+        while (arr[j] < arr[j - 1]) {
+            temp = arr[j];
+            arr[j] = arr[j - 1];
+            arr[j - 1] = temp;
+            console.log(arr);
+            j--;
+        }
+        console.log(arr);
+    }
+
+    /*
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = i + 1; j >= 1; j--) {
+            if (arr[j] < arr[j - 1]) {
+                temp = arr[j];
+                arr[j] = arr[j - 1];
+                arr[j - 1] = temp;
+                console.log(arr);
+            } else {
+                j = 0;
+                break;
+            }
+        } 
+        console.log(arr);
+    }
+    */
+
     return arr;
 }
 
@@ -33,12 +73,16 @@ function insertionSort(arr) {
 function bubbleSort(arr) {
     let temp;
 
+    console.log("Bubble Sort");
+    console.log(arr);
+
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < arr.length - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
                 arr[j] += arr[j + 1];
                 arr[j + 1] = arr[j] - arr[j + 1];
                 arr[j] -= arr[j + 1];
+                console.log(arr);
             }
 
             /*
@@ -49,6 +93,7 @@ function bubbleSort(arr) {
             }
             */
         }
+        console.log(arr);
     }
 
     return arr;
