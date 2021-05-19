@@ -128,6 +128,45 @@ function onlyDigits(myString)
     */
 }
 
+// Time Complexity: O(n) Linear Time
+// Space Complexity: (Total: O(n) Linear Space), (Auxillary: O(1) Constant Space)
+function isBalanced(expression)
+{
+    let count = 0;
+    let checkParentheis = false;
+
+    for (let i = 0; i < expression.length; i++)
+    {
+        if (expression[i] == '(')
+        {
+            checkParentheis = true;
+            count++;
+        }
+        else if (expression[i] == ')')
+        {
+            if (!checkParentheis) 
+            {
+                count--;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else if (expression[i] != ' ')
+        {
+            checkParentheis = false;
+        }
+
+        if (count == -1)
+        {
+            return false;
+        }
+    }
+
+    return count == 0;
+}
+
 function findDuplicateTest()
 {
     console.assert(findDuplicate([1, 1, 2, 3, 4, 5]) == 1, "1 side by side");
@@ -150,10 +189,24 @@ function onlyDigitsTests()
     console.assert(!onlyDigits("a$|"), "Only Non-digits");
 }
 
+function isBalancedTests()
+{
+    console.assert(!isBalanced("("), "Opening parenthesis only");
+    console.assert(!isBalanced("2 * ( 8 + 2"), "Unbalanced Expression 1");
+    console.assert(!isBalanced("(2 + 6) * 5 + 6)"), "Unbalanced Expression 2");
+    console.assert(!isBalanced(")(2 + 6) * 5 + 6("), "Unbalanced Expression 3");
+    console.assert(!isBalanced("()"), "Opening & Closing parenthesis only 1");
+    console.assert(!isBalanced("( )"), "Opening & Closing parenthesis only 2");
+    // console.assert(!isBalanced("( + )"), "Opening & Closing parenthesis only 3");
+    console.assert(isBalanced("(5 + 6)"), "Balanced Complete Expression 1");
+    console.assert(isBalanced("1 / (2 + (3 * 4))"), "Balanced Expression 2");
+}
+
 function main()
 {
     findDuplicateTest();
     onlyDigitsTests();
+    isBalancedTests();
 }
 
 main();
