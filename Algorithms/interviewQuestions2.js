@@ -167,6 +167,50 @@ function isBalanced(expression)
     return count == 0;
 }
 
+function challenge1(x, y, z)
+{
+    /*
+    if (x)
+    {
+        y = false;
+    }
+    else
+    {
+        y = true;
+    }
+    */
+    y = !x;
+}
+
+function challenge2(x, y, z)
+{
+    /*
+    if (x)
+    {
+        return y;
+    }
+    else
+    {
+        return false;
+    }
+    */
+    return x == y && x;
+}
+
+function challenge3(x, y, z)
+{
+    /* if (x)
+    {
+        y = z;
+    }
+    else
+    {
+        y = !z;
+    }
+    */
+    y = x == z;
+}
+
 function findDuplicateTest()
 {
     console.assert(findDuplicate([1, 1, 2, 3, 4, 5]) == 1, "1 side by side");
