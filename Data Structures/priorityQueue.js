@@ -4,71 +4,106 @@ class Node
     {
         this.value = value;
         this.priority = priority;
-        this.timeSpentInLine = 0;
         this.next;
     }
 }
 
+// Space Complexity: O(n) Linear Space
 class PriorityQueue
 {
     constructor()
     {
-        this.queueByPriority = [];
+        this.front = null;
     }
 
-    push(value, priority)
+    // Time Complexity: O(n) Linear Time
+    enqueue(value, priority)
     {
-        if (!this.queueByPriority.length)
+        let newNode;
+
+        if (!this.front)
         {
-            this.queueByPriority.push(new Node(value, priority));
+            this.front = new Node(value, priority);
+        }
+        else if (this.front.priority < priority)
+        {
+            newNode = new Node(value, priority);
+            newNode.next = this.front;
+            this.front = newNode;
         }
         else
         {
-            let current;
-            let added = false;
-            for (let i = 0; i < this.queueByPriority.length; i++)
+            let current = this.front;
+            while (current.next && priority <= current.next.priority)
             {
-                current = this.queueByPriority[i];
-                if (current.priority == priority)
-                {
-                    while (current.next)
-                    {
-                        current = current.next;
-                    }
-
-                    current.next = new Node(value, priority);
-                    added = true;
-                }
+                current = current.next;
             }
 
-            if (!added)
-            {
-                this.queueByPriority.push(new Node(value, priority));
-            }
+            newNode = new Node(value, priority);
+            newNode.next = current.next;
+            current.next = newNode;
         }
     }
 
-    /*
-    MUST BE CHANGED
-    pop()
+    // O(1) Constant Time
+    dequeue()
     {
-        let poppedNode = this.queue;
-        this.queue = this.queue.next;
-        poppedNode.next = null;
-        return poppedNode;
+        if (this.front)
+        {
+            let removedNode = this.front;
+            this.front = this.front.next;
+
+            removedNode.next = null;
+            return removedNode;
+        }
+        return null;
     }
-    */
+
+    // Time Complexity: O(n) Linear Time
+    display()
+    {
+        if (this.front)
+        {
+            let current = this.front;
+            let displayString = "";
+
+            while (current.next)
+            {
+                displayString += "|" + current.value + "|" + current.priority + "| -> ";
+                current = current.next;
+            }
+
+            displayString += "|" + current.value + "|" + current.priority + "|";
+            console.log(displayString);
+        }
+        else
+        {
+            console.log("Empty Queue");
+        }
+    }
 }
 
 function main()
 {
     queue = new PriorityQueue();
 
-    queue.push(24, 1);
-    queue.push(48, 3);
-    queue.push(96, 2);
-    queue.push(9, 3);
-    console.log(queue);
+    queue.enqueue(24, 1);
+    queue.display();
+    queue.enqueue(48, 3);
+    queue.display();
+    queue.enqueue(96, 2);
+    queue.display();
+    queue.enqueue(19, 1);
+    queue.display();
+
+    for (let i = 0; i < 5; i++) 
+    {
+        console.log(queue.dequeue());
+    }
+    queue.display();
+
+    queue.enqueue(88, 1);
+    queue.display();
 }
 
 main();
