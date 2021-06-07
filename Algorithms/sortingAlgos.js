@@ -1,4 +1,4 @@
-// Time-Complexity: O(n^2)
+// Time-Complexity: Best Case - O(n), Average/Worst Case - O(n^2)
 // Space Complexity: O(n), Auxillary: O(1)
 function bubbleSort(arr) {
     let temp;
@@ -23,7 +23,7 @@ function bubbleSort(arr) {
     return arr;
 }
 
-// Time-Complexity: O(n^2)
+// Time-Complexity: Best/Average/Worst Case - O(n^2)
 // Space Complexity: O(n), Auxillary: O(1)
 function selectionSort(arr) {
     let minIndex;
@@ -62,6 +62,56 @@ function insertionSort(arr) {
         }
     }
     return arr;
+}
+
+function quickSort(data, left, right) {
+    let pivot;
+
+    if (right <= left) {
+        return;
+    }
+    else {
+        pivot = parition(data, left, right);
+        quickSort(data, left, pivot - 1);
+        quickSort(data, pivot + 1, right);
+    }
+
+    return data;
+}
+
+function parition(data, left, right) {
+    let pivot = data[left];
+    let leftIndex = left + 1;
+    let rightIndex = right;
+    let temp;
+
+    while (true)
+    {
+        while (leftIndex <= rightIndex && data[leftIndex] <= pivot)
+        {
+            leftIndex++;
+        }
+        while (rightIndex >= leftIndex && data[rightIndex] >= pivot)
+        {
+            rightIndex--;
+        }
+        if (rightIndex <= leftIndex)
+        {
+            break;
+        }
+
+        temp = data[leftIndex];
+        data[leftIndex] = data[rightIndex];
+        data[rightIndex] = temp;
+        console.log(data);
+    }
+
+    temp = data[left];
+    data[left] = data[rightIndex];
+    data[rightIndex] = temp;
+    console.log(data);
+
+    return rightIndex;
 }
 
 function arrayEquals(arr1, arr2) {
@@ -109,6 +159,10 @@ function main() {
     bubbleSortTests();
     selectionSortTests();
     insertionSortTests();
+
+    let arr = [3, 44, 38, 5, 35];
+
+    quickSort(arr, 0, arr.length - 1);
 }
 
 main();

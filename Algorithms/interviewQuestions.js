@@ -116,6 +116,25 @@ function secondHighest(arr) {
 }
 
 // Time Complexity: O(n) Linear Time
+// Space Complexity: Total - O(n) Linear Space Auxillary - O(1) Constant Space
+function maxMin(arr) {
+    let max = arr[0];
+    let min = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (max < arr[i]) {
+            max = arr[i];
+        } 
+        else if (min > arr[i])
+        {
+            min = arr[i];
+        }
+    }
+
+    return [max, min];
+}
+
+// Time Complexity: O(n) Linear Time
 // Space Complexity: O(1) Constant Space
 function fizzBuzz(n) {
     let myString = "";
