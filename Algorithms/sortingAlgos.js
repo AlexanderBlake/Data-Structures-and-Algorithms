@@ -114,6 +114,100 @@ function parition(data, left, right) {
     return rightIndex;
 }
 
+function mergeSort(data) {
+    if (data.length < 2)
+    {
+        return data;
+    }
+
+    let middle = Math.floor(data.length / 2);
+
+    let right = mergeSort(data.slice(middle));
+    let left = mergeSort(data.slice(0, middle));
+
+    console.log("The left side is: ", left);
+    console.log("The right side is: ", right);
+
+    let merged = merge(left, right);
+
+    console.log("Merged ", merged)
+    return merged
+}
+
+function merge(left, right)
+{
+    if (!left.length)
+    {
+        return left;
+    }
+
+    if (!right.length)
+    {
+        return right;
+    }
+
+    let result = [];
+    let leftIndex = 0;
+    let rightIndex = 0;
+    let totalLen = left.length + right.length;
+
+    while (result.length < totalLen)
+    {
+        if (left[leftIndex] < right[rightIndex])
+        {
+            result.push(left[leftIndex]);
+            leftIndex++;
+        }
+
+        else 
+        {
+            result.push(right[rightIndex]);
+            rightIndex++;
+        }
+
+        if (leftIndex == left.length && rightIndex != right.length)
+        {
+            for (let i = rightIndex; i < right.length; i++)
+            {
+                result.push(right[i]);
+            }
+        }
+
+        else if (rightIndex == right.length && leftIndex != left.length)
+        {
+            for (let i = leftIndex; i < left.length; i++)
+            {
+                result.push(left[i]);
+            }
+        }
+    }
+    return result;
+}
+
+function shellSort(data)
+{
+    let gap = Math.floor(data.length / 2);
+
+    while (gap > 0)
+    {
+        for (let iIndex = gap; iIndex < data.length; iIndex++)
+        {
+            let temp = data[iIndex];
+            let jIndex = iIndex;
+
+            while (jIndex >= gap && data[jIndex - gap] > temp)
+            {
+                data[jIndex] = data[jIndex - gap];
+                jIndex -= gap;
+            }
+
+            data[jIndex] = temp;
+        }
+        gap = Math.floor(gap / 2);
+    }
+    console.log(data);
+}
+
 function arrayEquals(arr1, arr2) {
     if (arr1.length != arr2.length) {
         return false;
@@ -160,9 +254,13 @@ function main() {
     selectionSortTests();
     insertionSortTests();
 
-    let arr = [3, 44, 38, 5, 35];
+    let arr = [3, 44, 38, 5];
 
-    quickSort(arr, 0, arr.length - 1);
+    // quickSort(arr, 0, arr.length - 1);
+
+    // mergeSort(arr);
+
+    shellSort([633, 141, 880, 957, 470, 268, 887, 701]);
 }
 
 main();
