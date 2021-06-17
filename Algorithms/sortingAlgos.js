@@ -260,7 +260,7 @@ function main() {
 
     // mergeSort(arr);
 
-    shellSort([633, 141, 880, 957, 470, 268, 887, 701]);
+    shellSort([7, 6, 3, 10, 1, 5]);
 }
 
 main();
