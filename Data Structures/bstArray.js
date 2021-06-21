@@ -12,7 +12,7 @@ class BinarySearchTree {
     }
 
     findParent(index) {
-
+        return Math.round(index / 2) - 1;
     }
 
     unBalancedInsert(value) {

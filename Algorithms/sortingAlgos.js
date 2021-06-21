@@ -208,6 +208,56 @@ function shellSort(data)
     console.log(data);
 }
 
+function createHeap(data, length, index)
+{
+    let temp;
+    let largest = index;
+    let left = 2 * index + 1;
+    let right = 2 * index + 2;
+
+    if (left < length && data[index] < data[left])
+    {
+        largest = left;
+    }
+
+    if (right < length && data[largest] < data[right])
+    {
+        largest = right;
+    }
+
+    if (largest != index)
+    {
+        temp = data[index];
+        data[index] = data[largest];
+        data[largest] = temp;
+
+        createHeap(data, length, largest);
+    }
+}
+
+// Time Complexity: O(n log n)
+function heapSort(data)
+{
+    let temp;
+    let length = data.length;
+
+    for (let index = length; index > 0; index--)
+    {
+        createHeap(data, length, index);
+    }
+
+    for (let index = length - 1; index > 0; index--)
+    {
+        temp = data[index];
+        data[index] = data[0];
+        data[0] = temp;
+
+        createHeap(data, index, 0);
+    }
+
+    console.log(data);
+}
+
 function arrayEquals(arr1, arr2) {
     if (arr1.length != arr2.length) {
         return false;
@@ -260,7 +310,9 @@ function main() {
 
     // mergeSort(arr);
 
-    shellSort([7, 6, 3, 10, 1, 5]);
+    // shellSort([7, 6, 3, 10, 1, 5]);
+
+    heapSort([8, 6, 2, 5, 3, 1]);
 }
 
 main();
