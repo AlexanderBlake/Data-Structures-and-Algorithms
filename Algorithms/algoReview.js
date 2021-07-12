@@ -239,6 +239,121 @@ function secondHighest(arr)
     return sHighest;
 }
 
+// Write numbers in numerical order if the number is divisible by 3 say fizz, if the number is divisible by 5 say buzz, and by both say fizzbuzz
+// 1, 2, fizz, 4, buzz, fizz, 7, ..., n
+// Return string
+// Time Complexity: O(n)
+// Space Complexity: Total: O(n), Auxilary: O(1)
+function fizzBuzz(n)
+{
+    // n = 3 => "1 , 2 , fizz"
+    let isFizz;
+    let s = "";
+
+    for (let i = 1; i <= n; i++)
+    {
+        isFizz = false;
+
+        if (i % 3 == 0) 
+        {
+            s += "fizz";
+            isFizz = true;
+        }
+        
+        if (i % 5 == 0)
+        {
+            s += "buzz";
+        }
+        else if (!isFizz)
+        {
+            s += i;
+        }
+
+        if (i != n) 
+        {
+            s += ", ";
+        }
+    }
+
+    return s;   
+}
+
+function fizzBuzzTests()
+{
+    console.assert(fizzBuzz(-1) == "", fizzBuzz(-1));
+    console.assert(fizzBuzz(0) == "", fizzBuzz(0));
+    console.assert(fizzBuzz(1) == "1", fizzBuzz(1));
+    console.assert(fizzBuzz(2) == "1, 2", fizzBuzz(2));
+    console.assert(fizzBuzz(3) == "1, 2, fizz", fizzBuzz(3));
+    console.assert(fizzBuzz(4) == "1, 2, fizz, 4", fizzBuzz(4));
+    console.assert(fizzBuzz(5) == "1, 2, fizz, 4, buzz", fizzBuzz(5));
+    console.assert(fizzBuzz(6) == "1, 2, fizz, 4, buzz, fizz", fizzBuzz(6));
+    console.assert(fizzBuzz(7) == "1, 2, fizz, 4, buzz, fizz, 7", fizzBuzz(7));
+    console.assert(fizzBuzz(15) == "1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz", fizzBuzz(15));
+}
+
+// Write a function that makes the most money buying and selling stocks knowing what the prices will be for the week
+// Long positions only, no short selling
+// No commissions, unlimited capital, you can only own 1 share at most, unlimited amount of trades
+// You must close all positions by the weekend
+// Return the max profit (loss)
+function stocks(prices)
+{
+    let profit = 0;
+
+    if (prices.length !== 5)
+    {
+        return -1;
+    }
+
+    for (let i = 0; i < prices.length - 1; i++)
+    {
+        if (prices[i] <= 0)
+        {
+            return -1;
+        }
+
+        if (prices[i] < prices[i + 1])
+        {
+            profit += prices[i + 1] - prices[i];
+        }
+    }
+
+    return profit;
+}
+
+function stocksTests()
+{
+    let result;
+
+    console.assert(stocks([]) == -1, "0 day week");
+    console.assert(stocks([1, 2, 3, 4]) == -1, "4 day week");
+    console.assert(stocks([0, 1, 2, 3, 5]) == -1, "$0 stock");
+    console.assert(stocks([-1, 1, 2, 3, 5]) == -1, "-$1 stock");
+    console.assert(stocks([0, 1, 2, 3, 5, 6]) == -1, "6 day week");
+
+    console.assert(stocks([20, 40, 60, 80, 100]) == 80, "Should return $80");
+    console.assert(stocks([100, 80, 60, 40, 20]) == 0, "Should return $0");
+
+    result = stocks([100, 80, 90, 70, 95]);
+    console.assert(result == 35, "Expected: $35, Actual: $" + result);
+    result = stocks([80, 100, 30, 95, 75]);
+    console.assert(result == 85, "Expected: $85, Actual: $" + result);
+}
+
+function reverseArray(arr)
+{
+    let temp;
+
+    for (let i = 0; i < arr.length / 2; i++) {
+        temp = arr[i];
+        arr[i] = arr[arr.length - 1 - i];
+        arr[arr.length - 1 - i] = temp;
+    }
+
+    return arr;
+}
+
 function main()
 {
     toLowerCaseTests();
@@ -246,7 +361,12 @@ function main()
     isPalindromeTests();
     reorderTests();
 
-    console.log(secondHighest([1, 2, 5, 2, 3, 6]));
+    // console.log(secondHighest([1, 2, 5, 2, 3, 6]));
+
+    fizzBuzzTests();
+    stocksTests();
+
+    console.log(reverseArray([1, 2, 3, 4]));
 }
 
 main();
