@@ -79,6 +79,90 @@ class Stack
     }
 }
 
+class Queue
+{
+    constructor()
+    {
+        this.head = null;
+        this.tail = null;
+        this.size = 0;
+    }
+
+    back()
+    {
+        let returnVal = -1;
+        if (this.size)
+        {
+            returnVal = this.tail.value;
+        }
+        return returnVal;
+    }
+
+    isEmpty()
+    {
+        return this.size === 0;
+    }
+
+    // push, append (add to the end)
+    push(value)
+    {
+        let newNode = new Node(value);
+        if (!this.size)
+        {
+            this.head = newNode;
+            this.tail = newNode;
+        }
+        else
+        {
+            this.tail.next = newNode;
+            this.tail = newNode;
+            
+            /*let current = this.head;
+            
+            while (current.next)
+            {
+                current = current.next;
+            }
+
+            current.next = this.tail;
+            */
+        }
+
+        this.size++;
+    }
+
+    pop()
+    {
+
+    }
+
+    display()
+    {
+        let current = this.head;
+        let displayString = "";
+
+        while (current.next)
+        {
+            displayString += current.value + " -> ";
+            current = current.next;
+        }
+
+        displayString += current.value;
+        console.log(displayString);
+    }
+}
+
+function queueTests()
+{
+    let queue = new Queue();
+
+    queue.push(24);
+    queue.push(48);
+    queue.push(96);
+
+    queue.display();
+}
+
 function stackTests()
 {
     stack = new Stack();
@@ -162,6 +246,7 @@ function main()
     isBalancedTests();
     // stackOverflow(1);
     stackTests();
+    queueTests();
 }
 
 main();
