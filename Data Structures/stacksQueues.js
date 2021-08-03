@@ -103,7 +103,6 @@ class Queue
         return this.size === 0;
     }
 
-    // push, append (add to the end)
     push(value)
     {
         let newNode = new Node(value);
@@ -116,16 +115,6 @@ class Queue
         {
             this.tail.next = newNode;
             this.tail = newNode;
-            
-            /*let current = this.head;
-            
-            while (current.next)
-            {
-                current = current.next;
-            }
-
-            current.next = this.tail;
-            */
         }
 
         this.size++;
@@ -133,22 +122,50 @@ class Queue
 
     pop()
     {
+        if (!this.size)
+        {
+            return -1;
+        } 
+        else 
+        {
+            let poppedNode = this.head;
 
+            if (this.size === 1)
+            {
+                this.head = null;
+                this.tail = null;
+            }
+            else
+            {
+                this.head = this.head.next;
+            }
+            
+            poppedNode.next = null;
+            this.size--;
+            return poppedNode.value;
+        }
     }
 
     display()
     {
-        let current = this.head;
-        let displayString = "";
-
-        while (current.next)
+        if (this.head)
         {
-            displayString += current.value + " -> ";
-            current = current.next;
-        }
+            let current = this.head;
+            let displayString = "";
 
-        displayString += current.value;
-        console.log(displayString);
+            while (current.next)
+            {
+                displayString += current.value + " -> ";
+                current = current.next;
+            }
+
+            displayString += current.value;
+            console.log(displayString);
+        }
+        else 
+        {
+            console.log("Empty Queue");
+        }
     }
 }
 
@@ -161,6 +178,18 @@ function queueTests()
     queue.push(96);
 
     queue.display();
+    // console.log(queue);
+
+    console.log(queue.pop());
+
+    console.log(queue.pop());
+
+    console.log(queue.pop());
+    queue.display();
+
+    console.log(queue.pop());
+    queue.display();
+    console.log(queue);
 }
 
 function stackTests()
@@ -245,7 +274,7 @@ function main()
 {
     isBalancedTests();
     // stackOverflow(1);
-    stackTests();
+    // stackTests();
     queueTests();
 }
 
