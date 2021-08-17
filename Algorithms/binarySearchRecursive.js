@@ -1,3 +1,5 @@
+// Time Complexity: O(log n) Logarithmetic Time
+// Space Complexity: O(1) Constant Space
 function binarySearch(target, low, high, attempts = 0)
 {
     let guess = Math.floor((high + low) / 2);
@@ -28,6 +30,8 @@ function binarySearch(target, low, high, attempts = 0)
     }
 }
 
+// Time Complexity: O(n) Linear Time
+// Space Complexity: O(1) Constant Space
 function actualExpectedValue()
 {
     let expectedValue = 0;
@@ -69,3 +73,5 @@ function main()
 }
 
 main();
+
+// Time/Space Complexities: O(1) Constant, O(n) Linear, O(n^2) Quadratic, O(log(n)) Logarithmetic, O(n log(n)) Linear Logarithmetic
