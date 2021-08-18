@@ -59,6 +59,35 @@ class Tree
                 }
             }
         }
-        
+    }
+
+    inorder(current = this.root)
+    {
+        if (current.left)
+        {
+            this.inorder(current.left);
+        }
+        console.log(current.value);
+        if (current.right)
+        {
+            this.inorder(current.right);
+        }
     }
 }
+
+function main()
+{
+    tree = new Tree();
+
+    tree.insert(5);
+    tree.insert(3);
+    tree.insert(2);
+    tree.insert(4);
+    tree.insert(7);
+    tree.insert(6);
+    tree.insert(8);
+
+    tree.inorder();
+}
+
+main();
