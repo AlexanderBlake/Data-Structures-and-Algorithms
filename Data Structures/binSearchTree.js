@@ -73,6 +73,21 @@ class Tree
             this.inorder(current.right);
         }
     }
+
+    preorder()
+    {
+
+    }
+
+    postorder()
+    {
+
+    }
+
+    breadthFirstTraversal()
+    {
+
+    }
 }
 
 function main()
