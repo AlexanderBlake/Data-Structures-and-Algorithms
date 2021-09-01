@@ -74,14 +74,30 @@ class Tree
         }
     }
 
-    preorder()
+    preorder(current = this.root)
     {
-
+        console.log(current.value);
+        if (current.left)
+        {
+            this.preorder(current.left);
+        }
+        if (current.right)
+        {
+            this.preorder(current.right);
+        }
     }
 
-    postorder()
+    postorder(current = this.root)
     {
-
+        if (current.left)
+        {
+            this.postorder(current.left);
+        }
+        if (current.right)
+        {
+            this.postorder(current.right);
+        }
+        console.log(current.value);
     }
 
     breadthFirstTraversal()
@@ -94,15 +110,15 @@ function main()
 {
     tree = new Tree();
 
+    tree.insert(24);
+    tree.insert(10);
     tree.insert(5);
-    tree.insert(3);
-    tree.insert(2);
-    tree.insert(4);
-    tree.insert(7);
-    tree.insert(6);
-    tree.insert(8);
+    tree.insert(15);
+    tree.insert(30);
+    tree.insert(25);
+    tree.insert(40);
 
-    tree.inorder();
+    tree.postorder();
 }
 
 main();

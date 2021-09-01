@@ -70,6 +70,51 @@ function fibonacciRec(n)
     return fibonacciRec(n - 1) + fibonacciRec(n - 2);
 }
 
+function challenge1(x, y, z)
+{
+    /*
+    if (x)
+    {
+        y = false;
+    }
+    else
+    {
+        y = true;
+    }
+    */
+    y = !x;
+}
+
+function challenge2(x, y, z)
+{
+    /*
+    if (x)
+    {
+        return y;
+    }
+    else
+    {
+        return false;
+    }
+    */
+    return x && y;
+}
+
+function challenge3(x, y, z)
+{
+    /*
+    if (x)
+    {
+        y = z;
+    }
+    else
+    {
+        y = !z;
+    }
+    */
+    y = (x && z) || (!x && !z);
+}
+
 function fibonacciTests()
 {
     let result;
