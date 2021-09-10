@@ -100,9 +100,114 @@ class Tree
         console.log(current.value);
     }
 
-    breadthFirstTraversal()
+    breadthFirstTraversal(current = this.root, queue = new Queue())
     {
+        console.log(current.value);
 
+        if (current.left)
+        {
+            queue.push(current.left);
+        }
+        
+        if (current.right)
+        {
+            queue.push(current.right);
+        }
+
+        while (!queue.isEmpty())
+        {
+            this.breadthFirstTraversal(queue.pop(), queue);
+        }
+    }
+}
+
+class Queue
+{
+    constructor()
+    {
+        this.head = null;
+        this.tail = null;
+        this.size = 0;
+    }
+
+    back()
+    {
+        let returnVal = -1;
+        if (this.size)
+        {
+            returnVal = this.tail.value;
+        }
+        return returnVal;
+    }
+
+    isEmpty()
+    {
+        return this.size === 0;
+    }
+
+    push(value)
+    {
+        let newNode = new Node(value);
+        if (!this.size)
+        {
+            this.head = newNode;
+            this.tail = newNode;
+        }
+        else
+        {
+            this.tail.next = newNode;
+            this.tail = newNode;
+        }
+
+        this.size++;
+    }
+
+    pop()
+    {
+        if (!this.size)
+        {
+            return -1;
+        } 
+        else 
+        {
+            let poppedNode = this.head;
+
+            if (this.size === 1)
+            {
+                this.head = null;
+                this.tail = null;
+            }
+            else
+            {
+                this.head = this.head.next;
+            }
+            
+            poppedNode.next = null;
+            this.size--;
+            return poppedNode.value;
+        }
+    }
+
+    display()
+    {
+        if (this.head)
+        {
+            let current = this.head;
+            let displayString = "";
+
+            while (current.next)
+            {
+                displayString += current.value + " -> ";
+                current = current.next;
+            }
+
+            displayString += current.value;
+            console.log(displayString);
+        }
+        else 
+        {
+            console.log("Empty Queue");
+        }
     }
 }
 
@@ -118,7 +223,7 @@ function main()
     tree.insert(25);
     tree.insert(40);
 
-    tree.postorder();
+    tree.breadthFirstTraversal();
 }
 
 main();
