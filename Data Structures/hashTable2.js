@@ -7,6 +7,7 @@ class Node
     }
 }
 
+// Time Complexity: O(1) Constant Time
 class HashTable
 {
     constructor()
@@ -22,7 +23,52 @@ class HashTable
 
     hashFunction(value)
     {
-        return value % SIZE;
+        return value % this.SIZE;
+    }
+
+    insert(value)
+    {
+        let index = this.hashFunction(value);
+
+        if (!this.table[index])
+        {
+            this.table[index] = new Node(value);
+        }
+        else
+        {
+            let current = this.table[index];
+            while (current.next)
+            {
+                current = current.next;
+            }
+            current.next = new Node(value);
+        }
+    }
+
+    display()
+    {
+        let current;
+        let myString;
+
+        for (let i = 0; i < this.SIZE; i++)
+        {
+            current = this.table[i];
+            myString = i + ": ";
+
+            if (this.table[i])
+            {
+                myString += current.value + " -> ";
+
+                while (current.next)
+                {
+                    current = current.next;
+                    myString += current.value + " -> ";
+                }
+            }
+
+            console.log(myString);
+            
+        }
     }
 }
 
@@ -30,7 +76,15 @@ function main()
 {
     table = new HashTable();
 
-    console.log(table.table);
+    table.insert(24);
+    table.insert(10);
+    table.insert(31);
+    table.insert(21);
+    table.insert(35);
+    table.insert(6);
+    table.insert(13);
+
+    table.display();
 }
 
 main();
