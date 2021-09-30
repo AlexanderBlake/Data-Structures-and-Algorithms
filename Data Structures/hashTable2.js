@@ -45,6 +45,74 @@ class HashTable
         }
     }
 
+    remove(value)
+    {
+        let current;
+        let index = this.hashFunction(value);
+
+        if (!this.table[index])
+        {
+            return false;
+        }
+
+        if (this.table[index].value === value)
+        {
+            current = this.table[index];
+            this.table[index] = this.table[index].next;
+            current.next = null;
+            current = null;
+        }
+        else if (this.table[index].next)
+        {
+            let previous = this.table[index];
+            current = previous.next;
+
+            while (current.next && current.value !== value)
+            {
+                previous = current;
+                current = previous.next;
+            }
+
+            if (current.value !== value)
+            {
+                return false;
+            }
+
+            previous.next = current.next;
+            current.next = null;
+            current = null;
+        }
+
+        return true;
+    }
+
+    searchLinkedList(current, value, index = 0)
+    {
+        if (current === null) 
+        {
+            return -1;
+        }
+        if (current.value === value)
+        {
+            return index;
+        }
+
+        return this.searchLinkedList(current.next, value, ++index);
+    }
+
+    search(value)
+    {
+        let hashTableIndex = this.hashFunction(value);
+        let linkedListIndex = this.searchLinkedList(this.table[hashTableIndex], value);
+
+        if (linkedListIndex === -1)
+        {
+            return [-1, -1];
+        }
+
+        return [hashTableIndex, linkedListIndex];
+    }
+
     display()
     {
         let current;
@@ -57,17 +125,15 @@ class HashTable
 
             if (this.table[i])
             {
-                myString += current.value + " -> ";
+                myString += current.value;
 
                 while (current.next)
                 {
                     current = current.next;
-                    myString += current.value + " -> ";
+                    myString += " -> " + current.value;
                 }
             }
-
-            console.log(myString);
-            
+            console.log(myString);   
         }
     }
 }
@@ -83,8 +149,25 @@ function main()
     table.insert(35);
     table.insert(6);
     table.insert(13);
+    table.insert(8);
+    table.insert(3);
+
+    // First Conditional
+    console.assert(!table.remove(16));
+
+    // Second If Conditional
+    console.assert(table.remove(8));
+
+    // Final Conditional
+    console.assert(table.remove(3));
+    console.assert(table.remove(24));
+    console.assert(!table.remove(24));
 
     table.display();
+
+    console.log(table.search(31));
+    console.log(table.search(99));
+    console.log(table.search(3));
 }
 
 main();
