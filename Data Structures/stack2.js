@@ -15,11 +15,13 @@ class Stack
         // this.size = 0;
     }
 
+    // Time Complexity: O(n)
     empty()
     {
         return this.size(this.bottom) == 0;
     }
 
+    // Time Complexity: O(n)
     size(node, length = 0)
     {
         if (!node)
@@ -30,6 +32,7 @@ class Stack
         return this.size(node.next, ++length);
     }
 
+    // Time Complexity: O(n)
     pop()
     {
         let currentName;
@@ -59,6 +62,7 @@ class Stack
         return currentName;
     }
 
+    // Time Complexity: O(n)
     push(name)
     {
         if (this.empty())
@@ -78,14 +82,13 @@ class Stack
         // this.size++;
     }
 
+    // Time Complexity: O(n)
     display()
     {
-        console.log(this.size(this.bottom));
-
         if (!this.empty())
         {
             let current = this.bottom;
-            let myString = "";
+            let myString = "Size: " + this.size(this.bottom) + "\n";
 
             while (current.next)
             {
