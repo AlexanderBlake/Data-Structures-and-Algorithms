@@ -8,7 +8,7 @@ class Node
     }
 }
 
-class Tree
+class AVLTree
 {
     constructor()
     {
@@ -119,6 +119,22 @@ class Tree
             this.breadthFirstTraversal(queue.pop(), queue);
         }
     }
+
+    leafcount()
+    {
+
+    }
+
+    height()
+    {
+
+    }
+
+    balancedCount()
+    {
+
+    }
+
 }
 
 class Queue
