@@ -8,7 +8,7 @@ class Node
     }
 }
 
-class AVLTree
+class Tree
 {
     constructor()
     {
@@ -120,21 +120,36 @@ class AVLTree
         }
     }
 
-    leafcount()
+    leafcount(current = this.root, count = 0)
+    {
+        let isLeaf = true;
+
+        if (current.left)
+        {
+            isLeaf = false;
+            count = this.leafcount(current.left, count);
+        }
+        if (current.right)
+        {
+            isLeaf = false;
+            count = this.leafcount(current.right, count);
+        }
+        if (isLeaf)
+        {
+            return count + 1;
+        }
+        return count;
+    }
+
+    height(current = this.root)
+    {
+        console.log(node);
+    }
+
+    balancedCount(current = this.root)
     {
 
     }
-
-    height()
-    {
-
-    }
-
-    balancedCount()
-    {
-
-    }
-
 }
 
 class Queue
@@ -235,11 +250,13 @@ function main()
     tree.insert(10);
     tree.insert(5);
     tree.insert(15);
+    tree.insert(20);
+    tree.insert(23);
     tree.insert(30);
-    tree.insert(25);
     tree.insert(40);
 
-    tree.breadthFirstTraversal();
+    // tree.breadthFirstTraversal();
+    console.log(tree.leafcount());
 }
 
 main();
