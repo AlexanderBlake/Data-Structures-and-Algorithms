@@ -26,6 +26,58 @@ function stocks(prices)
     return profit;
 }
 
+// [17, 23, 14, 6, 8]
+// Time Complexity: O(n^2)
+function selectionSort(arr)
+{
+    let temp;
+    let smallestIndex;
+
+    for (let i = 0; i < arr.length - 1; i++) 
+    {
+        smallestIndex = i;
+
+        for (let j = i + 1; j < arr.length; j++)
+        {
+            if (arr[smallestIndex] > arr[j])
+            {
+                smallestIndex = j;
+            }
+        }
+
+        if (smallestIndex !== i)
+        {
+            temp = arr[smallestIndex];
+            arr[smallestIndex] = arr[i];
+            arr[i] = temp;
+        }
+    }
+
+    return arr;
+}
+
+function bubbleSort(arr)
+{
+    for (let i = 0; i < arr.length; i++) 
+    {
+        for (let j = 0; j < arr.length - i - 1; j++)
+        {
+            if (arr[j] > arr[j + 1])
+            {
+                arr[j] += arr[j + 1];
+                arr[j + 1] = arr[j] - arr[j + 1];
+                arr[j] -= arr[j + 1];
+            }
+        }
+    }
+    return arr;
+}
+
+function insertionSort(arr) 
+{
+
+}
+
 function stocksTest()
 {
     console.assert(stocks([]) == -1, "Empty list");
@@ -43,9 +95,30 @@ function stocksTest()
     console.assert(stocks([20, 32, 10, 8, 7]) == 12, "Random 2");
 }
 
+function selectionSortTests()
+{
+    console.assert(JSON.stringify(selectionSort([6, 8, 14, 17, 23])) == JSON.stringify([6, 8, 14, 17, 23]), "Selection sort Sorted Array");
+    console.assert(JSON.stringify(selectionSort([17, 23, 14, 6, 8])) == JSON.stringify([6, 8, 14, 17, 23]), "Selection sort Unsorted Array");
+}
+
+function bubbleSortTests()
+{
+    console.assert(JSON.stringify(bubbleSort([6, 8, 14, 17, 23])) == JSON.stringify([6, 8, 14, 17, 23]), "Bubble sort Sorted Array");
+    console.assert(JSON.stringify(bubbleSort([17, 23, 14, 6, 8])) == JSON.stringify([6, 8, 14, 17, 23]), "Bubble sort Unsorted Array");
+}
+
+function insertionSortTests()
+{
+    console.assert(JSON.stringify(insertionSort([6, 8, 14, 17, 23])) == JSON.stringify([6, 8, 14, 17, 23]), "Insertion sort Sorted Array");
+    console.assert(JSON.stringify(insertionSort([17, 23, 14, 6, 8])) == JSON.stringify([6, 8, 14, 17, 23]), "Insertion sort Unsorted Array");
+}
+
 function main()
 {
     stocksTest();
+    selectionSortTests();
+    bubbleSortTests();
+    insertionSortTests();
 }
 
 main();
