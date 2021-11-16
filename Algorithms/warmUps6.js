@@ -112,10 +112,56 @@ function infiniteLoops()
 
 }
 
+
+// Return the number of attempts/guesses
+function binarySearchIter(low, high, target)
+{
+    let attempts = 1;
+    let guess = Math.floor((low + high) / 2);
+
+    while (guess !== target)
+    {
+        if (guess < target)
+        {
+            low = guess;
+        }
+        else if (guess > target)
+        {
+            high = guess;
+        }
+
+        // console.log(guess);
+        guess = Math.floor((low + high) / 2);
+        attempts++;
+    }
+
+    // console.log(guess);
+    return attempts;
+}
+
+
+// Return the number of attempts / guesses
+function binarySearchRec(low, high, target, attempts = 1)
+{
+    let guess = Math.floor((low + high) / 2);
+
+    if (guess < target) 
+    {
+        return binarySearchRec(guess, high, target, ++attempts);
+    }
+    else if (guess > target)
+    {
+        return binarySearchRec(low, guess, target, ++attempts);
+    }
+    return attempts;
+}
+
 function main()
 {
     nameMatchTests();
-    infiniteLoops();
+    // infiniteLoops();
+    console.log(binarySearchIter(0, 100, 37));
+    console.log(binarySearchRec(0, 100, 37));
 }
 
 main();
