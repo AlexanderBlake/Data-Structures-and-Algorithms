@@ -11,6 +11,80 @@ class Edge
     }
 }
 
+class PriorityQueue
+{
+    constructor()
+    {
+        this.front = null;
+    }
+
+    // Time Complexity: O(n) Linear Time
+    enqueue(value, priority)
+    {
+        let newNode;
+
+        if (!this.front)
+        {
+            this.front = new Node(value, priority);
+        }
+        else if (this.front.priority < priority)
+        {
+            newNode = new Node(value, priority);
+            newNode.next = this.front;
+            this.front = newNode;
+        }
+        else
+        {
+            let current = this.front;
+            while (current.next && priority <= current.next.priority)
+            {
+                current = current.next;
+            }
+
+            newNode = new Node(value, priority);
+            newNode.next = current.next;
+            current.next = newNode;
+        }
+    }
+
+    // O(1) Constant Time
+    dequeue()
+    {
+        if (this.front)
+        {
+            let removedNode = this.front;
+            this.front = this.front.next;
+
+            removedNode.next = null;
+            return removedNode;
+        }
+        return null;
+    }
+
+    // Time Complexity: O(n) Linear Time
+    display()
+    {
+        if (this.front)
+        {
+            let current = this.front;
+            let displayString = "";
+
+            while (current.next)
+            {
+                displayString += "|" + current.value + "|" + current.priority + "| -> ";
+                current = current.next;
+            }
+
+            displayString += "|" + current.value + "|" + current.priority + "|";
+            console.log(displayString);
+        }
+        else
+        {
+            console.log("Empty Queue");
+        }
+    }
+}
+
 class Vertex
 {
     constructor(name)
