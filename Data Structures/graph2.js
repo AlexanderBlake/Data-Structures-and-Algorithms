@@ -11,6 +11,16 @@ class Edge
     }
 }
 
+class Node
+{
+    constructor(value, priority)
+    {
+        this.value = value;
+        this.priority = priority;
+        this.next;
+    }
+}
+
 class PriorityQueue
 {
     constructor()
@@ -27,7 +37,7 @@ class PriorityQueue
         {
             this.front = new Node(value, priority);
         }
-        else if (this.front.priority < priority)
+        else if (this.front.priority > priority)
         {
             newNode = new Node(value, priority);
             newNode.next = this.front;
@@ -36,7 +46,7 @@ class PriorityQueue
         else
         {
             let current = this.front;
-            while (current.next && priority <= current.next.priority)
+            while (current.next && priority >= current.next.priority)
             {
                 current = current.next;
             }
@@ -71,11 +81,11 @@ class PriorityQueue
 
             while (current.next)
             {
-                displayString += "|" + current.value + "|" + current.priority + "| -> ";
+                displayString += "|" + current.value.vertex1.name + ", " + current.value.vertex2.name + "|" + current.priority + "| -> ";
                 current = current.next;
             }
-
-            displayString += "|" + current.value + "|" + current.priority + "|";
+            displayString += "|" + current.value.vertex1.name + ", " + current.value.vertex2.name + "|" + current.priority + "|";
+            // displayString += "|" + current.value + "|" + current.priority + "|";
             console.log(displayString);
         }
         else
@@ -117,6 +127,69 @@ class Graph
         for (let val of this.vertices.values())
         {
             val.visited = false;
+        }
+    }
+
+    primsAlgo(sourceName)
+    {
+        let pq = new PriorityQueue();
+        let edges = this.vertices.get(sourceName).edges;
+        let minSpanTree = [];
+        let verticesUsed = [];
+        let keepGoing = true;
+
+        while (keepGoing)
+        {
+            for (let i = 0; i < edges.length; i++)
+            {
+                pq.enqueue(edges[i], edges[i].weight);
+            }
+            let node = pq.dequeue();
+            let count = 2;
+
+            while (count === 2)
+            {
+                count = 0;
+                for (let i = 0; i < verticesUsed.length; i++)
+                {
+                    if (node.value.vertex1.name === verticesUsed[i])
+                    {
+                        count++;
+                    }
+                    else if (node.value.vertex2.name === verticesUsed[i])
+                    {
+                        count++;
+                    }
+                }
+
+                if (count != 2)
+                {
+                    minSpanTree.push(node);
+                    verticesUsed.push(node.value.vertex1.name);
+                    verticesUsed.push(node.value.vertex2.name);
+                }
+            }
+
+            for (let i = 0; i < minSpanTree.length; i++)
+            {
+                console.log(minSpanTree[i].value.vertex1.name + ", " + minSpanTree[i].value.vertex2.name);
+            }
+            
+            // pq.display();
+
+            if (sourceName === node.value.vertex1.name)
+            {
+                sourceName = node.value.vertex2.name;
+            }
+            else
+            {
+                sourceName = node.value.vertex1.name;
+            }
+
+            if (!pq.front)
+            {
+                keepGoing = false;
+            }
         }
     }
 
@@ -197,11 +270,15 @@ function main()
     graph.makeEdge('C', 'D', 3);
     graph.makeEdge('D', 'F', 3);
 
+    /*
     console.log("DFS Traversal");
     graph.dfsTraversal('D');
     graph.resetVertices();
     console.log("BFS Traversal");
     graph.bfsTraversal('D');
+    */
+
+    graph.primsAlgo('C');
 }
 
 main();
