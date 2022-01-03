@@ -133,49 +133,38 @@ class Graph
     primsAlgo(sourceName)
     {
         let pq = new PriorityQueue();
-        let edges = this.vertices.get(sourceName).edges;
+        let edges;
         let minSpanTree = [];
         let verticesUsed = [];
         let keepGoing = true;
+        let node;
 
         while (keepGoing)
         {
+            edges = this.vertices.get(sourceName).edges;
+
             for (let i = 0; i < edges.length; i++)
             {
                 pq.enqueue(edges[i], edges[i].weight);
             }
-            let node = pq.dequeue();
+
             let count = 2;
 
-            while (count === 2)
+            node = pq.dequeue();
+            while (verticesUsed.includes(node.value.vertex1.name) && verticesUsed.includes(node.value.vertex2.name))
             {
-                count = 0;
-                for (let i = 0; i < verticesUsed.length; i++)
+                if (!pq.front)
                 {
-                    if (node.value.vertex1.name === verticesUsed[i])
-                    {
-                        count++;
-                    }
-                    else if (node.value.vertex2.name === verticesUsed[i])
-                    {
-                        count++;
-                    }
+                    break;
                 }
-
-                if (count != 2)
-                {
-                    minSpanTree.push(node);
-                    verticesUsed.push(node.value.vertex1.name);
-                    verticesUsed.push(node.value.vertex2.name);
-                }
+                node = pq.dequeue();
             }
-
-            for (let i = 0; i < minSpanTree.length; i++)
+            if (pq.front)
             {
-                console.log(minSpanTree[i].value.vertex1.name + ", " + minSpanTree[i].value.vertex2.name);
+                minSpanTree.push(node);
             }
-            
-            // pq.display();
+            verticesUsed.push(node.value.vertex1.name);
+            verticesUsed.push(node.value.vertex2.name);
 
             if (sourceName === node.value.vertex1.name)
             {
@@ -191,6 +180,14 @@ class Graph
                 keepGoing = false;
             }
         }
+
+        let weight = 0;
+        for (let i = 0; i < minSpanTree.length; i++)
+        {
+            console.log(minSpanTree[i].value.vertex1.name + ", " + minSpanTree[i].value.vertex2.name);
+            weight += minSpanTree[i].value.weight;
+        }
+        console.log("Minimum Spanning Tree Weight: " + weight);
     }
 
     dfsTraversal(name)
@@ -278,7 +275,7 @@ function main()
     graph.bfsTraversal('D');
     */
 
-    graph.primsAlgo('C');
+    graph.primsAlgo('F');
 }
 
 main();
