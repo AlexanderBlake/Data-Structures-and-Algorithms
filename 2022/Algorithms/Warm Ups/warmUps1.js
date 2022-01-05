@@ -1,3 +1,88 @@
+function challenge1(x, y, z)
+{
+    /*
+    if (x)
+    {
+        y = false;
+    }
+    else
+    {
+        y = true;
+    }
+    */
+    y = !x;
+}
+
+function challenge2(x, y, z)
+{
+    /*
+    if (x)
+    {
+        return y;
+    }
+    else
+    {
+        return false;
+    }
+    */
+    return x && y;
+}
+
+function challenge3(x, y, z)
+{
+    /*
+    if (x)
+    {
+        y = z;
+    }
+    else
+    {
+        y = !z;
+    }
+    */
+    // xnor
+    y = x === z;
+    y = (x && z) || (!x && !z);
+}
+
+function nand(a, b)
+{
+    return !(a && b);
+}
+
+function nor(a, b)
+{
+    return !(a || b);
+}
+
+function xor(a, b)
+{
+    return a !== b;
+}
+
+// 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
+function fibonnacciIter(n)
+{
+    let prev = 1;
+    let curr = 1;
+    if (n <= 2)
+    {
+        return 1;
+    }
+    for(let i = 3; i <= n; i++)
+    {
+        curr += prev;
+        prev = curr - prev;
+    }
+    console.log(curr);
+    return curr;
+}
+
+function fibonnacciRec(n)
+{
+
+}
+
 // Write numbers in numerical order if the number is divisible by 3 say fizz, if the number is divisible by 5 say buzz, and by both say fizzbuzz
 // 1, 2, fizz, 4, buzz, fizz, 7, ..., n
 function fizzBuzz(n)
@@ -215,11 +300,23 @@ function stocksTest()
     console.assert(stocks([20, 32, 10, 8, 7]) == 12, "Random 2");
 }
 
+function fibonacciIterTests()
+{
+    console.assert(fibonnacciIter(1) === 1, "First term");
+    console.assert(fibonnacciIter(2) === 1, "Second term");
+    console.assert(fibonnacciIter(3) === 2, "Third term");
+    console.assert(fibonnacciIter(4) === 3, "Fourth term");
+    console.assert(fibonnacciIter(5) === 5, "Fifth term");
+    console.assert(fibonnacciIter(6) === 8, "Sixth term");
+    console.assert(fibonnacciIter(7) === 13,"Seventh term");
+}
+
 function main()
 {
     isPalindromeTest();
     // fizzBuzzTest();
     // stocksTest();
+    fibonacciIterTests();
 
     /*
     console.log(fizzBuzzRec(-1));
@@ -229,6 +326,22 @@ function main()
     */
 
     // console.log("Alex".substring(1, 4 - 1));
+
+    /*
+    if (score > 90)
+    {
+        grade = "A";
+    }
+    else if (name === 3)
+    {
+        grade = "A";
+    }
+    else
+    {
+        grade = "F";
+    }
+    */
+
 }
 
 main();
