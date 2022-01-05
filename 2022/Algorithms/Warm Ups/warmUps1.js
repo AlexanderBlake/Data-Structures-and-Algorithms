@@ -2,6 +2,7 @@
 // 1, 2, fizz, 4, buzz, fizz, 7, ..., n
 function fizzBuzz(n)
 {
+
     let myString = "";
     if (n > 0)
     {
@@ -56,7 +57,7 @@ function fizzBuzz(n)
     return myString;
 }
 
-/*
+
 function fizzBuzzRec(n)
 {
     if (n <= 0)
@@ -84,7 +85,7 @@ function fizzBuzzRec(n)
         return fizzBuzzRec(n - 1) + ", " + n;
     }
 }
-*/
+
 
 function fizzBuzzRec(n, myString = "")
 {
@@ -132,20 +133,62 @@ function stocks(prices)
 // Alex xelA
 function isPalindrome(word)
 {
+    if (word.length <= 1)
+    {
+        return word.length !== 0;
+    }
 
+    if (word[0] === word[word.length - 1])
+    {
+        if (word.length === 2)
+        {
+            return true;
+        }
+        
+        return isPalindrome(word.substring(1, word.length - 1));
+    }
+    return false;
 }
+
+
+/*
+function isPalindrome(word)
+{
+    let reversedWord = "";
+
+    for (let i = word.length - 1; i >= 0; i--)
+    {
+        reversedWord += word[i];
+    }
+
+    return reversedWord === word;
+
+    if (word === "")
+    {
+        return false;
+    }
+    for (let i = 0; i < word.length / 2; i++)
+    {
+        if (word[i] !== word[word.length - 1 - i]) 
+        {
+            return false;
+        }
+    }
+    return true;
+}
+*/
 
 function isPalindromeTest()
 {
-    console.assert(isPalindrome("tacocat") == true, "tacocat");
-    console.assert(isPalindrome("baab") == true, "baab");
-    console.assert(isPalindrome("a") == true, "a");
+    console.assert(isPalindrome("tacocat") === true, "tacocat");
+    console.assert(isPalindrome("baab") === true, "baab");
+    console.assert(isPalindrome("aba") === true, "aba");
+    console.assert(isPalindrome("a") === true, "a");
 
-    console.assert(isPalindrome("Blake") == false, "Blake");
-    console.assert(isPalindrome("") == false, "<Empty String>");
-    console.assert(isPalindrome(null) == false, "<NULL>");
-    console.assert(isPalindrome(123) == false, "<int> 123");
-    console.assert(isPalindrome("123") == false, "<string> 123");
+    console.assert(isPalindrome("BlakeB") === false, "BlakeB");
+    console.assert(isPalindrome("") === false, "<Empty String>");
+    console.assert(isPalindrome("Blake") === false, "Blake");
+    console.assert(isPalindrome("123") === false, "<string> 123");
 }
 
 function fizzBuzzTest()
@@ -174,14 +217,18 @@ function stocksTest()
 
 function main()
 {
-    // isPalindromeTest();
+    isPalindromeTest();
     // fizzBuzzTest();
     // stocksTest();
 
+    /*
     console.log(fizzBuzzRec(-1));
     console.log(fizzBuzzRec(0));
     console.log(fizzBuzzRec(8));
     console.log(fizzBuzzRec(15));
+    */
+
+    // console.log("Alex".substring(1, 4 - 1));
 }
 
 main();
