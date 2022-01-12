@@ -61,6 +61,8 @@ function xor(a, b)
 }
 
 // 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
+// Time Complexity: Average/Worst: O(n) Linear Time, Best: O(1) Constant Time
+// Space Complexity: O(1) Constant Space
 function fibonnacciIter(n)
 {
     let prev = 1;
@@ -73,14 +75,39 @@ function fibonnacciIter(n)
     {
         curr += prev;
         prev = curr - prev;
+        console.log(i);
     }
-    console.log(curr);
     return curr;
 }
 
-function fibonnacciRec(n)
+/*
+// Time Complexity: O(2^n)
+// Space Complexity: O(n) Total, O(1) Auxiliary
+function fibonnacciRec(n, table)
 {
+    if (n <= 2)
+    {
+        return 1;
+    }
 
+    return fibonnacciRec(n - 1) + fibonnacciRec(n - 2);
+}
+*/
+
+// Time Complexity: O(2^n)
+// Space Complexity: O(n) Total, O(1) Auxiliary
+function fibonnaciRec(n, map = {1: 1, 2: 1})
+{
+    if (n in map)
+    {
+        return map[n];
+    }
+    else
+    {
+        map[n] = fibRec(n - 1, map) + fibRec(n - 2, map);
+    }
+
+    return map[n];
 }
 
 // Write numbers in numerical order if the number is divisible by 3 say fizz, if the number is divisible by 5 say buzz, and by both say fizzbuzz
@@ -263,6 +290,42 @@ function isPalindrome(word)
 }
 */
 
+
+// Take in a number(n) and remove the last digit until n is divisible by 3, then return the resulting number
+function modifyNumber(n)
+{
+    let stringRep = n.toString();
+    let len = stringRep.length;
+    let intRep = n;
+
+    for (let i = 0; i < len; i++)
+    {
+        if (intRep % 3 === 0)
+        {
+            return intRep;
+        }
+
+        stringRep = stringRep.slice(0, stringRep.length - 1);
+        intRep = parseInt(stringRep);
+    }
+
+    /*
+    for (let i = len - 1; i >= 0; i--)
+    {
+        if (intRep % 3 === 0)
+        {
+            return intRep;
+        }
+
+        stringRep = stringRep.slice(0, i);
+        intRep = parseInt(stringRep);
+    }
+    */
+
+    return -1;
+}
+
+
 function isPalindromeTest()
 {
     console.assert(isPalindrome("tacocat") === true, "tacocat");
@@ -300,7 +363,7 @@ function stocksTest()
     console.assert(stocks([20, 32, 10, 8, 7]) == 12, "Random 2");
 }
 
-function fibonacciIterTests()
+function fibonnacciIterTests()
 {
     console.assert(fibonnacciIter(1) === 1, "First term");
     console.assert(fibonnacciIter(2) === 1, "Second term");
@@ -311,12 +374,24 @@ function fibonacciIterTests()
     console.assert(fibonnacciIter(7) === 13,"Seventh term");
 }
 
+function fibonnacciRecTests()
+{
+    console.assert(fibonnacciRec(1) === 1, "First term");
+    console.assert(fibonnacciRec(2) === 1, "Second term");
+    console.assert(fibonnacciRec(3) === 2, "Third term");
+    console.assert(fibonnacciRec(4) === 3, "Fourth term");
+    console.assert(fibonnacciRec(5) === 5, "Fifth term");
+    console.assert(fibonnacciRec(6) === 8, "Sixth term");
+    console.assert(fibonnacciRec(7) === 13,"Seventh term");
+}
+
 function main()
 {
     isPalindromeTest();
     // fizzBuzzTest();
     // stocksTest();
-    fibonacciIterTests();
+    fibonnacciIterTests();
+    fibonnacciRecTests();
 
     /*
     console.log(fizzBuzzRec(-1));
@@ -341,6 +416,14 @@ function main()
         grade = "F";
     }
     */
+
+    /*
+    console.log(modifyNumber(64));
+    console.log(modifyNumber(25));
+    console.log(modifyNumber(63));
+    */
+
+    console.log(fibonnacciRec(100));
 
 }
 
