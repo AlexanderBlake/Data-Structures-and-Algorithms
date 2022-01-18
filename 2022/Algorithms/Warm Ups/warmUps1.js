@@ -96,7 +96,7 @@ function fibonnacciRec(n, table)
 
 // Time Complexity: O(2^n)
 // Space Complexity: O(n) Total, O(1) Auxiliary
-function fibonnaciRec(n, map = {1: 1, 2: 1})
+function fibonnacciRec(n, map = {1: 1, 2: 1})
 {
     if (n in map)
     {
@@ -104,10 +104,17 @@ function fibonnaciRec(n, map = {1: 1, 2: 1})
     }
     else
     {
-        map[n] = fibRec(n - 1, map) + fibRec(n - 2, map);
+        map[n] = fibonnacciRec(n - 1, map) + fibonnacciRec(n - 2, map);
     }
 
     return map[n];
+    /*
+    if (n <= 2)
+    {
+        return 1;
+    }
+    return fibonnacciRec(n - 1) + fibonnacciRec(n - 2);
+    */
 }
 
 // Write numbers in numerical order if the number is divisible by 3 say fizz, if the number is divisible by 5 say buzz, and by both say fizzbuzz
@@ -391,7 +398,7 @@ function main()
     // fizzBuzzTest();
     // stocksTest();
     fibonnacciIterTests();
-    fibonnacciRecTests();
+    // fibonnacciRecTests();
 
     /*
     console.log(fizzBuzzRec(-1));
@@ -422,8 +429,8 @@ function main()
     console.log(modifyNumber(25));
     console.log(modifyNumber(63));
     */
-
-    console.log(fibonnacciRec(100));
+    console.log(fibonnacciIter(1000));
+    console.log(fibonnacciRec(1000));
 
 }
 
