@@ -44,6 +44,29 @@ function binarySearch(val, arr)
     return -1;
 }
 
+// n = 1 return 1 (1 penny)
+// n = 99 return 9 (3 quarters, 2 dimes, 4 pennies)
+// n = 67 return 6 (2 quarters, 1 dime, 1 nickel, 2 pennies)
+function makingChange(n)
+{
+    // Math.floor();
+    let numCoins;
+    let count = 0;
+    let denominations = [25, 10, 5, 1];
+    
+
+    // while (n !== 0 && i < coins.length)
+
+    for (let i = 0; i < denominations.length && n !== 0; i++)
+    {
+        numCoins = Math.floor(n / denominations[i]);
+        n -= numCoins * denominations[i];
+        count += numCoins;
+    }
+
+    return count;
+}
+
 function linearSearchTests()
 {
     console.assert(linearSearch(4, [4, 24, 5, 8]) === 0, "First Index");
@@ -69,11 +92,22 @@ function binarySearchTests()
     console.assert(binarySearch(24, [4, 5, 8, 9, 24]) === 4, "Odd Expected: 4, Actual: " + binarySearch(24, [4, 5, 8, 9, 24]));
     
 }
+// n = 1 return 1 (1 penny)
+// n = 99 return 9 (3 quarters, 2 dimes, 4 pennies)
+// n = 67 return 6 (2 quarters, 1 dime, 1 nickel, 2 pennies)
+function makingChangeTests()
+{
+    console.assert(makingChange(1) === 1, "1 penny");
+    console.assert(makingChange(99) === 9, "3 quarters, 2 dimes, 4 pennies");
+    console.assert(makingChange(67) === 6, "67 cents: 2 quarters, 1 dime, 1 nickel, 2 pennies");
+    console.assert(makingChange(75) === 3, "75 cents: 3 quarters");
+}
 
 function main()
 {
     linearSearchTests();
     binarySearchTests();
+    makingChangeTests();
 }
 
 main();
