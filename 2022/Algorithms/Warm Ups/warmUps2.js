@@ -67,6 +67,49 @@ function makingChange(n)
     return count;
 }
 
+
+// O(n)
+function isPrime(n)
+{
+    let prime = true;
+
+    if (n === 1 || (n % 2 === 0 && n !== 2))
+    {
+        prime = false;
+    }
+
+    for (let i = 3; i * i < n; i += 2)
+    {
+        if (n % i === 0)
+        {
+            prime = false;
+            i = n;
+        }
+    }
+
+    return prime;
+}
+
+/*
+function isPrime(n, i = 2) {
+    
+    // corner cases
+    if (n === 0 || n === 1) {
+      return false;
+    }
+
+    // Checking Prime
+    if (n === i) return true;
+
+    // base cases
+    if (n % i === 0) {
+      return false;
+    }
+
+    return isPrime(n, ++i);
+}
+*/
+
 function linearSearchTests()
 {
     console.assert(linearSearch(4, [4, 24, 5, 8]) === 0, "First Index");
@@ -75,6 +118,7 @@ function linearSearchTests()
     console.assert(linearSearch(-8, [4, 24, 5, -8]) === 3, "Last Index");
     console.assert(linearSearch(12, [4, 24, 5, 8]) === -1, "Not in array");
 }
+
 
 function binarySearchTests()
 {
@@ -90,8 +134,8 @@ function binarySearchTests()
     console.assert(binarySearch(8, [4, 5, 8, 9, 24]) === 2, "Odd Expected: 2, Actual: " + binarySearch(8, [4, 5, 8, 9, 24]));
     console.assert(binarySearch(9, [4, 5, 8, 9, 24]) === 3, "Odd Expected: 3, Actual: " + binarySearch(9, [4, 5, 8, 9, 24]));
     console.assert(binarySearch(24, [4, 5, 8, 9, 24]) === 4, "Odd Expected: 4, Actual: " + binarySearch(24, [4, 5, 8, 9, 24]));
-    
 }
+
 // n = 1 return 1 (1 penny)
 // n = 99 return 9 (3 quarters, 2 dimes, 4 pennies)
 // n = 67 return 6 (2 quarters, 1 dime, 1 nickel, 2 pennies)
@@ -103,11 +147,25 @@ function makingChangeTests()
     console.assert(makingChange(75) === 3, "75 cents: 3 quarters");
 }
 
+
+function isPrimeTests()
+{
+    console.assert(!isPrime(1), 1);
+    console.assert(isPrime(2), 2);
+    console.assert(isPrime(3), 3);
+    console.assert(!isPrime(4), 4);
+    console.assert(isPrime(5), 5);
+    console.assert(!isPrime(6), 6);
+    console.assert(isPrime(7), 7);
+}
+
+
 function main()
 {
     linearSearchTests();
     binarySearchTests();
     makingChangeTests();
+    isPrimeTests();
 }
 
 main();
