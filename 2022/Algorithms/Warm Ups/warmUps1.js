@@ -80,11 +80,12 @@ function fibonnacciIter(n)
     return curr;
 }
 
-/*
+
 // Time Complexity: O(2^n)
 // Space Complexity: O(n) Total, O(1) Auxiliary
-function fibonnacciRec(n, table)
+function fibonnacciRec(n)
 {
+    console.log(n);
     if (n <= 2)
     {
         return 1;
@@ -92,10 +93,11 @@ function fibonnacciRec(n, table)
 
     return fibonnacciRec(n - 1) + fibonnacciRec(n - 2);
 }
-*/
 
-// Time Complexity: O(2^n)
+
+// Time Complexity: O(n)
 // Space Complexity: O(n) Total, O(1) Auxiliary
+/*
 function fibonnacciRec(n, map = {1: 1, 2: 1})
 {
     if (n in map)
@@ -113,9 +115,10 @@ function fibonnacciRec(n, map = {1: 1, 2: 1})
     {
         return 1;
     }
-    return fibonnacciRec(n - 1) + fibonnacciRec(n - 2);
     */
-}
+    // return fibonnacciRec(n - 1) + fibonnacciRec(n - 2);
+// }
+
 
 // Write numbers in numerical order if the number is divisible by 3 say fizz, if the number is divisible by 5 say buzz, and by both say fizzbuzz
 // 1, 2, fizz, 4, buzz, fizz, 7, ..., n
@@ -237,17 +240,6 @@ function fizzBuzzRec(n, myString = "")
     return fizzBuzzRec(n - 1, myString);
 }
 
-
-// Write a function that makes the most money buying and selling stocks knowing what the prices will be for the week
-// Long positions only, no short selling
-// No commissions, unlimited capital, you can only own 1 share at most, unlimited amount of trades
-// You must close all positions by the weekend
-// Return the max profit (loss)
-function stocks(prices)
-{
-
-}
-
 // Return whether a word is a palindrome: racecar, mom, dad
 // Alex xelA
 function isPalindrome(word)
@@ -354,22 +346,6 @@ function fizzBuzzTest()
     console.assert(fizzBuzz(15) === "1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz", 15);
 }
 
-function stocksTest()
-{
-    console.assert(stocks([]) == -1, "Empty list");
-    console.assert(stocks([0, 0, 0, 0, 0]) == -1, "All zeros");
-    console.assert(stocks([2, -1, 1, 2, 3]) == -1, "One negative value");
-    console.assert(stocks([2, 3, 0, 4, 5]) == -1, "One zero value");
-
-    console.assert(stocks([1, 1, 1, 1, 1]) == 0, "All the same value");
-    console.assert(stocks([100, 80, 60, 40, 20]) == 0, "Decreasing");
-
-    console.assert(stocks([100, 1, 100, 1, 100]) == 198, "Oscillating");
-    console.assert(stocks([20, 40, 60, 80, 100]) == 80, "Increasing");
-    console.assert(stocks([20, 32, 10, 8, 76]) == 80, "Random");
-    console.assert(stocks([20, 32, 10, 8, 7]) == 12, "Random 2");
-}
-
 function fibonnacciIterTests()
 {
     console.assert(fibonnacciIter(1) === 1, "First term");
@@ -394,10 +370,10 @@ function fibonnacciRecTests()
 
 function main()
 {
-    isPalindromeTest();
+    // isPalindromeTest();
     // fizzBuzzTest();
     // stocksTest();
-    fibonnacciIterTests();
+    // fibonnacciIterTests();
     // fibonnacciRecTests();
 
     /*
@@ -429,7 +405,7 @@ function main()
     console.log(modifyNumber(25));
     console.log(modifyNumber(63));
     */
-    console.log(fibonnacciIter(1000));
+    // console.log(fibonnacciIter(1000));
     console.log(fibonnacciRec(1000));
 
 }
