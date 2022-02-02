@@ -41,12 +41,41 @@ class SinglyLinkedList
 
     pushFront(value)
     {
+        let newNode = new Node(value);
+
+        if (this.head)
+        {
+            newNode.next = this.head;
+        }
+        this.head = newNode;
+    }
+
+    sort()
+    {
 
     }
 
     insert(value)
     {
+        // this.sort();
 
+        if (!this.head)
+        {
+            this.head = new Node(value);
+        }
+        else
+        {
+            let current = this.head;
+            let newN = new Node(value);
+
+            while (current.next && value > current.next.value)
+            {
+                current = current.next;
+            }
+
+            newN.next = current.next;
+            current.next = newN;
+        }
     }
 
     reverse()
@@ -60,13 +89,18 @@ class SinglyLinkedList
         let myString = "";
         let current = this.head;
 
-        while (current.next)
+        while (current)
         {
-            myString += current.value + " -> ";
+            myString += current.value;
             current = current.next;
+
+            if (current)
+            {
+                myString += " -> ";
+            }
         }
 
-        return myString + current.value;
+        return myString;
     }
 }
 
@@ -75,10 +109,21 @@ function main()
 {
     sll = new SinglyLinkedList();
 
+    /*
     sll.pushBack(24);
     sll.pushBack(48);
     sll.pushBack(10);
     sll.pushBack(15);
+
+    sll.pushFront(99);
+    */
+
+    sll.insert(1);
+    sll.insert(5);
+    sll.insert(2);
+    sll.insert(4);
+    sll.insert(3);
+
 
     console.log(sll.toString());
 }
