@@ -58,7 +58,91 @@ function stocks(prices)
     }
 
     return profit;
+}
 
+// fromCharCode() Ex. String.fromCharCode(65) === "A";
+// charCodeAt()  Ex. 'A'.charCodeAt(0) === 65;
+// 27 / 4 = 6 R 3
+// 27 % 4 = 3
+// Time Complexity: O(n) Linear Time
+function caesarCipher(text, key, decrypt)
+{
+    let resultText = "";
+
+    key = key % 26;
+
+    if (decrypt)
+    {
+        key *= -1;
+    }
+
+    for (let i = 0; i < text.length; i++)
+    {
+        let asciiVal = text[i].charCodeAt(0);
+
+        if (asciiVal >= 65 && asciiVal <= 90)
+        {
+            resultText += String.fromCharCode(65 + (((asciiVal - 65) + key) % 26));
+
+            /*
+            asciiVal = asciiVal + key;
+
+            while (asciiVal > 90)
+            {
+                asciiVal -= 26;
+            }
+            resultText += String.fromCharCode(asciiVal);
+            */
+        }
+        else if (asciiVal >= 97 && asciiVal <= 122)
+        {
+            resultText += String.fromCharCode(97 + (((asciiVal - 97) + key) % 26));
+        }
+        else
+        {
+            resultText += text[i];
+        }   
+    }
+
+    return resultText;
+}
+
+function vigenereCipher(text, key, decrypt)
+{
+    return text;
+}
+
+function caesarCipherTests()
+{
+    let result = caesarCipher("Agent 007, ATTACK AT DAWN!", 1, false);
+    console.assert(result === "Bhfou 007, BUUBDL BU EBXO!", "Encrpytion; key = 1: " + result);
+
+    result = caesarCipher("Zzz", 1, false);
+    console.assert(result === "Aaa", "Encrpytion; key = 1 " + result);
+
+    result = caesarCipher("Agent 007, ATTACK AT DAWN!", 27, false);
+    console.assert(result === "Bhfou 007, BUUBDL BU EBXO!", "Encrpytion; key = 27 " + result);
+
+    result = caesarCipher("Bhfou 007, BUUBDL BU EBXO!", 1, true);
+    console.assert(result === "Agent 007, ATTACK AT DAWN!", "Decryption; key = 1 " + result);
+
+    result = caesarCipher("Bhfou 007, BUUBDL BU EBXO!", 27, true);
+    console.assert(result === "Agent 007, ATTACK AT DAWN!", "Decryption; key = 27 " + result);
+}
+
+function vigenereCipherTests()
+{
+    let result = vigenereCipher("ATTACK", "SECRET", false);
+    console.assert(result === "SXVRGD", "Encrpytion; key = 1: " + result);
+
+    result = vigenereCipher("Agent 007, ATTACK AT DAWN!", "SECRET", false);
+    console.assert(result === "Skgex 007, TLXCTO TL HCNR!", "Encrpytion; key = 27 " + result);
+
+    result = vigenereCipher("SXVRGD", "SECRET", true);
+    console.assert(result === "ATTACK", "Decryption; key = 1 " + result);
+
+    result = vigenereCipher("Skgex 007, TLXCTO TL HCNR!", "SECRET", true);
+    console.assert(result === "Agent 007, ATTACK AT DAWN!", "Decryption; key = 27 " + result);
 }
 
 function stocksTests()
@@ -77,11 +161,17 @@ function stocksTests()
     console.assert(stocks([20, 32, 10, 8, 7]) === 12, "Random 2");
 }
 
+function vigenereCipherTests()
+{
+
+}
+
 function main()
 {
     // infiniteLoop();
     // stackOverflow(1);
     stocksTests();
+    caesarCipherTests();
 }
 
 
