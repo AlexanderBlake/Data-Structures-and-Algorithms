@@ -21,9 +21,9 @@ function infiniteLoop()
     }
 }
 
-function minCoins(n)
+function toBinary(n)
 {
-    
+
 }
 
 function isPrime(n)
@@ -113,7 +113,7 @@ function caesarCipher(text, key, decrypt)
 
     for (let i = 0; i < text.length; i++)
     {
-        let asciiVal = text[i].charCodeAt(0);
+        let asciiVal = text.charCodeAt(i);
 
         if (asciiVal >= 65 && asciiVal <= 90)
         {
@@ -144,7 +144,62 @@ function caesarCipher(text, key, decrypt)
 
 function vigenereCipher(text, key, decrypt)
 {
-    return text;
+    let resultText = "";
+    let keyIter = 0;
+
+    /*
+    for (let i = 0; i < text.length; i++)
+    {
+        let asciiVal = text.charCodeAt(i);
+        let asciiKey = key.charCodeAt(keyIter % key.length) - 65;
+        let base = asciiVal < 97 ? 65 : 97;
+
+        if (asciiVal >= base && asciiVal <= base + 26)
+        {
+            keyIter++;
+            resultText += caesarCipher(text[i], asciiKey, decrypt);
+        }
+        else
+        {
+            resultText += text[i];
+        }  
+    }
+    */
+
+    for (let i = 0; i < text.length; i++)
+    {
+        let asciiVal = text.charCodeAt(i);
+        let base = asciiVal < 97 ? 65 : 97;
+        let asciiKey = key.charCodeAt(keyIter % key.length) - 65;
+
+        if (decrypt)
+        {
+            asciiKey *= -1;
+        }
+        
+        if (asciiVal >= base && asciiVal <= base + 26)
+        {
+            keyIter++
+
+            resultASCII = (((asciiVal - base) + asciiKey) % 26);
+
+            if (resultASCII < 0)
+            {
+                resultASCII = 26 + resultASCII;
+                resultText += String.fromCharCode(resultASCII + base);
+            }
+            else
+            {
+                resultText += String.fromCharCode(base + (((asciiVal - base) + asciiKey) % 26));
+            }
+        }
+        else
+        {
+            resultText += text[i];
+        }   
+    }
+
+    return resultText;
 }
 
 function caesarCipherTests()
@@ -196,9 +251,13 @@ function stocksTests()
     console.assert(stocks([20, 32, 10, 8, 7]) === 12, "Random 2");
 }
 
-function vigenereCipherTests()
+function toBinaryTests()
 {
-
+    console.assert(toBinary("0") === "0", 0);
+    console.assert(toBinary("1") === "1", 1);
+    console.assert(toBinary("2") === "10", 10);
+    console.assert(toBinary("3") === "11", 11);
+    console.assert(toBinary("4") === "100", 100);
 }
 
 function main()
@@ -207,6 +266,8 @@ function main()
     // stackOverflow(1);
     stocksTests();
     caesarCipherTests();
+    vigenereCipherTests();
+    toBinaryTests();
 }
 
 
