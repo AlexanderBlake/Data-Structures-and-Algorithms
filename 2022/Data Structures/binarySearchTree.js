@@ -58,7 +58,12 @@ class BinarySearchTree
     // 8, 3, 1, 6, 4, 7, 10, 14, 13
     preorderTraversal(current = this.root)
     {
-
+        if (current)
+        {
+            console.log(current.value);
+            this.preorderTraversal(current.left);
+            this.preorderTraversal(current.right);
+        }
     }
 
     // 1, 3, 4, 6, 7, 8, 10, 13, 14
@@ -75,7 +80,7 @@ class BinarySearchTree
     // 1, 4, 7, 6, 3, 13, 14, 10, 8
     postOrderTraversal(current = this.root)
     {
-        
+
     }
 }
 
@@ -83,6 +88,7 @@ function main()
 {
     tree = new BinarySearchTree();
 
+    /*
     tree.insert(8);
     tree.insert(3);
     tree.insert(10);
@@ -92,8 +98,17 @@ function main()
     tree.insert(4);
     tree.insert(7);
     tree.insert(13);
+    */
 
-    tree.inOrderTraversal();
+    tree.insert(4);
+    tree.insert(2);
+    tree.insert(6);
+    tree.insert(1);
+    tree.insert(3);
+    tree.insert(5);
+    tree.insert(7);
+
+    tree.preorderTraversal();
 }
 
 main();
