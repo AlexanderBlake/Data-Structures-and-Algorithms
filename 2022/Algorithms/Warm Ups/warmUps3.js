@@ -21,11 +21,6 @@ function infiniteLoop()
     }
 }
 
-function toBinary(n)
-{
-
-}
-
 function isPrime(n)
 {
     if (n <= 1)

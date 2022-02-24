@@ -47,6 +47,114 @@ function secondLargest(arr)
     return second;
 }
 
+function DectoBinary(decNum)
+{
+    if (decNum == 0)
+    {
+        return "0"
+    }
+
+    let binaryNum = "";
+    let dec = parseInt(decNum);
+    let exp = Math.floor(Math.log(dec) / Math.log(2));
+
+    while (exp >= 0)
+    {
+        let placeValue = 2 ** exp--;
+        if (placeValue <= dec)
+        {
+            dec -= placeValue;
+            binaryNum += "1";
+        }
+        else 
+        {
+            binaryNum += "0";
+        }
+    }
+
+    return binaryNum;
+}
+
+function DectoBinaryTests()
+{
+    console.assert(DectoBinary("0") === "0", 0);
+    console.assert(DectoBinary("1") === "1", 1);
+    console.assert(DectoBinary("2") === "10", 2);
+    console.assert(DectoBinary("8") === "1000", 8);
+    console.assert(DectoBinary("24") === "11000", 24);
+    console.assert(DectoBinary("26") === "11010", 26);
+}
+
+function DectoHex(n)
+{
+
+}
+
+function BinarytoDec(n)
+{
+    decNum = 0;
+
+    /*
+    for (let i = 0; i < n.length; i++)
+    {
+        decNum += n[i] * 2 ** (n.length - 1 - i);
+    }
+    */
+
+    for (let i = n.length - 1; i >= 0; i--)
+    {
+        decNum += n[i] * 2 ** (n.length - 1 - i);
+    }
+
+    return decNum;
+}
+
+function BinarytoDecTests()
+{
+    console.assert(BinarytoDec("0") === 0);
+    console.assert(BinarytoDec("1") === 1);
+    console.assert(BinarytoDec("10") === 2);
+    console.assert(BinarytoDec("1000") === 8);
+    console.assert(BinarytoDec("11000") === 24);
+    console.assert(BinarytoDec("11010") === 26);
+}
+
+function BinarytoHex(n)
+{
+
+}
+
+function HextoBinary(n)
+{
+
+}
+
+function HextoDec(n)
+{
+
+}
+
+function twoSum(nums, target)
+{
+    let value;
+    let complementPair;
+    let map = {};
+
+    for (let i = 0; i < nums.length; i++)
+    {
+        key = nums[i];
+        complementPair = target - key;
+        if (map[complementPair] !== undefined)
+        {
+            return [map[complementPair], i];
+        }
+        else
+        {
+            map[key] = i;
+        }
+    }
+}
+
 function secondLargestTests()
 {
     console.assert(secondLargest([4, 1, 2, 3, 5]) === 4, "First index");
@@ -67,6 +175,9 @@ function secondLargestTests()
 function main()
 {
     secondLargestTests();
+    DectoBinaryTests();
+    BinarytoDecTests();
+    // console.log(twoSum([1, 5, 9], 10));
 }
 
 main();
