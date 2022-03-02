@@ -114,10 +114,154 @@ function fibonnaciRec(n)
     return fibonnaciRec(n - 1) + fibonnaciRec(n - 2);
 }
 
+// Time Complexity: O(n) Linear Time
+function containsDuplicate(arr)
+{
+    let dupes = new Set();
+
+    for (let i = 0; i < arr.length; i++) 
+    {
+        if (dupes.has(arr[i])) {
+            return true;
+        } else {
+            dupes.add(arr[i]);
+        }
+    }
+    return false;
+}
+
+/*
+// Time Complexity: O(n^2) Quadratic Time
+function containsDuplicate(arr)
+{
+    for (let i = 0; i < arr.length - 1; i++)
+    {
+        for (let j = i + 1; j < arr.length; j++)
+        {
+            if (arr[i] == arr[j])
+            {
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+*/
+
+// Time Complexity: O(n) Linear Time
+function linearSearch(arr, target)
+{
+    let index = -1;
+
+    for (let i = 0; i < arr.length; i++)
+    {
+        if (arr[i] === target)
+        {
+            index = i;
+            // return index;
+            break;
+        }
+    }
+
+    return index;
+}
+
+function binarySearch(arr, target)
+{
+    let start = 0;
+    let end = arr.length - 1;
+
+    let middle = Math.round((start + end) / 2);
+
+    while (arr[middle] != target && start <= end) {
+        if (arr[middle] > target)
+        {
+            end = middle - 1;
+        }
+        else
+        {
+            start = middle + 1;
+        }
+
+        middle = Math.round((start + end) / 2);
+    }
+
+    if (arr[middle] === target)
+    {
+        return middle;
+    }
+    return -1;
+}
+
+function linearSearchTests()
+{
+    console.assert(linearSearch([5, 1, 4, 3, 2], 4) === 2);
+    console.assert(linearSearch([-5, 1, 4, -3, 2], 4) === 2);
+    console.assert(linearSearch([-5, 1, -4, -3, 2], 4) === -1);
+    console.assert(linearSearch([-5, 1, 4, 4, -3, 2], 4) === 2);
+}
+
+function binarySearchTests()
+{
+    console.assert(binarySearch([1, 3, 24, 99, 100], 4) === -1);
+    console.assert(binarySearch([1, 3, 24, 99, 100], 24) === 2);
+}
+
+function swap()
+{
+    let a = 5;
+    let b = 24;
+
+    // a = a + b;
+    a += b;
+
+    b = a - b;
+
+    // a = a - b;
+    a -= b;
+
+    console.log(a);
+    console.log(b);
+}
+
+function containsDuplicateTests()
+{
+    console.assert(containsDuplicate([1, 1, 2, 3, 4, 5]));
+    console.assert(!containsDuplicate([1, 2, 3, 4, 5]));
+    console.assert(containsDuplicate([5, 2, 3, 1, 5]));
+}
+
 
 function main()
 {
-    console.log(fibonnaciRec(20));
+    containsDuplicateTests();
+    linearSearchTests();
+    binarySearchTests();
+
+    /*
+    let mySet = new Set();
+
+    mySet.add(1);
+    mySet.add("1");
+
+    console.log(1 == "1");
+    console.log(1 === "1");
+    console.log(mySet);
+    */
+
+    // swap();
+
+
+    /*
+    let a = 5;
+
+    // console.log(a++);
+    console.log(a);
+    a += 1;
+
+    console.log(++a);
+    */
 }
 
 main();
