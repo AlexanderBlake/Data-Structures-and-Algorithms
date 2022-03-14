@@ -80,7 +80,12 @@ class BinarySearchTree
     // 1, 4, 7, 6, 3, 13, 14, 10, 8
     postOrderTraversal(current = this.root)
     {
-
+        if (current)
+        {
+            this.postOrderTraversal(current.left);
+            this.postOrderTraversal(current.right);
+            console.log(current.value);
+        }
     }
 }
 
@@ -108,7 +113,7 @@ function main()
     tree.insert(5);
     tree.insert(7);
 
-    tree.preorderTraversal();
+    tree.postOrderTraversal();
 }
 
 main();

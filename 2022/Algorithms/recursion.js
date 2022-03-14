@@ -25,11 +25,16 @@ function test(n)
     console.log(n);
     if (n > 0)
     {
+        
         /*
-        n--;
         test(n);
+        n--;
         */
-        test(n--);
+        
+        // n--;
+        // test(n);
+
+        test(--n);
 
         /*
         test(n--);
