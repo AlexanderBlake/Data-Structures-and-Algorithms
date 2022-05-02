@@ -6,6 +6,24 @@ class Node {
     }
 }
 
+class Queue {
+    constructor(value) {
+        this.arr = [value];
+    }
+
+    enqueue(value) {
+        this.arr.push(value);
+    }
+
+    dequeue() {
+        return this.arr.shift();
+    }
+
+    isEmpty() {
+        return this.arr.length === 0;
+    }
+}
+
 class Tree {
     constructor(value) {
         this.root = new Node(value);
@@ -57,10 +75,27 @@ class Tree {
             console.log(current.value);
         }
     }
+
+    breadthFirstTraversal() {
+        let current;
+        let myQ = new Queue(this.root);
+
+        while (!myQ.isEmpty()) {
+            current = myQ.dequeue();
+
+            if (current.left) {
+                myQ.enqueue(current.left);
+            }
+            if (current.right) {
+                myQ.enqueue(current.right);
+            }
+            console.log(current.value);
+        }
+    }
 }
 
 function main() {
-    tree = new Tree(24);
+    let tree = new Tree(24);
 
     tree.insert(12);
     tree.insert(48);
@@ -69,7 +104,7 @@ function main() {
     tree.insert(36);
     tree.insert(96);
 
-    tree.postorderTraversal();
+    tree.breadthFirstTraversal();
 }
 
 main();
