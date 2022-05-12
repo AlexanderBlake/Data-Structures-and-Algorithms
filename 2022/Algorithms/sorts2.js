@@ -65,15 +65,50 @@ function bubbleSort(arr, end = arr.length - 1) {
 }
 
 function merge(left, right) {
-    
+    let leftIndex = 0;
+    let rightIndex = 0;
+    let result = [];
+
+    while (leftIndex < left.length && rightIndex < right.length) {
+        if (left[leftIndex] < right[rightIndex]) {
+            result.push(left[leftIndex++]);
+        } else {
+            result.push(right[rightIndex++]);
+        }
+    }
+
+    for (let i = leftIndex; i < left.length; i++) {
+        result.push(left[i]);
+    }
+
+    for (let i = rightIndex; i < right.length; i++) {
+        result.push(right[i]);
+    }
+
+    return result;
 }
 
 function mergeSort(arr) {
+    if (arr.length == 1) {
+        return arr;
+    }
 
+    let middle = Math.floor(arr.length / 2);
+
+    let left = mergeSort(arr.slice(0, middle));
+    let right = mergeSort(arr.slice(middle));
+
+    let result = merge(left, right);
+
+    return result;
 }
 
 function main()
 {
+
+    console.log(mergeSort([6, 5, 3, 1, 8, 7, 2, 4]));
+
+    /*
     swap(3, 4);
 
     bubbleSort(["Bob", "Alex", "John", "Charlie"]);
@@ -84,6 +119,7 @@ function main()
     selectionSort([29, 10, 14, 37, 14, 24, 12, 48]);
     insertionSort([29, 10, 14, 37, 14]);
     insertionSort([29, 10, 14, 37, 14, 24, 12, 48]);
+    */
 }
 
 main();
