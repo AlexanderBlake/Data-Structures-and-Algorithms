@@ -64,6 +64,7 @@ function bubbleSort(arr, end = arr.length - 1) {
     }
 }
 
+// Precondition: Left & right arrays are sorted
 function merge(left, right) {
     let leftIndex = 0;
     let rightIndex = 0;
@@ -98,13 +99,14 @@ function mergeSort(arr) {
     let left = mergeSort(arr.slice(0, middle));
     let right = mergeSort(arr.slice(middle));
 
-    let result = merge(left, right);
-
-    return result;
+    return merge(left, right);
 }
 
 function main()
 {
+
+    // console.log(merge([24, 48, 96], [12, 36, 50]));
+
 
     console.log(mergeSort([6, 5, 3, 1, 8, 7, 2, 4]));
 

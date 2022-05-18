@@ -47,15 +47,15 @@ class Tree {
     preOrderTraversal(current = this.root) {
         if (current) {
             console.log(current.value);
-            this.inOrderTraversal(current.left);
-            this.inOrderTraversal(current.right);
+            this.preOrderTraversal(current.left);
+            this.preOrderTraversal(current.right);
         }
     }
 
     postOrderTraversal(current = this.root) {
         if (current) {
-            this.inOrderTraversal(current.left);
-            this.inOrderTraversal(current.right);
+            this.postOrderTraversal(current.left);
+            this.postOrderTraversal(current.right);
             console.log(current.value);
         }
     }
