@@ -26,7 +26,6 @@ function fibonacci(n) {
     if (n <= 2) {
         return n - 1;
     }
-
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
@@ -219,7 +218,7 @@ function bubbleSortTests() {
     console.assert(arrayEquals(bubbleSort([6, 5, 3, 1, 8, 7, 2, 4]), [1, 2, 3, 4, 5, 6, 7, 8]), "Large list");
 }
 
-function main() {
+function main(i = 1) {
     let arr = [24, 12, 48, 96, 6, 3, 100];
 
     insertionSortTests();
@@ -227,6 +226,8 @@ function main() {
     bubbleSortTests();
 
     fibonacciTests();
+    console.log(i)
+    main(++i);
 }
 
 main();
