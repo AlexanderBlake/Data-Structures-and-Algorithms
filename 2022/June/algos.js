@@ -26,6 +26,8 @@ function fibonacci(n) {
     if (n <= 2) {
         return n - 1;
     }
+
+    console.log(n);
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
@@ -227,7 +229,7 @@ function main(i = 1) {
 
     fibonacciTests();
     console.log(i)
-    main(++i);
+    // main(++i);
 }
 
 main();
