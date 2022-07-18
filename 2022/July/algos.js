@@ -1,17 +1,17 @@
 function nand(a, b) {
-
+    return !(a && b);
 }
 
 function nor(a, b) {
-
+    return !(a || b);
 }
 
 function xor(a, b) {
-
+    return a !== b;
 }
 
 function xnor(a, b) {
-
+    return a === b;
 }
 
 function challenge1(x, y)
@@ -58,4 +58,6 @@ function challenge3(x, z)
         y = !z;
     }
     */
+
+    y = x === z;
 }
