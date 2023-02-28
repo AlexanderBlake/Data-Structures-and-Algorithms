@@ -4,7 +4,7 @@
  */
 
  // Time Complexity: O(n) Linear Time
- // Space Complexity: O(1) Constant Space
+ // Space Complexity: O(n) Linear Space
 var numIdenticalPairs = function(nums) {
     let numInstances = {};
 
