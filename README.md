@@ -1,7 +1,6 @@
 <h1>Resources</h1>
 
-[LeetCode] - Practice Problems (https://leetcode.com)
-
+[LeetCode] (https://leetcode.com) - Practice Problems
 
 [Pramp] - Free Interview Practice (https://www.pramp.com/)
 
