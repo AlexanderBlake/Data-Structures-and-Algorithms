@@ -2,14 +2,14 @@
 
 [LeetCode](https://leetcode.com) - Practice Problems
 
-[Pramp] - Free Interview Practice (https://www.pramp.com/)
+[NeetCode](https://neetcode.io/roadmap) - Roadmap
 
-[VisuAlgo] - Algorithm Visualization (https://visualgo.net/en)
+[VisuAlgo](https://visualgo.net/en) - Algorithm Visualization
 
-[Levels.fyi] - Compensation Information (https://www.levels.fyi)
+[YouTube](https://www.youtube.com/@NeetCode) - Leetcode Videos
 
-[NeetCode] - Roadmap (https://neetcode.io/roadmap)
+[Pramp](https://www.pramp.com/) - Free Interview Practice
 
-[UNLV] - Resume and Interview Tips (https://www.unlv.edu/engineering/jobs/resources)
+[UNLV](https://www.unlv.edu/engineering/jobs/resources) - Resume and Interview Tips
 
-[YouTube] - Leetcode Videos (https://www.youtube.com/@NeetCode)
+[Levels.fyi](https://www.levels.fyi) - Compensation Information 
