@@ -2,13 +2,13 @@
 
 [LeetCode](https://leetcode.com) - Practice Problems
 
-[NeetCode](https://neetcode.io/roadmap) - Roadmap
-
-[VisuAlgo](https://visualgo.net/en) - Algorithm Visualization
-
-[YouTube](https://www.youtube.com/@NeetCode) - Leetcode Videos
+[NeetCode](https://neetcode.io/roadmap) - Topic Roadmap
 
 [Pramp](https://www.pramp.com/) - Free Interview Practice
+
+[VisuAlgo](https://visualgo.net/en) - Algorithm Visualizer
+
+[YouTube](https://www.youtube.com/@NeetCode) - Leetcode Videos
 
 [UNLV](https://www.unlv.edu/engineering/jobs/resources) - Resume and Interview Tips
 
