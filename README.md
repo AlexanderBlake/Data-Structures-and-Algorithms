@@ -72,7 +72,7 @@
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
-|[3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|Medium|[Python](./2023/Leetcode/problem3.py)|[YouTube](https://www.youtube.com/watch?v=wiGpQwVHdE0)|
+|[3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|Medium|[Python](./2022/Leetcode/problem3.py)|[YouTube](https://www.youtube.com/watch?v=wiGpQwVHdE0)|
 |[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|Easy|[JavaScript](./2023/Leetcode/problem121.js)|[YouTube](https://www.youtube.com/watch?v=1pkOgXD63yU)|
 
 <a id="linked-list"></a>
