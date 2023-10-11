@@ -103,7 +103,7 @@
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
-|[78. Subsets](https://leetcode.com/problems/subsets/)|Medium|[Python](./2023/Leetcode/problem78.py)
+|[78. Subsets](https://leetcode.com/problems/subsets/)|Medium|[Python](./2023/Leetcode/problem78.py)|[YouTube](https://www.youtube.com/watch?v=REOH22Xwdkk)|
 
 <a id="heap-priority-queue"></a>
 ### 9. Heap / Priority Queue
@@ -111,7 +111,7 @@
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
-|[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|Medium|[Python](./2023/Leetcode/problem215.py)
+|[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|Medium|[Python](./2023/Leetcode/problem215.py)|[YouTube](https://www.youtube.com/watch?v=XEmy13g1Qxc)|
 
 <a id="graphs"></a>
 ### 10. Graphs
@@ -119,7 +119,7 @@
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
-|[200. Number of Islands](https://leetcode.com/problems/number-of-islands/)|Medium|[Python](./2023/Leetcode/problem200.py)
+|[200. Number of Islands](https://leetcode.com/problems/number-of-islands/)|Medium|[Python](./2023/Leetcode/problem200.py)|[YouTube](https://www.youtube.com/watch?v=pV2kpPD66nE)|
 
 <a id="1-d-dp"></a>
 ### 11. 1-D Dynamic Programming
@@ -127,7 +127,7 @@
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
-|[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|Easy|[JavaScript](./2023/Leetcode/problem70.js)
+|[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|Easy|[JavaScript](./2023/Leetcode/problem70.js)|[YouTube](https://www.youtube.com/watch?v=Y0lT9Fck7qI)|
 
 <a id="greedy"></a>
 ### 12. Greedy
@@ -144,7 +144,7 @@
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
-|[62. Unique Paths](https://leetcode.com/problems/unique-paths/)|Medium|[Python](./2023/Leetcode/problem62.py)
+|[62. Unique Paths](https://leetcode.com/problems/unique-paths/)|Medium|[Python](./2023/Leetcode/problem62.py)|[YouTube](https://www.youtube.com/watch?v=IlEsdxuD4lY)|
 
 <a id="bit-manipulation"></a>
 ### 14. Bit Manipulation
