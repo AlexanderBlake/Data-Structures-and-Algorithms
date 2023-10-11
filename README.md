@@ -13,9 +13,11 @@
 5. [**Sliding Window**](#sliding-window)
 6. [**Linked List**](#linked-list)
 7. [**Trees**](#trees)
-8. [**1-D Dynamic Programming**](#1-d-dp)
-9. [**Bit Manipulation**](#bit-manipulation)
-10. [**Math & Geometry**](#math-geometry)
+8. [**Heap / Priority Queue**](#heap-priority-queue)
+9. [**Graphs**](#graphs)
+10. [**1-D Dynamic Programming**](#1-d-dp)
+11. [**Bit Manipulation**](#bit-manipulation)
+12. [**Math & Geometry**](#math-geometry)
 
 <a id="arrays-hashing"></a>
 ### 1. Arrays & Hashing
@@ -23,14 +25,17 @@
 |Problem|Difficulty|Solution|
 |-|-|-
 |[1. Two Sum](https://leetcode.com/problems/two-sum/)|Easy|[JavaScript](./2023/Leetcode/2sum.js)
+|[36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)|Medium|[Python](./2023/Leetcode/problem36.py)
 |[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|Easy|[JavaScript](./2023/Leetcode/problem217.js)
 |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)|Easy|[Python](./2023/Leetcode/problem242.py)
+|[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)|Medium|[Python](./2023/Leetcode/problem347.py)
 
 <a id="two-pointers"></a>
 ### 2. Two Pointers
 
 |Problem|Difficulty|Solution|
 |-|-|-
+|[15. 3Sum](https://leetcode.com/problems/3sum)|Medium|[Python](./2023/Leetcode/problem15.py)
 |[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|Easy|[JavaScript](./2023/Leetcode/problem125.js)
 
 <a id="stacks"></a>
@@ -39,6 +44,9 @@
 |Problem|Difficulty|Solution|
 |-|-|-
 |[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|Easy|[JavaScript](./2023/Leetcode/problem20.js)
+|[22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|Medium|[Python](./2023/Leetcode/problem22.py)
+|[150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|Medium|[Python](./2023/Leetcode/problem150.py)
+|[155. Min Stack](https://leetcode.com/problems/min-stack/)|Medium|[Python](./2023/Leetcode/problem155.py)
 
 <a id="binary-search"></a>
 ### 4. Binary Search
@@ -52,6 +60,7 @@
 
 |Problem|Difficulty|Solution|
 |-|-|-
+|[3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|Medium|[Python](./2023/Leetcode/problem3.py)
 |[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|Easy|[JavaScript](./2023/Leetcode/problem121.js)
 
 <a id="linked-list"></a>
@@ -59,6 +68,7 @@
 
 |Problem|Difficulty|Solution|
 |-|-|-
+|[2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|Medium|[Python](./2023/Leetcode/problem2.py)
 |[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|Easy|[Python](./2023/Leetcode/problem21.py)
 |[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|Easy|[JavaScript](./2023/Leetcode/problem141.js)
 |[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|Easy|[Python](./2023/Leetcode/problem206.js)
@@ -69,31 +79,48 @@
 |Problem|Difficulty|Solution|
 |-|-|-
 |[100. Same Tree](https://leetcode.com/problems/same-tree/)|Easy|[C++](./2022/Leetcode/problem100.cpp)
+|[102. Binary Tree Level Order Traversal](https://leetcode.com/problems/same-tree/)|Medium|[Python](./2022/Leetcode/problem102.py)
 |[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|Easy|[JavaScript](./2022/Leetcode/problem104.js)
 |[110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)|Easy|[C++](./2022/Leetcode/problem110.cpp)
 
+<a id="heap-priority-queue"></a>
+### 8. Heap / Priority Queue
+
+|Problem|Difficulty|Solution|
+|-|-|-
+|[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|Medium|[Python](./2023/Leetcode/problem215.py)
+
+<a id="graphs"></a>
+### 9. Graphs
+
+|Problem|Difficulty|Solution|
+|-|-|-
+|[200. Number of Islands](https://leetcode.com/problems/number-of-islands/)|Medium|[Python](./2023/Leetcode/problem200.py)
+
 <a id="1-d-dp"></a>
-### 8. 1-D Dynamic Programming
+### 10. 1-D Dynamic Programming
 
 |Problem|Difficulty|Solution|
 |-|-|-
 |[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|Easy|[JavaScript](./2023/Leetcode/problem70.js)
 
 <a id="bit-manipulation"></a>
-### 9. Bit Manipulation
+### 11. Bit Manipulation
 
 |Problem|Difficulty|Solution|
 |-|-|-
+[7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)|Easy|[Python](./2023/Leetcode/problem7.py)
 |[136. Single Number](https://leetcode.com/problems/single-number/)|Easy|[C#](./2023/Leetcode/problem136.cs) [JavaScript](./2023/Leetcode/problem136.js) [Python](./2023/Leetcode/problem136.py)
 |[190. Reverse Bits](https://leetcode.com/problems/reverse-bits/)|Easy|[Python](./2023/Leetcode/problem190.py)
 |[191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|Easy|[Python](./2023/Leetcode/problem191.py)
 |[268. Missing Number](https://leetcode.com/problems/missing-number/)|Easy|[Python](./2023/Leetcode/problem268.py)
 
 <a id="math-geometry"></a>
-### 10. Math & Geometry
+### 12. Math & Geometry
 
 |Problem|Difficulty|Solution|
 |-|-|-
+[48. Rotate Image](https://leetcode.com/problems/rotate-image/)|Easy|[Python](./2023/Leetcode/problem48.py)
 |[66. Plus One](https://leetcode.com/problems/plus-one/)|Easy|[Python](./2023/Leetcode/problem66.py)
 |[202. Happy Number](https://leetcode.com/problems/happy-number/)|Easy|[JavaScript](./2023/Leetcode/problem202.js) [Python](./2023/Leetcode/problem202.py)
 
