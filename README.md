@@ -42,8 +42,8 @@
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
-|[15. 3Sum](https://leetcode.com/problems/3sum)|Medium|[Python](./2023/Leetcode/problem15.py)
-|[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|Easy|[JavaScript](./2023/Leetcode/problem125.js)
+|[15. 3Sum](https://leetcode.com/problems/3sum)|Medium|[Python](./2023/Leetcode/problem15.py)|[YouTube](https://www.youtube.com/watch?v=jzZsG8n2R9A)|
+|[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|Easy|[JavaScript](./2023/Leetcode/problem125.js)|[YouTube](https://www.youtube.com/watch?v=jJXJ16kPFWg)|
 
 <a id="stacks"></a>
 ### 3. Stacks
@@ -51,10 +51,10 @@
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
-|[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|Easy|[JavaScript](./2023/Leetcode/problem20.js)
-|[22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|Medium|[Python](./2023/Leetcode/problem22.py)
-|[150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|Medium|[Python](./2023/Leetcode/problem150.py)
-|[155. Min Stack](https://leetcode.com/problems/min-stack/)|Medium|[Python](./2023/Leetcode/problem155.py)
+|[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|Easy|[JavaScript](./2023/Leetcode/problem20.js)|[YouTube](https://www.youtube.com/watch?v=WTzjTskDFMg)|
+|[22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|Medium|[Python](./2023/Leetcode/problem22.py)|[YouTube](https://www.youtube.com/watch?v=s9fokUqJ76A)|
+|[150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|Medium|[Python](./2023/Leetcode/problem150.py)|[YouTube](https://www.youtube.com/watch?v=iu0082c4HDE)|
+|[155. Min Stack](https://leetcode.com/problems/min-stack/)|Medium|[Python](./2023/Leetcode/problem155.py)|[YouTube](https://www.youtube.com/watch?v=qkLl7nAwDPo)|
 
 <a id="binary-search"></a>
 ### 4. Binary Search
