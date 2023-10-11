@@ -135,7 +135,8 @@
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
-|[134. Gas Station](https://leetcode.com/problems/gas-station/)|Medium|[Python](./2023/Leetcode/problem134.py)
+|[122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/gas-station/)|Medium|[JavaScript](./2023/Leetcode/problem122.js) [Python](./2023/Leetcode/problem122.py)|[YouTube](https://www.youtube.com/watch?v=3SJ3pUkPQMc)|
+|[134. Gas Station](https://leetcode.com/problems/gas-station/)|Medium|[Python](./2023/Leetcode/problem134.py)|[YouTube](https://www.youtube.com/watch?v=lJwbPZGo05A)|
 
 <a id="2-d-dp"></a>
 ### 13. 2-D Dynamic Programming
