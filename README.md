@@ -2,11 +2,12 @@
 
 # Table of Contents
 
-1. [**Topic Roadmap**](#topic-roadmap)
-2. [**Resources**](#resources)
+1. [**Leetcode Topic Roadmap**](#leetcode-topic-roadmap)
+2. [**Data Structures**](#data-structures)
+3. [**Resources**](#resources)
 
-<a id="topic-roadmap"></a>
-## Topic Roadmap
+<a id="leetcode-topic-roadmap"></a>
+## Leetcode Topic Roadmap
 
 1. [**Arrays & Hashing**](#arrays-hashing)
 2. [**Two Pointers**](#two-pointers)
@@ -187,6 +188,17 @@
 |[202. Happy Number](https://leetcode.com/problems/happy-number/)|Easy|[JavaScript](./2023/Leetcode/problem202.js) [Python](./2023/Leetcode/problem202.py)|[YouTube](https://www.youtube.com/watch?v=ljz85bxOYJ0)|
 |[258. Add Digits](https://leetcode.com/problems/add-digits/)|Easy|[JavaScript](./2023/Leetcode/problem258.js) [Python](./2023/Leetcode/problem258.py)|[YouTube](https://www.youtube.com/watch?v=gGEWzsYZalM)|
 |[412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)|Easy|[C++](./2022/Leetcode/problem412.cpp) [Java](./2022/Leetcode/problem412.java) [JavaScript](./2022/Leetcode/problem412.js)|[YouTube](https://www.youtube.com/watch?v=1t1_a1BZ04o)|
+
+<a id="data-structures"></a>
+## Data Structures
+[🔼 Back to top](#top)
+
+|Data Structure|Code
+|-|-
+Binary Search Tree|[JavaScript](./2020%20-%202021/Data%20Structures/binarySearchTree.js)
+Linked List|[JavaScript](./2020%20-%202021/Data%20Structures/ll.js)
+Queue|[JavaScript](./2020%20-%202021/Data%20Structures/queue.js)
+Stack|[JavaScript](./2020%20-%202021/Data%20Structures/stack.js)
 
 <a id="resources"></a>
 ## Resources
