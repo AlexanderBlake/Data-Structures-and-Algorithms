@@ -119,7 +119,7 @@
 
 |Problem|Difficulty|Solution|
 |-|-|-
-|[134. Gas Station](https://leetcode.com/problems/gas-station/)|Easy|[JavaScript](./2023/Leetcode/problem134.py)
+|[134. Gas Station](https://leetcode.com/problems/gas-station/)|Medium|[Python](./2023/Leetcode/problem134.py)
 
 <a id="bit-manipulation"></a>
 ### 13. Bit Manipulation
