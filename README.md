@@ -107,6 +107,7 @@
 |[110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)|Easy|[C++](./2022/Leetcode/problem110.cpp)|[YouTube](https://www.youtube.com/watch?v=QfJsau0ItOY)|
 |[1038. Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)|Medium|[C++](./2022/Leetcode/problem1038.cpp)|[YouTube](https://www.youtube.com/watch?v=4nnl3FrwEYM)|
 |[1302. Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/)|Medium|[C++](./2022/Leetcode/problem1302.cpp) [JavaScript](./2022/Leetcode/problem1302.js)|[YouTube](https://www.youtube.com/watch?v=hM9tzzlRcnM)|
+|[2265. Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/)|Medium|[Python](./2022/Leetcode/problem2265.cpp)|[YouTube](https://www.youtube.com/watch?v=U8Xt9m7pBb8)|
 
 <a id="backtracking"></a>
 ### 8. Backtracking
