@@ -193,12 +193,14 @@
 ## Data Structures
 [🔼 Back to top](#top)
 
-|Data Structure|Code
-|-|-
-Binary Search Tree|[JavaScript](./2020%20-%202021/Data%20Structures/binarySearchTree.js)
-Linked List|[JavaScript](./2020%20-%202021/Data%20Structures/ll.js)
-Queue|[JavaScript](./2020%20-%202021/Data%20Structures/queue.js)
-Stack|[JavaScript](./2020%20-%202021/Data%20Structures/stack.js)
+|Data Structure|Code|Space|Search|Insert|Delete|Notes
+|-|-|-|-|-|-|-
+Binary Search Tree|[JavaScript](./2020%20-%202021/Data%20Structures/binarySearchTree.js)|O(n)|O(log n)|O(log n)|O(log n)
+Hash Set|[JavaScript](./2020%20-%202021/Data%20Structures/binarySearchTree.js)|O(n)|O(1)*|O(1)*|O(1)*|Time Complexity is constant on an amortized basis (average)
+Hash Table|[JavaScript](./2020%20-%202021/Data%20Structures/binarySearchTree.js)|O(n)|O(1)*|O(1)*|O(1)*|Time Complexity is constant on an amortized basis (average)
+Linked List|[JavaScript](./2020%20-%202021/Data%20Structures/ll.js)|O(n)|O(n)|O(1)|O(1)
+Queue|[JavaScript](./2020%20-%202021/Data%20Structures/queue.js)|O(n)|O(n)|O(1)|O(1)|FIFO / LILO (First In First Out / Last In Last Out)
+Stack|[JavaScript](./2020%20-%202021/Data%20Structures/stack.js)|O(n)|O(n)|O(1)|O(1)|FILO / LIFO (First In Last Out / Last In First Out)
 
 <a id="resources"></a>
 ## Resources
