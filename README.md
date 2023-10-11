@@ -104,6 +104,7 @@
 |[103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|Medium|[Python](./2023/Leetcode/problem103.py)|[YouTube](https://www.youtube.com/watch?v=igbboQbiwqw)|
 |[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|Easy|[JavaScript](./2022/Leetcode/problem104.js)|[YouTube](https://www.youtube.com/watch?v=hTM3phVI6YQ)|
 |[110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)|Easy|[C++](./2022/Leetcode/problem110.cpp)|[YouTube](https://www.youtube.com/watch?v=QfJsau0ItOY)|
+|[1038. Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)|Medium|[C++](./2022/Leetcode/problem1038.cpp)|[YouTube](https://www.youtube.com/watch?v=4nnl3FrwEYM)|
 
 <a id="backtracking"></a>
 ### 8. Backtracking
