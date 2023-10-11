@@ -97,6 +97,7 @@
 |[66. Plus One](https://leetcode.com/problems/plus-one/)|<span style="color:green">Easy</span>|[Python](./2023/Leetcode/problem66.py)
 |[202. Happy Number](https://leetcode.com/problems/happy-number/)|<span style="color:green">Easy</span>|[JavaScript](./2023/Leetcode/problem202.js) [Python](./2023/Leetcode/problem202.py)
 
+<a id="resources"></a>
 ## Resources
 
 [LeetCode](https://leetcode.com) - Practice Problems
