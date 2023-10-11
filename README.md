@@ -93,7 +93,7 @@
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
 |[100. Same Tree](https://leetcode.com/problems/same-tree/)|Easy|[C++](./2022/Leetcode/problem100.cpp)|[YouTube](https://www.youtube.com/watch?v=vRbbcKXCxOw)|
-|[102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|Medium|[Python](./2022/Leetcode/problem102.py)|[YouTube](https://www.youtube.com/watch?v=6ZnyEApgFYg)|
+|[102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|Medium|[Python](./2023/Leetcode/problem102.py)|[YouTube](https://www.youtube.com/watch?v=6ZnyEApgFYg)|
 |[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|Easy|[JavaScript](./2022/Leetcode/problem104.js)|[YouTube](https://www.youtube.com/watch?v=hTM3phVI6YQ)|
 |[110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)|Easy|[C++](./2022/Leetcode/problem110.cpp)|[YouTube](https://www.youtube.com/watch?v=QfJsau0ItOY)|
 
