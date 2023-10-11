@@ -173,6 +173,7 @@
 |[190. Reverse Bits](https://leetcode.com/problems/reverse-bits/)|Easy|[Python](./2023/Leetcode/problem190.py)|[YouTube](https://www.youtube.com/watch?v=UcoN6UjAI64)|
 |[191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|Easy|[Python](./2023/Leetcode/problem191.py)|[YouTube](https://www.youtube.com/watch?v=5Km3utixwZs)|
 |[268. Missing Number](https://leetcode.com/problems/missing-number/)|Easy|[Python](./2023/Leetcode/problem268.py)|[YouTube](https://www.youtube.com/watch?v=WnPLSRLSANE)|
+|[2433. Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/)|Medium|[Python](./2022/Leetcode/problem2433.py)|[YouTube](https://www.youtube.com/watch?v=idcT-p_DDrI)|
 
 <a id="math-geometry"></a>
 ### 15. Math & Geometry
