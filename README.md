@@ -149,6 +149,7 @@
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
 |[62. Unique Paths](https://leetcode.com/problems/unique-paths/)|Medium|[Python](./2023/Leetcode/problem62.py)|[YouTube](https://www.youtube.com/watch?v=IlEsdxuD4lY)|
+|[64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|Medium|[Python](./2023/Leetcode/problem64.py)|[YouTube](https://www.youtube.com/watch?v=pGMsrvt0fpk)|
 
 <a id="bit-manipulation"></a>
 ### 14. Bit Manipulation
