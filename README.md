@@ -171,10 +171,9 @@
 ## Resources
 [🔼 Back to top](#top)
 
-[Pramp](https://www.pramp.com/) - Free Interview Practice
-
-[GitHub](https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/tree/main) - Skill Assessment Quizzes
-
-[UNLV](https://www.unlv.edu/engineering/jobs/resources) - Resume and Interview Tips
-
-[Levels.fyi](https://www.levels.fyi) - Compensation Information 
+|Website|Description
+|-|-
+[Pramp](https://www.pramp.com/)|Free Interview Practice
+[GitHub](https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/tree/main)|Skill Assessment Quizzes
+[UNLV](https://www.unlv.edu/engineering/jobs/resources)|Resume and Interview Tips
+[Levels.fyi](https://www.levels.fyi)|Compensation Information 
