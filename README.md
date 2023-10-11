@@ -18,8 +18,9 @@
 10. [**Graphs**](#graphs)
 11. [**1-D Dynamic Programming**](#1-d-dp)
 12. [**Greedy**](#greedy)
-12. [**Bit Manipulation**](#bit-manipulation)
-13. [**Math & Geometry**](#math-geometry)
+13. [**2-D Dynamic Programming**](#2-d-dp)
+14. [**Bit Manipulation**](#bit-manipulation)
+15. [**Math & Geometry**](#math-geometry)
 
 <a id="arrays-hashing"></a>
 ### 1. Arrays & Hashing
@@ -121,8 +122,15 @@
 |-|-|-
 |[134. Gas Station](https://leetcode.com/problems/gas-station/)|Medium|[Python](./2023/Leetcode/problem134.py)
 
+<a id="2-d-dp"></a>
+### 13. 2-D Dynamic Programming
+
+|Problem|Difficulty|Solution|
+|-|-|-
+|[62. Unique Paths](https://leetcode.com/problems/unique-paths/)|Medium|[Python](./2023/Leetcode/problem62.py)
+
 <a id="bit-manipulation"></a>
-### 13. Bit Manipulation
+### 14. Bit Manipulation
 
 |Problem|Difficulty|Solution|
 |-|-|-
@@ -133,7 +141,7 @@
 |[268. Missing Number](https://leetcode.com/problems/missing-number/)|Easy|[Python](./2023/Leetcode/problem268.py)
 
 <a id="math-geometry"></a>
-### 14. Math & Geometry
+### 15. Math & Geometry
 
 |Problem|Difficulty|Solution|
 |-|-|-
