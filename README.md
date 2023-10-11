@@ -152,11 +152,11 @@
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
-[7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)|Easy|[Python](./2023/Leetcode/problem7.py)
-|[136. Single Number](https://leetcode.com/problems/single-number/)|Easy|[C#](./2023/Leetcode/problem136.cs) [JavaScript](./2023/Leetcode/problem136.js) [Python](./2023/Leetcode/problem136.py)
-|[190. Reverse Bits](https://leetcode.com/problems/reverse-bits/)|Easy|[Python](./2023/Leetcode/problem190.py)
-|[191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|Easy|[Python](./2023/Leetcode/problem191.py)
-|[268. Missing Number](https://leetcode.com/problems/missing-number/)|Easy|[Python](./2023/Leetcode/problem268.py)
+[7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)|Easy|[Python](./2023/Leetcode/problem7.py)|[YouTube](https://www.youtube.com/watch?v=HAgLH58IgJQ)|
+|[136. Single Number](https://leetcode.com/problems/single-number/)|Easy|[C#](./2023/Leetcode/problem136.cs) [JavaScript](./2023/Leetcode/problem136.js) [Python](./2023/Leetcode/problem136.py)|[YouTube](https://www.youtube.com/watch?v=qMPX1AOa83k)|
+|[190. Reverse Bits](https://leetcode.com/problems/reverse-bits/)|Easy|[Python](./2023/Leetcode/problem190.py)|[YouTube](https://www.youtube.com/watch?v=UcoN6UjAI64)|
+|[191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|Easy|[Python](./2023/Leetcode/problem191.py)|[YouTube](https://www.youtube.com/watch?v=5Km3utixwZs)|
+|[268. Missing Number](https://leetcode.com/problems/missing-number/)|Easy|[Python](./2023/Leetcode/problem268.py)|[YouTube](https://www.youtube.com/watch?v=WnPLSRLSANE)|
 
 <a id="math-geometry"></a>
 ### 15. Math & Geometry
@@ -164,9 +164,9 @@
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
-[48. Rotate Image](https://leetcode.com/problems/rotate-image/)|Easy|[Python](./2023/Leetcode/problem48.py)
-|[66. Plus One](https://leetcode.com/problems/plus-one/)|Easy|[Python](./2023/Leetcode/problem66.py)
-|[202. Happy Number](https://leetcode.com/problems/happy-number/)|Easy|[JavaScript](./2023/Leetcode/problem202.js) [Python](./2023/Leetcode/problem202.py)
+[48. Rotate Image](https://leetcode.com/problems/rotate-image/)|Easy|[Python](./2023/Leetcode/problem48.py)|[YouTube](https://www.youtube.com/watch?v=fMSJSS7eO1w)|
+|[66. Plus One](https://leetcode.com/problems/plus-one/)|Easy|[Python](./2023/Leetcode/problem66.py)|[YouTube](https://www.youtube.com/watch?v=jIaA8boiG1s)|
+|[202. Happy Number](https://leetcode.com/problems/happy-number/)|Easy|[JavaScript](./2023/Leetcode/problem202.js) [Python](./2023/Leetcode/problem202.py)|[YouTube](https://www.youtube.com/watch?v=ljz85bxOYJ0)|
 
 <a id="resources"></a>
 ## Resources
