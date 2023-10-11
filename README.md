@@ -72,8 +72,8 @@
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
-|[3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|Medium|[Python](./2023/Leetcode/problem3.py)
-|[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|Easy|[JavaScript](./2023/Leetcode/problem121.js)
+|[3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|Medium|[Python](./2023/Leetcode/problem3.py)|[YouTube](https://www.youtube.com/watch?v=wiGpQwVHdE0)|
+|[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|Easy|[JavaScript](./2023/Leetcode/problem121.js)|[YouTube](https://www.youtube.com/watch?v=1pkOgXD63yU)|
 
 <a id="linked-list"></a>
 ### 6. Linked List
@@ -110,7 +110,7 @@
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
-|-|-|-
+|-|-|-|-
 |[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|Medium|[Python](./2023/Leetcode/problem215.py)
 
 <a id="graphs"></a>
