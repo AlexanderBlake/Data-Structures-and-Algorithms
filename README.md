@@ -167,6 +167,7 @@
 [48. Rotate Image](https://leetcode.com/problems/rotate-image/)|Medium|[Python](./2023/Leetcode/problem48.py)|[YouTube](https://www.youtube.com/watch?v=fMSJSS7eO1w)|
 |[66. Plus One](https://leetcode.com/problems/plus-one/)|Easy|[Python](./2023/Leetcode/problem66.py)|[YouTube](https://www.youtube.com/watch?v=jIaA8boiG1s)|
 |[202. Happy Number](https://leetcode.com/problems/happy-number/)|Easy|[JavaScript](./2023/Leetcode/problem202.js) [Python](./2023/Leetcode/problem202.py)|[YouTube](https://www.youtube.com/watch?v=ljz85bxOYJ0)|
+|[258. Add Digits](https://leetcode.com/problems/add-digits/)|Easy|[JavaScript](./2023/Leetcode/problem258.js) [Python](./2023/Leetcode/problem258.py)|[YouTube](https://www.youtube.com/watch?v=gGEWzsYZalM)|
 
 <a id="resources"></a>
 ## Resources
