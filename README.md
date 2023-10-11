@@ -104,6 +104,7 @@
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
+|[17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|Medium|[Python](./2023/Leetcode/problem17.py)|[YouTube](https://www.youtube.com/watch?v=0snEunUacZY)|
 |[78. Subsets](https://leetcode.com/problems/subsets/)|Medium|[Python](./2023/Leetcode/problem78.py)|[YouTube](https://www.youtube.com/watch?v=REOH22Xwdkk)|
 
 <a id="heap-priority-queue"></a>
