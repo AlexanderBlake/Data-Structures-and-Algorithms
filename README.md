@@ -53,7 +53,8 @@
 
 |Problem|Difficulty|Solution|
 |-|-|-
-|[704. Binary Search](https://leetcode.com/problems/valid-parentheses/)|Easy|[JavaScript](./2023/Leetcode/problem704.js)
+|[374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)|Easy|[JavaScript](./2022/Leetcode/problem374.js) [Python](./2022/Leetcode/problem374.py)
+|[704. Binary Search](https://leetcode.com/problems/binary-search/)|Easy|[JavaScript](./2023/Leetcode/problem704.js)
 
 <a id="sliding-window"></a>
 ### 5. Sliding Window
