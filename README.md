@@ -84,7 +84,7 @@
 |[2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|Medium|[Python](./2023/Leetcode/problem2.py)|[YouTube](https://www.youtube.com/watch?v=wgFPrzTjm7s)|
 |[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|Easy|[Python](./2023/Leetcode/problem21.py)|[YouTube](https://www.youtube.com/watch?v=XIdigk956u0)|
 |[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|Easy|[JavaScript](./2023/Leetcode/problem141.js)|[YouTube](https://www.youtube.com/watch?v=gBTe7lFR3vc)|
-|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|Easy|[Python](./2023/Leetcode/problem206.js)|[YouTube](https://www.youtube.com/watch?v=G0_I-ZF0S38)|
+|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|Easy|[Python](./2023/Leetcode/problem206.py)|[YouTube](https://www.youtube.com/watch?v=G0_I-ZF0S38)|
 
 <a id="trees"></a>
 ### 7. Trees
