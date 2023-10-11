@@ -171,6 +171,7 @@
 |-|-|-|-
 [48. Rotate Image](https://leetcode.com/problems/rotate-image/)|Medium|[Python](./2023/Leetcode/problem48.py)|[YouTube](https://www.youtube.com/watch?v=fMSJSS7eO1w)|
 |[66. Plus One](https://leetcode.com/problems/plus-one/)|Easy|[Python](./2023/Leetcode/problem66.py)|[YouTube](https://www.youtube.com/watch?v=jIaA8boiG1s)|
+|[73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)|Medium|[Python](./2023/Leetcode/problem73.py)|[YouTube](https://www.youtube.com/watch?v=T41rL0L3Pnw)|
 |[202. Happy Number](https://leetcode.com/problems/happy-number/)|Easy|[JavaScript](./2023/Leetcode/problem202.js) [Python](./2023/Leetcode/problem202.py)|[YouTube](https://www.youtube.com/watch?v=ljz85bxOYJ0)|
 |[258. Add Digits](https://leetcode.com/problems/add-digits/)|Easy|[JavaScript](./2023/Leetcode/problem258.js) [Python](./2023/Leetcode/problem258.py)|[YouTube](https://www.youtube.com/watch?v=gGEWzsYZalM)|
 |[412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)|Easy|[C++](./2022/Leetcode/problem412.cpp) [Java](./2022/Leetcode/problem412.java) [JavaScript](./2022/Leetcode/problem412.js)|[YouTube](https://www.youtube.com/watch?v=1t1_a1BZ04o)|
