@@ -35,6 +35,7 @@
 |[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|Easy|[JavaScript](./2023/Leetcode/problem217.js) [Python](./2023/Leetcode/problem217.py)|[YouTube](https://www.youtube.com/watch?v=3OamzN90kPg)|
 |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)|Easy|[Python](./2023/Leetcode/problem242.py)|[YouTube](https://www.youtube.com/watch?v=9UtInBqnCgA)|
 |[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)|Medium|[Python](./2023/Leetcode/problem347.py)|[YouTube](https://www.youtube.com/watch?v=YPTqKIgVk-k)|
+|[442. Find all Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/)|Medium|[Python](./2022/Leetcode/problem442.py)|[YouTube](https://www.youtube.com/watch?v=aMsSF1Il3IY)|
 
 <a id="two-pointers"></a>
 ### 2. Two Pointers
@@ -89,7 +90,6 @@
 |[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|Easy|[JavaScript](./2023/Leetcode/problem141.js)|[YouTube](https://www.youtube.com/watch?v=gBTe7lFR3vc)|
 |[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|Easy|[Python](./2023/Leetcode/problem206.py)|[YouTube](https://www.youtube.com/watch?v=G0_I-ZF0S38)|
 |[237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|Medium|[C++](./2022/Leetcode/problem237.cpp)|[YouTube](https://www.youtube.com/watch?v=urzP1YbgUnU)|
-|[442. Find all Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/)|Medium|[Python](./2022/Leetcode/problem442.py)|[YouTube](https://www.youtube.com/watch?v=aMsSF1Il3IY)|
 
 <a id="trees"></a>
 ### 7. Trees
