@@ -13,11 +13,13 @@
 5. [**Sliding Window**](#sliding-window)
 6. [**Linked List**](#linked-list)
 7. [**Trees**](#trees)
-8. [**Heap / Priority Queue**](#heap-priority-queue)
-9. [**Graphs**](#graphs)
-10. [**1-D Dynamic Programming**](#1-d-dp)
-11. [**Bit Manipulation**](#bit-manipulation)
-12. [**Math & Geometry**](#math-geometry)
+8. [**Backtracking**](#backtracking)
+9. [**Heap / Priority Queue**](#heap-priority-queue)
+10. [**Graphs**](#graphs)
+11. [**1-D Dynamic Programming**](#1-d-dp)
+12. [**Greedy**](#greedy)
+12. [**Bit Manipulation**](#bit-manipulation)
+13. [**Math & Geometry**](#math-geometry)
 
 <a id="arrays-hashing"></a>
 ### 1. Arrays & Hashing
@@ -84,29 +86,43 @@
 |[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|Easy|[JavaScript](./2022/Leetcode/problem104.js)
 |[110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)|Easy|[C++](./2022/Leetcode/problem110.cpp)
 
+<a id="backtracking"></a>
+### 8. Backtracking
+
+|Problem|Difficulty|Solution|
+|-|-|-
+|[78. Subsets](https://leetcode.com/problems/subsets/)|Medium|[Python](./2023/Leetcode/problem78.py)
+
 <a id="heap-priority-queue"></a>
-### 8. Heap / Priority Queue
+### 9. Heap / Priority Queue
 
 |Problem|Difficulty|Solution|
 |-|-|-
 |[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|Medium|[Python](./2023/Leetcode/problem215.py)
 
 <a id="graphs"></a>
-### 9. Graphs
+### 10. Graphs
 
 |Problem|Difficulty|Solution|
 |-|-|-
 |[200. Number of Islands](https://leetcode.com/problems/number-of-islands/)|Medium|[Python](./2023/Leetcode/problem200.py)
 
 <a id="1-d-dp"></a>
-### 10. 1-D Dynamic Programming
+### 11. 1-D Dynamic Programming
 
 |Problem|Difficulty|Solution|
 |-|-|-
 |[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|Easy|[JavaScript](./2023/Leetcode/problem70.js)
 
+<a id="greedy"></a>
+### 12. Greedy
+
+|Problem|Difficulty|Solution|
+|-|-|-
+|[134. Gas Station](https://leetcode.com/problems/gas-station/)|Easy|[JavaScript](./2023/Leetcode/problem134.py)
+
 <a id="bit-manipulation"></a>
-### 11. Bit Manipulation
+### 13. Bit Manipulation
 
 |Problem|Difficulty|Solution|
 |-|-|-
@@ -117,7 +133,7 @@
 |[268. Missing Number](https://leetcode.com/problems/missing-number/)|Easy|[Python](./2023/Leetcode/problem268.py)
 
 <a id="math-geometry"></a>
-### 12. Math & Geometry
+### 14. Math & Geometry
 
 |Problem|Difficulty|Solution|
 |-|-|-
