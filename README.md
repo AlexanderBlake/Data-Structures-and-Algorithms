@@ -195,12 +195,12 @@
 
 |Data Structure|Code|Search|Insert/Delete|Notes|Language Support
 |-|-|-|-|-|-
-[Binary Search Tree](https://visualgo.net/en/bst)|[JavaScript](./2020%20-%202021/Data%20Structures/binarySearchTree.js)|O(logn)|O(log n)||C++ (map/set)
-[Hash Map/Set/Table](https://visualgo.net/en/hashtable)|[JavaScript](./2020%20-%202021/Data%20Structures/binarySearchTree.js)|O(1)*|O(1)*|Time Complexity is constant on an amortized basis (average)|C++ (unordered_map / set), Java (Hashmap / HashSet), JavaScript (Map* / Set*), & Python (dictionary / set)
+[Binary Search Tree](https://visualgo.net/en/bst)|[JavaScript](./2020%20-%202021/Data%20Structures/binarySearchTree.js)|O(logn)|O(log n)||C++ (map / set)
+[Hash Map/Set/Table](https://visualgo.net/en/hashtable)|[JavaScript](./2020%20-%202021/Data%20Structures/binarySearchTree.js)|O(1)*|O(1)*|Time Complexity is constant on an amortized basis (average)|C++ (unordered_map / unordered_set), Java (HashMap / HashSet), JavaScript (Map* / Set*), & Python (dictionary / set)
 [Linked List](https://visualgo.net/en/list)|[JavaScript](./2020%20-%202021/Data%20Structures/ll.js)|O(n)|O(1)
 [Min/Max Heap (Priority Queue)](https://visualgo.net/en/heap)||O(n)|O(log n)|Find-min/max: O(1)|Python (heapq)
 [Queue](https://visualgo.net/en/list?mode=Queue)|[JavaScript](./2020%20-%202021/Data%20Structures/queue.js)|O(n)|O(1)|FIFO / LILO (First In First Out / Last In Last Out)|C++ (queue / deque), Java (Queue), & Python (deque)
-[Stack](https://visualgo.net/en/list?mode=Stack)|[JavaScript](./2020%20-%202021/Data%20Structures/stack.js)|O(n)|O(1)|FILO / LIFO (First In Last Out / Last In First Out)|C++ (array/deque), Java (Array / ArrayList / Stack), JavaScript (Array), & Python (list/deque)
+[Stack](https://visualgo.net/en/list?mode=Stack)|[JavaScript](./2020%20-%202021/Data%20Structures/stack.js)|O(n)|O(1)|FILO / LIFO (First In Last Out / Last In First Out)|C (array), C++ (array / deque), Java (Array / ArrayList / Stack), JavaScript (Array), & Python (list / deque)
 
 <a id="resources"></a>
 ## Resources
