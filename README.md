@@ -94,6 +94,7 @@
 |-|-|-|-
 |[2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|Medium|[Python](./2023/Leetcode/problem2.py)|[YouTube](https://www.youtube.com/watch?v=wgFPrzTjm7s)|
 |[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|Easy|[Python](./2023/Leetcode/problem21.py)|[YouTube](https://www.youtube.com/watch?v=XIdigk956u0)|
+|[116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|Medium|[Python](./2023/Leetcode/problem116.py)|[YouTube](https://www.youtube.com/watch?v=U4hFQCa1Cq0)|
 |[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|Easy|[JavaScript](./2023/Leetcode/problem141.js)|[YouTube](https://www.youtube.com/watch?v=gBTe7lFR3vc)|
 |[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|Easy|[Python](./2023/Leetcode/problem206.py)|[YouTube](https://www.youtube.com/watch?v=G0_I-ZF0S38)|
 |[237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|Medium|[C++](./2022/Leetcode/problem237.cpp)|[YouTube](https://www.youtube.com/watch?v=urzP1YbgUnU)|
@@ -132,6 +133,7 @@
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
 |[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|Medium|[Python](./2023/Leetcode/problem215.py)|[YouTube](https://www.youtube.com/watch?v=XEmy13g1Qxc)|
+|[703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|Easy|[Python](./2023/Leetcode/problem703.py)|[YouTube](https://www.youtube.com/watch?v=hOjcdrqMoQ8)|
 
 <a id="graphs"></a>
 ### 10. Graphs
