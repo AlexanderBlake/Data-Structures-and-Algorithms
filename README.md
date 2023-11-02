@@ -67,6 +67,7 @@
 |-|-|-|-
 |[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|Easy|[JavaScript](./2023/Leetcode/problem20.js)|[YouTube](https://www.youtube.com/watch?v=WTzjTskDFMg)|
 |[22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|Medium|[Python](./2023/Leetcode/problem22.py)|[YouTube](https://www.youtube.com/watch?v=s9fokUqJ76A)|
+|[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)|Easy|[Python](./2023/Leetcode/problem94.py)|[YouTube](https://www.youtube.com/watch?v=g_S5WuasWUE)|
 |[150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|Medium|[Python](./2023/Leetcode/problem150.py)|[YouTube](https://www.youtube.com/watch?v=iu0082c4HDE)|
 |[155. Min Stack](https://leetcode.com/problems/min-stack/)|Medium|[Python](./2023/Leetcode/problem155.py)|[YouTube](https://www.youtube.com/watch?v=qkLl7nAwDPo)|
 |[1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)|Easy|[Python](./2023/Leetcode/problem1047.py)|[YouTube](https://www.youtube.com/watch?v=hXEEr5WekSQ)|
