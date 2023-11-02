@@ -16,14 +16,15 @@
 5. [**Sliding Window**](#sliding-window)
 6. [**Linked List**](#linked-list)
 7. [**Trees**](#trees)
-8. [**Backtracking**](#backtracking)
-9. [**Heap / Priority Queue**](#heap-priority-queue)
-10. [**Graphs**](#graphs)
-11. [**1-D Dynamic Programming**](#1-d-dp)
-12. [**Greedy**](#greedy)
-13. [**2-D Dynamic Programming**](#2-d-dp)
-14. [**Bit Manipulation**](#bit-manipulation)
-15. [**Math & Geometry**](#math-geometry)
+8. [**Tries**](#tries)
+9. [**Backtracking**](#backtracking)
+10. [**Heap / Priority Queue**](#heap-priority-queue)
+11. [**Graphs**](#graphs)
+12. [**1-D Dynamic Programming**](#1-d-dp)
+13. [**Greedy**](#greedy)
+14. [**2-D Dynamic Programming**](#2-d-dp)
+15. [**Bit Manipulation**](#bit-manipulation)
+16. [**Math & Geometry**](#math-geometry)
 
 <a id="arrays-hashing"></a>
 ### 1. Arrays & Hashing
@@ -121,6 +122,14 @@
 |[1038. Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)|Medium|[C++](./2022/Leetcode/problem1038.cpp)|[YouTube](https://www.youtube.com/watch?v=4nnl3FrwEYM)|
 |[1302. Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/)|Medium|[C++](./2022/Leetcode/problem1302.cpp) [JavaScript](./2022/Leetcode/problem1302.js)|[YouTube](https://www.youtube.com/watch?v=hM9tzzlRcnM)|
 |[2265. Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/)|Medium|[Python](./2022/Leetcode/problem2265.cpp)|[YouTube](https://www.youtube.com/watch?v=U8Xt9m7pBb8)|
+
+<a id="tries"></a>
+### 8. Tries
+[🔼 Back to top](#top)
+
+|Problem|Difficulty|Code Solution|Video Solution
+|-|-|-|-
+|[14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|Easy|[Python](./2023/Leetcode/problem14.py)|[YouTube](https://www.youtube.com/watch?v=0sWShKIJoo4)|
 
 <a id="backtracking"></a>
 ### 8. Backtracking
