@@ -195,6 +195,7 @@
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
 [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)|Medium|[Python](./2023/Leetcode/problem7.py)|[YouTube](https://www.youtube.com/watch?v=HAgLH58IgJQ)|
+[67. Add Binary](https://leetcode.com/problems/add-binary/)|Easy|[Python](./2023/Leetcode/problem67.py)|[YouTube](https://www.youtube.com/watch?v=keuWJ47xG8g)|
 |[136. Single Number](https://leetcode.com/problems/single-number/)|Easy|[C#](./2023/Leetcode/problem136.cs) [JavaScript](./2023/Leetcode/problem136.js) [Python](./2023/Leetcode/problem136.py)|[YouTube](https://www.youtube.com/watch?v=qMPX1AOa83k)|
 |[190. Reverse Bits](https://leetcode.com/problems/reverse-bits/)|Easy|[Python](./2023/Leetcode/problem190.py)|[YouTube](https://www.youtube.com/watch?v=UcoN6UjAI64)|
 |[191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|Easy|[Python](./2023/Leetcode/problem191.py)|[YouTube](https://www.youtube.com/watch?v=5Km3utixwZs)|
