@@ -49,6 +49,7 @@
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
 |[15. 3Sum](https://leetcode.com/problems/3sum)|Medium|[Python](./2023/Leetcode/problem15.py)|[YouTube](https://www.youtube.com/watch?v=jzZsG8n2R9A)|
+|[26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|Easy|[Python](./2023/Leetcode/problem26.py)|[YouTube](https://www.youtube.com/watch?v=DEJAZBq0FDA)|
 |[27. Remove Element](https://leetcode.com/problems/remove-element/)|Easy|[Python](./2023/Leetcode/problem27.py)|[YouTube](https://www.youtube.com/watch?v=Pcd1ii9P9ZI)|
 |[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|Easy|[JavaScript](./2023/Leetcode/problem125.js)|[YouTube](https://www.youtube.com/watch?v=jJXJ16kPFWg)|
 |[167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|Medium|[Python](./2023/Leetcode/problem167.py)|[YouTube](https://www.youtube.com/watch?v=cQ1Oz4ckceM)|
