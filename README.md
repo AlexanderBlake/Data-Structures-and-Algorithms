@@ -132,7 +132,7 @@
 |[14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|Easy|[Python](./2023/Leetcode/problem14.py)|[YouTube](https://www.youtube.com/watch?v=0sWShKIJoo4)|
 
 <a id="backtracking"></a>
-### 8. Backtracking
+### 9. Backtracking
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -142,7 +142,7 @@
 |[78. Subsets](https://leetcode.com/problems/subsets/)|Medium|[Python](./2023/Leetcode/problem78.py)|[YouTube](https://www.youtube.com/watch?v=REOH22Xwdkk)|
 
 <a id="heap-priority-queue"></a>
-### 9. Heap / Priority Queue
+### 10. Heap / Priority Queue
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -151,7 +151,7 @@
 |[703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|Easy|[Python](./2023/Leetcode/problem703.py)|[YouTube](https://www.youtube.com/watch?v=hOjcdrqMoQ8)|
 
 <a id="graphs"></a>
-### 10. Graphs
+### 11. Graphs
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -161,7 +161,7 @@
 |[695. Max Area of Island](https://leetcode.com/problems/max-area-of-island/)|Medium|[Java](./2023/Leetcode/problem695.java) [Python](./2023/Leetcode/problem695.py)|[YouTube](https://www.youtube.com/watch?v=iJGr1OtmH0c)|
 
 <a id="1-d-dp"></a>
-### 11. 1-D Dynamic Programming
+### 12. 1-D Dynamic Programming
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -169,7 +169,7 @@
 |[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|Easy|[JavaScript](./2023/Leetcode/problem70.js)|[YouTube](https://www.youtube.com/watch?v=Y0lT9Fck7qI)|
 
 <a id="greedy"></a>
-### 12. Greedy
+### 13. Greedy
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -178,7 +178,7 @@
 |[134. Gas Station](https://leetcode.com/problems/gas-station/)|Medium|[Python](./2023/Leetcode/problem134.py)|[YouTube](https://www.youtube.com/watch?v=lJwbPZGo05A)|
 
 <a id="2-d-dp"></a>
-### 13. 2-D Dynamic Programming
+### 14. 2-D Dynamic Programming
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -187,7 +187,7 @@
 |[64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|Medium|[Python](./2023/Leetcode/problem64.py)|[YouTube](https://www.youtube.com/watch?v=pGMsrvt0fpk)|
 
 <a id="bit-manipulation"></a>
-### 14. Bit Manipulation
+### 15. Bit Manipulation
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -200,7 +200,7 @@
 |[2433. Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/)|Medium|[Python](./2022/Leetcode/problem2433.py)|[YouTube](https://www.youtube.com/watch?v=idcT-p_DDrI)|
 
 <a id="math-geometry"></a>
-### 15. Math & Geometry
+### 16. Math & Geometry
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
