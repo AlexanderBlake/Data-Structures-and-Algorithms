@@ -16,15 +16,16 @@
 5. [**Sliding Window**](#sliding-window)
 6. [**Linked List**](#linked-list)
 7. [**Trees**](#trees)
-8. [**Tries**](#tries)
-9. [**Backtracking**](#backtracking)
-10. [**Heap / Priority Queue**](#heap-priority-queue)
-11. [**Graphs**](#graphs)
-12. [**1-D Dynamic Programming**](#1-d-dp)
-13. [**Greedy**](#greedy)
-14. [**2-D Dynamic Programming**](#2-d-dp)
-15. [**Bit Manipulation**](#bit-manipulation)
-16. [**Math & Geometry**](#math-geometry)
+8. [**Design**](#design)
+9. [**Tries**](#tries)
+10. [**Backtracking**](#backtracking)
+11. [**Heap / Priority Queue**](#heap-priority-queue)
+12. [**Graphs**](#graphs)
+13. [**1-D Dynamic Programming**](#1-d-dp)
+14. [**Greedy**](#greedy)
+15. [**2-D Dynamic Programming**](#2-d-dp)
+16. [**Bit Manipulation**](#bit-manipulation)
+17. [**Math & Geometry**](#math-geometry)
 
 <a id="arrays-hashing"></a>
 ### 1. Arrays & Hashing
@@ -40,7 +41,6 @@
 |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)|Easy|[Python](./2023/Leetcode/problem242.py)|[YouTube](https://www.youtube.com/watch?v=9UtInBqnCgA)|
 |[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)|Medium|[Python](./2023/Leetcode/problem347.py)|[YouTube](https://www.youtube.com/watch?v=YPTqKIgVk-k)|
 |[442. Find all Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)|Medium|[Python](./2022/Leetcode/problem442.py)|[YouTube](https://www.youtube.com/watch?v=aMsSF1Il3IY)|
-|[535. Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)|Medium|[Python](./2023/Leetcode/problem535.py)|[YouTube](https://www.youtube.com/watch?v=VyBOaboQLGc)|
 |[766. Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/)|Easy|[Python](./2023/Leetcode/problem766.py)|[YouTube](https://www.youtube.com/watch?v=47tY6v-kW5Q)|
 
 <a id="two-pointers"></a>
@@ -69,7 +69,6 @@
 |[22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|Medium|[Python](./2023/Leetcode/problem22.py)|[YouTube](https://www.youtube.com/watch?v=s9fokUqJ76A)|
 |[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)|Easy|[Python](./2023/Leetcode/problem94.py)|[YouTube](https://www.youtube.com/watch?v=g_S5WuasWUE)|
 |[150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|Medium|[Python](./2023/Leetcode/problem150.py)|[YouTube](https://www.youtube.com/watch?v=iu0082c4HDE)|
-|[155. Min Stack](https://leetcode.com/problems/min-stack/)|Medium|[Python](./2023/Leetcode/problem155.py)|[YouTube](https://www.youtube.com/watch?v=qkLl7nAwDPo)|
 |[1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)|Easy|[Python](./2023/Leetcode/problem1047.py)|[YouTube](https://www.youtube.com/watch?v=hXEEr5WekSQ)|
 |[1209. Remove All Adjacent Duplicates In String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/)|Medium|[Python](./2023/Leetcode/problem1209.py)|[YouTube](https://www.youtube.com/watch?v=w6LcypDgC4w)|
 |[1614. Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/)|Easy|[Python](./2023/Leetcode/problem1614.py)|[YouTube](https://www.youtube.com/watch?v=kUp-gqHzk6c)|
@@ -128,8 +127,20 @@
 |[1302. Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/)|Medium|[C++](./2022/Leetcode/problem1302.cpp) [JavaScript](./2022/Leetcode/problem1302.js)|[YouTube](https://www.youtube.com/watch?v=hM9tzzlRcnM)|
 |[2265. Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/)|Medium|[Python](./2022/Leetcode/problem2265.cpp)|[YouTube](https://www.youtube.com/watch?v=U8Xt9m7pBb8)|
 
+<a id="design"></a>
+### 8. Design
+[🔼 Back to top](#top)
+
+|Problem|Difficulty|Code Solution|Video Solution
+|-|-|-|-
+|[155. Min Stack](https://leetcode.com/problems/min-stack/)|Medium|[Python](./2023/Leetcode/problem155.py)|[YouTube](https://www.youtube.com/watch?v=qkLl7nAwDPo)|
+|[380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)|Medium|[Python](./2023/Leetcode/problem380.py)|[YouTube](https://www.youtube.com/watch?v=j4KwhBziOpg)|
+|[535. Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)|Medium|[Python](./2023/Leetcode/problem535.py)|[YouTube](https://www.youtube.com/watch?v=VyBOaboQLGc)|
+|[703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|Easy|[Python](./2023/Leetcode/problem703.py)|[YouTube](https://www.youtube.com/watch?v=hOjcdrqMoQ8)|
+|[1603. Design Parking System](https://leetcode.com/problems/design-parking-system/)|Easy|[C++](./2022/Leetcode/problem1603.cpp)|[YouTube](https://www.youtube.com/watch?v=d5zCHesOrSk)|
+
 <a id="tries"></a>
-### 8. Tries
+### 9. Tries
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -137,7 +148,7 @@
 |[14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|Easy|[Python](./2023/Leetcode/problem14.py)|[YouTube](https://www.youtube.com/watch?v=0sWShKIJoo4)|
 
 <a id="backtracking"></a>
-### 9. Backtracking
+### 10. Backtracking
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -147,16 +158,15 @@
 |[78. Subsets](https://leetcode.com/problems/subsets/)|Medium|[Python](./2023/Leetcode/problem78.py)|[YouTube](https://www.youtube.com/watch?v=REOH22Xwdkk)|
 
 <a id="heap-priority-queue"></a>
-### 10. Heap / Priority Queue
+### 11. Heap / Priority Queue
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
 |[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|Medium|[Python](./2023/Leetcode/problem215.py)|[YouTube](https://www.youtube.com/watch?v=XEmy13g1Qxc)|
-|[703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|Easy|[Python](./2023/Leetcode/problem703.py)|[YouTube](https://www.youtube.com/watch?v=hOjcdrqMoQ8)|
 
 <a id="graphs"></a>
-### 11. Graphs
+### 12. Graphs
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -166,7 +176,7 @@
 |[695. Max Area of Island](https://leetcode.com/problems/max-area-of-island/)|Medium|[Java](./2023/Leetcode/problem695.java) [Python](./2023/Leetcode/problem695.py)|[YouTube](https://www.youtube.com/watch?v=iJGr1OtmH0c)|
 
 <a id="1-d-dp"></a>
-### 12. 1-D Dynamic Programming
+### 13. 1-D Dynamic Programming
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -174,7 +184,7 @@
 |[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|Easy|[JavaScript](./2023/Leetcode/problem70.js)|[YouTube](https://www.youtube.com/watch?v=Y0lT9Fck7qI)|
 
 <a id="greedy"></a>
-### 13. Greedy
+### 14. Greedy
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -183,7 +193,7 @@
 |[134. Gas Station](https://leetcode.com/problems/gas-station/)|Medium|[Python](./2023/Leetcode/problem134.py)|[YouTube](https://www.youtube.com/watch?v=lJwbPZGo05A)|
 
 <a id="2-d-dp"></a>
-### 14. 2-D Dynamic Programming
+### 15. 2-D Dynamic Programming
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -192,7 +202,7 @@
 |[64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|Medium|[Python](./2023/Leetcode/problem64.py)|[YouTube](https://www.youtube.com/watch?v=pGMsrvt0fpk)|
 
 <a id="bit-manipulation"></a>
-### 15. Bit Manipulation
+### 16. Bit Manipulation
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -206,7 +216,7 @@
 |[2433. Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/)|Medium|[Python](./2022/Leetcode/problem2433.py)|[YouTube](https://www.youtube.com/watch?v=idcT-p_DDrI)|
 
 <a id="math-geometry"></a>
-### 16. Math & Geometry
+### 17. Math & Geometry
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
