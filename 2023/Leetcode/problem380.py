@@ -17,10 +17,7 @@ class RandomizedSet:
         
         index = self.locations[val]
         if index != len(self.locations) - 1:
-            temp = self.myList[index]
-            self.myList[index] = self.myList[-1]
-            self.myList[-1] = temp
-
+            self.myList[index], self.myList[-1] = self.myList[-1], self.myList[index]
             self.locations[self.myList[index]] = index
         
         self.locations.pop(val)
