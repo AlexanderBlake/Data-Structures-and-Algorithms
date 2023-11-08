@@ -191,6 +191,7 @@
 |-|-|-|-
 |[122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|Medium|[JavaScript](./2023/Leetcode/problem122.js) [Python](./2023/Leetcode/problem122.py)|[YouTube](https://www.youtube.com/watch?v=3SJ3pUkPQMc)|
 |[134. Gas Station](https://leetcode.com/problems/gas-station/)|Medium|[Python](./2023/Leetcode/problem134.py)|[YouTube](https://www.youtube.com/watch?v=lJwbPZGo05A)|
+|[2571. Minimum Operations to Reduce an Integer to 0](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/)|Medium|[Python](./2023/Leetcode/problem2571.py)|[YouTube](https://www.youtube.com/watch?v=O3VbqTLzTu8)|
 
 <a id="2-d-dp"></a>
 ### 15. 2-D Dynamic Programming
