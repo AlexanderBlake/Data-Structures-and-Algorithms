@@ -41,7 +41,7 @@
 |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)|Easy|[Python](./2023/Leetcode/problem242.py)|[YouTube](https://www.youtube.com/watch?v=9UtInBqnCgA)|
 |[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)|Medium|[Python](./2023/Leetcode/problem347.py)|[YouTube](https://www.youtube.com/watch?v=YPTqKIgVk-k)|
 |[442. Find all Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)|Medium|[Python](./2022/Leetcode/problem442.py)|[YouTube](https://www.youtube.com/watch?v=aMsSF1Il3IY)|
-|[766. Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/)|Easy|[Python](./2023/Leetcode/problem766.py)|[YouTube](https://www.youtube.com/watch?v=47tY6v-kW5Q)|
+|[766. Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/)|Easy|[JavaScript](./2023/Leetcode/problem766.js) [Python](./2023/Leetcode/problem766.py)|[YouTube](https://www.youtube.com/watch?v=47tY6v-kW5Q)|
 
 <a id="two-pointers"></a>
 ### 2. Two Pointers
