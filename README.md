@@ -43,6 +43,7 @@
 |[442. Find all Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)|Medium|[Python](./2022/Leetcode/problem442.py)|[YouTube](https://www.youtube.com/watch?v=aMsSF1Il3IY)|
 |[766. Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/)|Easy|[JavaScript](./2023/Leetcode/problem766.js) [Python](./2023/Leetcode/problem766.py)|[YouTube](https://www.youtube.com/watch?v=47tY6v-kW5Q)|
 |[1464. Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)|Easy|[Python](./2023/Leetcode/problem1464.py)|[YouTube](https://www.youtube.com/watch?v=iuXra1Eq5BQ)|
+|[2482. Difference Between Ones and Zeros in Row and Column](https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/)|Medium|[Python](./2023/Leetcode/problem2482.py)|[YouTube](https://www.youtube.com/watch?v=zBaJewbBamw)|
 
 <a id="two-pointers"></a>
 ### 2. Two Pointers
