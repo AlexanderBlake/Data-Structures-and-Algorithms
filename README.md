@@ -192,7 +192,7 @@
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
-|[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|Medium|[Python](./2023/Leetcode/problem53.py)|[YouTube](https://www.youtube.com/watch?v=5WZl3MMT0Eg)|
+|[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|Medium|[JavaScript](./2024/Leetcode/problem53.js) [Python](./2024/Leetcode/problem53.py)|[YouTube](https://www.youtube.com/watch?v=5WZl3MMT0Eg)|
 |[122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|Medium|[JavaScript](./2023/Leetcode/problem122.js) [Python](./2023/Leetcode/problem122.py)|[YouTube](https://www.youtube.com/watch?v=3SJ3pUkPQMc)|
 |[134. Gas Station](https://leetcode.com/problems/gas-station/)|Medium|[Python](./2023/Leetcode/problem134.py)|[YouTube](https://www.youtube.com/watch?v=lJwbPZGo05A)|
 |[2571. Minimum Operations to Reduce an Integer to 0](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/)|Medium|[Python](./2023/Leetcode/problem2571.py)|[YouTube](https://www.youtube.com/watch?v=O3VbqTLzTu8)|
@@ -234,6 +234,7 @@
 |[202. Happy Number](https://leetcode.com/problems/happy-number/)|Easy|[JavaScript](./2023/Leetcode/problem202.js) [Python](./2023/Leetcode/problem202.py)|[YouTube](https://www.youtube.com/watch?v=ljz85bxOYJ0)|
 |[258. Add Digits](https://leetcode.com/problems/add-digits/)|Easy|[JavaScript](./2023/Leetcode/problem258.js) [Python](./2023/Leetcode/problem258.py)|[YouTube](https://www.youtube.com/watch?v=gGEWzsYZalM)|
 |[412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)|Easy|[C++](./2022/Leetcode/problem412.cpp) [Java](./2022/Leetcode/problem412.java) [JavaScript](./2022/Leetcode/problem412.js)|[YouTube](https://www.youtube.com/watch?v=1t1_a1BZ04o)|
+|[509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)|Easy|[C++](./2022/Leetcode/problem509.cpp)[JavaScript](./2024/Leetcode/problem509.js)|[YouTube](https://www.youtube.com/watch?v=kIzjdvU_QIU)|
 
 <a id="data-structures"></a>
 ## Data Structures
