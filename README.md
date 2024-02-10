@@ -125,6 +125,7 @@
 |[110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)|Easy|[C++](./2022/Leetcode/problem110.cpp)|[YouTube](https://www.youtube.com/watch?v=QfJsau0ItOY)|
 |[226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|Easy|[Python](./2023/Leetcode/problem226.py)|[YouTube](https://www.youtube.com/watch?v=OnSn2XEQ4MY)|
 |[230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)|Medium|[Python](./2023/Leetcode/problem230.py)|[YouTube](https://www.youtube.com/watch?v=5LUXSvjmGCw)|
+|[543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)|Easy|[Python](./2024/Leetcode/problem543.py)|[YouTube](https://www.youtube.com/watch?v=bkxqA8Rfv04)|
 |[863. All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)|Medium|[Java](./2023/Leetcode/problem863.java) [Python](./2023/Leetcode/problem863.py)|[YouTube](https://www.youtube.com/watch?v=LQh2g3ygCVU)|
 |[1038. Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)|Medium|[C++](./2022/Leetcode/problem1038.cpp)|[YouTube](https://www.youtube.com/watch?v=4nnl3FrwEYM)|
 |[1302. Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/)|Medium|[C++](./2022/Leetcode/problem1302.cpp) [JavaScript](./2022/Leetcode/problem1302.js)|[YouTube](https://www.youtube.com/watch?v=hM9tzzlRcnM)|
