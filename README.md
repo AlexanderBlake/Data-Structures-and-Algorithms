@@ -37,7 +37,7 @@
 |[36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)|Medium|[Python](./2023/Leetcode/problem36.py)|[YouTube](https://www.youtube.com/watch?v=TjFXEUCMqI8)|
 |[49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)|Medium|[Python](./2023/Leetcode/problem49.py)|[YouTube](https://www.youtube.com/watch?v=vzdNOK2oB2E)|
 |[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)|Easy|[Python](./2023/Leetcode/problem88.py)|[YouTube](https://www.youtube.com/watch?v=P1Ic85RarKY)|
-|[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|Easy|[JavaScript](./2023/Leetcode/problem217.js) [Python](./2023/Leetcode/problem217.py)|[YouTube](https://www.youtube.com/watch?v=3OamzN90kPg)|
+|[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|Easy|[C++](./2024/Leetcode/problem217.cpp) [JavaScript](./2023/Leetcode/problem217.js) [Python](./2023/Leetcode/problem217.py)|[YouTube](https://www.youtube.com/watch?v=3OamzN90kPg)|
 |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)|Easy|[Python](./2023/Leetcode/problem242.py)|[YouTube](https://www.youtube.com/watch?v=9UtInBqnCgA)|
 |[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)|Medium|[Python](./2023/Leetcode/problem347.py)|[YouTube](https://www.youtube.com/watch?v=YPTqKIgVk-k)|
 |[442. Find all Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)|Medium|[Python](./2022/Leetcode/problem442.py)|[YouTube](https://www.youtube.com/watch?v=aMsSF1Il3IY)|
@@ -193,7 +193,7 @@
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
-|[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|Medium|[JavaScript](./2024/Leetcode/problem53.js) [Python](./2024/Leetcode/problem53.py)|[YouTube](https://www.youtube.com/watch?v=5WZl3MMT0Eg)|
+|[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|Medium|[C++](./2024/Leetcode/problem53.cpp) [JavaScript](./2024/Leetcode/problem53.js) [Python](./2024/Leetcode/problem53.py)|[YouTube](https://www.youtube.com/watch?v=5WZl3MMT0Eg)|
 |[122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|Medium|[JavaScript](./2023/Leetcode/problem122.js) [Python](./2023/Leetcode/problem122.py)|[YouTube](https://www.youtube.com/watch?v=3SJ3pUkPQMc)|
 |[134. Gas Station](https://leetcode.com/problems/gas-station/)|Medium|[Python](./2023/Leetcode/problem134.py)|[YouTube](https://www.youtube.com/watch?v=lJwbPZGo05A)|
 |[2571. Minimum Operations to Reduce an Integer to 0](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/)|Medium|[Python](./2023/Leetcode/problem2571.py)|[YouTube](https://www.youtube.com/watch?v=O3VbqTLzTu8)|
