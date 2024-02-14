@@ -56,7 +56,7 @@
 |[27. Remove Element](https://leetcode.com/problems/remove-element/)|Easy|[Python](./2023/Leetcode/problem27.py)|[YouTube](https://www.youtube.com/watch?v=Pcd1ii9P9ZI)|
 |[28. Find the Index of the First Occurence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)|Easy|[Python](./2023/Leetcode/problem28.py)|[YouTube](https://www.youtube.com/watch?v=Gjkhm1gYIMw)|
 |[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|Easy|[JavaScript](./2023/Leetcode/problem125.js)|[YouTube](https://www.youtube.com/watch?v=jJXJ16kPFWg)|
-|[167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|Medium|[Python](./2023/Leetcode/problem167.py)|[YouTube](https://www.youtube.com/watch?v=cQ1Oz4ckceM)|
+|[167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|Medium|[JavaScript](./2024/Leetcode/problem167.js) [Python](./2023/Leetcode/problem167.py)|[YouTube](https://www.youtube.com/watch?v=cQ1Oz4ckceM)|
 |[234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)|Easy|[Python](./2023/Leetcode/problem234.py)|[YouTube](https://www.youtube.com/watch?v=yOzXms1J6Nk)|
 |[344. Reverse String](https://leetcode.com/problems/reverse-string/)|Easy|[C++](./2022/Leetcode/problem344.cpp) [JavaScript](./2022/Leetcode/problem344.js) [Python](./2023/Leetcode/problem344.py)|[YouTube](https://www.youtube.com/watch?v=_d0T_2Lk2qA)|
 |[2130. Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/)|Medium|[Python](./2023/Leetcode/problem2130.py)|[YouTube](https://www.youtube.com/watch?v=doj95MelfSA)|
@@ -118,7 +118,7 @@
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
 |[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|Medium|[C++](./2022/Leetcode/problem98.cpp)|[YouTube](https://www.youtube.com/watch?v=s6ATEkipzow)|
-|[100. Same Tree](https://leetcode.com/problems/same-tree/)|Easy|[C++](./2022/Leetcode/problem100.cpp)|[YouTube](https://www.youtube.com/watch?v=vRbbcKXCxOw)|
+|[100. Same Tree](https://leetcode.com/problems/same-tree/)|Easy|[C++](./2022/Leetcode/problem100.cpp) [JavaScript](./2024/Leetcode/problem100.js) [Python](./2024/Leetcode/problem100.py)|[YouTube](https://www.youtube.com/watch?v=vRbbcKXCxOw)|
 |[102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|Medium|[Python](./2023/Leetcode/problem102.py)|[YouTube](https://www.youtube.com/watch?v=6ZnyEApgFYg)|
 |[103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|Medium|[Python](./2023/Leetcode/problem103.py)|[YouTube](https://www.youtube.com/watch?v=igbboQbiwqw)|
 |[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|Easy|[C++](./2022/Leetcode/problem104.cpp) [JavaScript](./2023/Leetcode/problem104.js)|[YouTube](https://www.youtube.com/watch?v=hTM3phVI6YQ)|
