@@ -67,7 +67,7 @@
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
-|[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|Easy|[JavaScript](./2023/Leetcode/problem20.js)|[YouTube](https://www.youtube.com/watch?v=WTzjTskDFMg)|
+|[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|Easy|[C++](./2024/Leetcode/problem20.cpp) [JavaScript](./2023/Leetcode/problem20.js) [Python](./2024/Leetcode/problem20.py)|[YouTube](https://www.youtube.com/watch?v=WTzjTskDFMg)|
 |[22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|Medium|[Python](./2023/Leetcode/problem22.py)|[YouTube](https://www.youtube.com/watch?v=s9fokUqJ76A)|
 |[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)|Easy|[Python](./2023/Leetcode/problem94.py)|[YouTube](https://www.youtube.com/watch?v=g_S5WuasWUE)|
 |[150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|Medium|[Python](./2023/Leetcode/problem150.py)|[YouTube](https://www.youtube.com/watch?v=iu0082c4HDE)|
