@@ -186,6 +186,7 @@
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
 |[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|Easy|[JavaScript](./2023/Leetcode/problem70.js)|[YouTube](https://www.youtube.com/watch?v=Y0lT9Fck7qI)|
+|[392. Is Subsequence](https://leetcode.com/problems/is-subsequence/)|Easy|[Python](./2024/Leetcode/problem70.py)|[YouTube](https://www.youtube.com/watch?v=99RVfqklbCE)|
 
 <a id="greedy"></a>
 ### 14. Greedy
