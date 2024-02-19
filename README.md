@@ -87,7 +87,7 @@
 |[35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)|Easy|[Python](./2023/Leetcode/problem35.py)|[YouTube](https://www.youtube.com/watch?v=K-RYzDZkzCI)|
 |[69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)|Easy|[C++](./2024/Leetcode/problem69.cpp) [JavaScript](./2023/Leetcode/problem69.js) [Python](./2023/Leetcode/problem69.py)|[YouTube](https://www.youtube.com/watch?v=zdMhGxRWutQ)|
 |[374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)|Easy|[JavaScript](./2022/Leetcode/problem374.js) [Python](./2022/Leetcode/problem374.py)|[YouTube](https://www.youtube.com/watch?v=xW4QsTtaCa4)|
-|[700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)|Easy|[Python](./2024/Leetcode/problem700.py)|[YouTube](https://www.youtube.com/watch?v=s4DPM8ct1pI)|
+|[700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)|Easy|[Python](./2024/Leetcode/problem700.py)|[YouTube](https://www.youtube.com/watch?v=Lr2oxJlnLMM)|
 |[704. Binary Search](https://leetcode.com/problems/binary-search/)|Easy|[JavaScript](./2023/Leetcode/problem704.js)|[YouTube](https://www.youtube.com/watch?v=s4DPM8ct1pI)|
 
 <a id="sliding-window"></a>
