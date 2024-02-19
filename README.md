@@ -37,6 +37,7 @@
 |[36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)|Medium|[Python](./2023/Leetcode/problem36.py)|[YouTube](https://www.youtube.com/watch?v=TjFXEUCMqI8)|
 |[49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)|Medium|[Python](./2023/Leetcode/problem49.py)|[YouTube](https://www.youtube.com/watch?v=vzdNOK2oB2E)|
 |[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)|Easy|[Python](./2023/Leetcode/problem88.py)|[YouTube](https://www.youtube.com/watch?v=P1Ic85RarKY)|
+|[205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|Easy|[Python](./2024/Leetcode/problem205.py)|[YouTube](https://www.youtube.com/watch?v=7yF-U1hLEqQ)|
 |[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|Easy|[C++](./2024/Leetcode/problem217.cpp) [JavaScript](./2023/Leetcode/problem217.js) [Python](./2023/Leetcode/problem217.py)|[YouTube](https://www.youtube.com/watch?v=3OamzN90kPg)|
 |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)|Easy|[Python](./2023/Leetcode/problem242.py)|[YouTube](https://www.youtube.com/watch?v=9UtInBqnCgA)|
 |[290. Word Pattern](https://leetcode.com/problems/word-pattern/)|Easy|[Python](./2024/Leetcode/problem290.py)|[YouTube](https://www.youtube.com/watch?v=W_akoecmCbM)|
