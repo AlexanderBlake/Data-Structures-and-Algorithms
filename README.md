@@ -45,6 +45,7 @@
 |[442. Find all Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)|Medium|[Python](./2022/Leetcode/problem442.py)|[YouTube](https://www.youtube.com/watch?v=aMsSF1Il3IY)|
 |[766. Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/)|Easy|[JavaScript](./2023/Leetcode/problem766.js) [Python](./2023/Leetcode/problem766.py)|[YouTube](https://www.youtube.com/watch?v=47tY6v-kW5Q)|
 |[1464. Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)|Easy|[Python](./2023/Leetcode/problem1464.py)|[YouTube](https://www.youtube.com/watch?v=iuXra1Eq5BQ)|
+|[1732. Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)|Easy|[Python](./2023/Leetcode/problem1732.py)|[YouTube](https://www.youtube.com/watch?v=SGNCPI84IOM)|
 |[2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/)|Easy|[Python](./2024/Leetcode/problem2215.py)|[YouTube](https://www.youtube.com/watch?v=a4wqKR-znBE)|
 |[2482. Difference Between Ones and Zeros in Row and Column](https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/)|Medium|[Python](./2023/Leetcode/problem2482.py)|[YouTube](https://www.youtube.com/watch?v=zBaJewbBamw)|
 
