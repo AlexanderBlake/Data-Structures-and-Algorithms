@@ -39,10 +39,12 @@
 |[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)|Easy|[Python](./2023/Leetcode/problem88.py)|[YouTube](https://www.youtube.com/watch?v=P1Ic85RarKY)|
 |[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|Easy|[C++](./2024/Leetcode/problem217.cpp) [JavaScript](./2023/Leetcode/problem217.js) [Python](./2023/Leetcode/problem217.py)|[YouTube](https://www.youtube.com/watch?v=3OamzN90kPg)|
 |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)|Easy|[Python](./2023/Leetcode/problem242.py)|[YouTube](https://www.youtube.com/watch?v=9UtInBqnCgA)|
+|[290. Word Pattern](https://leetcode.com/problems/word-pattern/)|Easy|[Python](./2024/Leetcode/problem290.py)|[YouTube](https://www.youtube.com/watch?v=W_akoecmCbM)|
 |[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)|Medium|[Python](./2023/Leetcode/problem347.py)|[YouTube](https://www.youtube.com/watch?v=YPTqKIgVk-k)|
 |[442. Find all Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)|Medium|[Python](./2022/Leetcode/problem442.py)|[YouTube](https://www.youtube.com/watch?v=aMsSF1Il3IY)|
 |[766. Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/)|Easy|[JavaScript](./2023/Leetcode/problem766.js) [Python](./2023/Leetcode/problem766.py)|[YouTube](https://www.youtube.com/watch?v=47tY6v-kW5Q)|
 |[1464. Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)|Easy|[Python](./2023/Leetcode/problem1464.py)|[YouTube](https://www.youtube.com/watch?v=iuXra1Eq5BQ)|
+|[2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/)|Easy|[Python](./2024/Leetcode/problem2215.py)|[YouTube](https://www.youtube.com/watch?v=a4wqKR-znBE)|
 |[2482. Difference Between Ones and Zeros in Row and Column](https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/)|Medium|[Python](./2023/Leetcode/problem2482.py)|[YouTube](https://www.youtube.com/watch?v=zBaJewbBamw)|
 
 <a id="two-pointers"></a>
@@ -85,6 +87,7 @@
 |[35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)|Easy|[Python](./2023/Leetcode/problem35.py)|[YouTube](https://www.youtube.com/watch?v=K-RYzDZkzCI)|
 |[69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)|Easy|[C++](./2024/Leetcode/problem69.cpp) [JavaScript](./2023/Leetcode/problem69.js) [Python](./2023/Leetcode/problem69.py)|[YouTube](https://www.youtube.com/watch?v=zdMhGxRWutQ)|
 |[374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)|Easy|[JavaScript](./2022/Leetcode/problem374.js) [Python](./2022/Leetcode/problem374.py)|[YouTube](https://www.youtube.com/watch?v=xW4QsTtaCa4)|
+|[700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)|Easy|[Python](./2024/Leetcode/problem700.py)|[YouTube](https://www.youtube.com/watch?v=s4DPM8ct1pI)|
 |[704. Binary Search](https://leetcode.com/problems/binary-search/)|Easy|[JavaScript](./2023/Leetcode/problem704.js)|[YouTube](https://www.youtube.com/watch?v=s4DPM8ct1pI)|
 
 <a id="sliding-window"></a>
@@ -95,6 +98,7 @@
 |-|-|-|-
 |[3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|Medium|[Python](./2022/Leetcode/problem3.py)|[YouTube](https://www.youtube.com/watch?v=wiGpQwVHdE0)|
 |[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|Easy|[JavaScript](./2023/Leetcode/problem121.js)|[YouTube](https://www.youtube.com/watch?v=1pkOgXD63yU)|
+|[643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)|Easy|[Python](./2024/Leetcode/problem643.py)|[YouTube](https://www.youtube.com/watch?v=4mBuAZ2Zi0k)|
 
 <a id="linked-list"></a>
 ### 6. Linked List
