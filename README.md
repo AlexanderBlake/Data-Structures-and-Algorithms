@@ -179,6 +179,7 @@
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
 |[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|Medium|[Python](./2023/Leetcode/problem215.py)|[YouTube](https://www.youtube.com/watch?v=XEmy13g1Qxc)|
+|[973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)|Medium|[Python](./2024/Leetcode/problem973.py)|[YouTube](https://www.youtube.com/watch?v=rI2EBUEMfTk)|
 
 <a id="graphs"></a>
 ### 12. Graphs
