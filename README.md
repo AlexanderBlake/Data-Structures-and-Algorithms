@@ -115,7 +115,7 @@
 |[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|Easy|[Python](./2023/Leetcode/problem21.py)|[YouTube](https://www.youtube.com/watch?v=XIdigk956u0)|
 |[83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)|Easy|[Python](./2023/Leetcode/problem83.py)|[YouTube](https://www.youtube.com/watch?v=p10f-VpO4nE)|
 |[116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|Medium|[Python](./2023/Leetcode/problem116.py)|[YouTube](https://www.youtube.com/watch?v=U4hFQCa1Cq0)|
-|[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|Easy|[JavaScript](./2023/Leetcode/problem141.js)|[YouTube](https://www.youtube.com/watch?v=gBTe7lFR3vc)|
+|[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|Easy|[JavaScript](./2023/Leetcode/problem141.js) [Python](./2023/Leetcode/problem141.py)|[YouTube](https://www.youtube.com/watch?v=gBTe7lFR3vc)|
 |[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|Easy|[Python](./2023/Leetcode/problem206.py)|[YouTube](https://www.youtube.com/watch?v=G0_I-ZF0S38)|
 |[237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|Medium|[C++](./2022/Leetcode/problem237.cpp)|[YouTube](https://www.youtube.com/watch?v=urzP1YbgUnU)|
 
