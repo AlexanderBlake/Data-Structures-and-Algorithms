@@ -112,7 +112,7 @@
 |-|-|-|-
 |[2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|Medium|[Python](./2023/Leetcode/problem2.py)|[YouTube](https://www.youtube.com/watch?v=XVuQxVej6y8)|
 |[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|Medium|[Python](./2023/Leetcode/problem19.py)|[YouTube](https://www.youtube.com/watch?v=XIdigk956u0)|
-|[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|Easy|[Python](./2023/Leetcode/problem21.py)|[YouTube](https://www.youtube.com/watch?v=XIdigk956u0)|
+|[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|Easy|[JavaScript](./2024/Leetcode/problem21.js) [Python](./2023/Leetcode/problem21.py)|[YouTube](https://www.youtube.com/watch?v=XIdigk956u0)|
 |[83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)|Easy|[Python](./2023/Leetcode/problem83.py)|[YouTube](https://www.youtube.com/watch?v=p10f-VpO4nE)|
 |[116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|Medium|[Python](./2023/Leetcode/problem116.py)|[YouTube](https://www.youtube.com/watch?v=U4hFQCa1Cq0)|
 |[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|Easy|[JavaScript](./2023/Leetcode/problem141.js) [Python](./2023/Leetcode/problem141.py)|[YouTube](https://www.youtube.com/watch?v=gBTe7lFR3vc)|
