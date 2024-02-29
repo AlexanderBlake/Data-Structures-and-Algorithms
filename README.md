@@ -54,15 +54,8 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|Easy|[Python](./2024/Leetcode/problem205.py)|[YouTube](https://www.youtube.com/watch?v=7yF-U1hLEqQ)|
 |[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|Easy|[C++](./2024/Leetcode/problem217.cpp) [JavaScript](./2023/Leetcode/problem217.js) [Python](./2023/Leetcode/problem217.py)|[YouTube](https://www.youtube.com/watch?v=3OamzN90kPg)|
 |[228. Summary Ranges](https://leetcode.com/problems/summary-ranges/)|Easy|[Python](./2024/Leetcode/problem228.py)|[YouTube](https://www.youtube.com/watch?v=AjE4x3Yh9xc)|
-|[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)|Easy|[Python](./2023/Leetcode/problem242.py)|[YouTube](https://www.youtube.com/watch?v=9UtInBqnCgA)|
-|[290. Word Pattern](https://leetcode.com/problems/word-pattern/)|Easy|[Python](./2024/Leetcode/problem290.py)|[YouTube](https://www.youtube.com/watch?v=W_akoecmCbM)|
 |[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)|Medium|[Python](./2023/Leetcode/problem347.py)|[YouTube](https://www.youtube.com/watch?v=YPTqKIgVk-k)|
 |[442. Find all Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)|Medium|[Python](./2022/Leetcode/problem442.py)|[YouTube](https://www.youtube.com/watch?v=aMsSF1Il3IY)|
-|[724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)|Easy|[Python](./2024/Leetcode/problem724.py)|[YouTube](https://www.youtube.com/watch?v=u89i60lYx8U)|
-|[766. Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/)|Easy|[JavaScript](./2023/Leetcode/problem766.js) [Python](./2023/Leetcode/problem766.py)|[YouTube](https://www.youtube.com/watch?v=47tY6v-kW5Q)|
-|[1464. Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)|Easy|[Python](./2023/Leetcode/problem1464.py)|[YouTube](https://www.youtube.com/watch?v=iuXra1Eq5BQ)|
-|[1732. Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)|Easy|[JavaScript](./2024/Leetcode/problem1732.js) [Python](./2023/Leetcode/problem1732.py)|[YouTube](https://www.youtube.com/watch?v=SGNCPI84IOM)|
-|[2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/)|Easy|[Python](./2024/Leetcode/problem2215.py)|[YouTube](https://www.youtube.com/watch?v=a4wqKR-znBE)|
 |[2482. Difference Between Ones and Zeros in Row and Column](https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/)|Medium|[Python](./2023/Leetcode/problem2482.py)|[YouTube](https://www.youtube.com/watch?v=zBaJewbBamw)|
 
 <a id="two-pointers"></a>
@@ -145,14 +138,8 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|Medium|[Python](./2023/Leetcode/problem102.py)|[YouTube](https://www.youtube.com/watch?v=6ZnyEApgFYg)|
 |[103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|Medium|[Python](./2023/Leetcode/problem103.py)|[YouTube](https://www.youtube.com/watch?v=igbboQbiwqw)|
 |[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|Easy|[C++](./2022/Leetcode/problem104.cpp) [JavaScript](./2023/Leetcode/problem104.js)|[YouTube](https://www.youtube.com/watch?v=hTM3phVI6YQ)|
-|[110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)|Easy|[C++](./2022/Leetcode/problem110.cpp)|[YouTube](https://www.youtube.com/watch?v=QfJsau0ItOY)|
-|[226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|Easy|[Python](./2023/Leetcode/problem226.py)|[YouTube](https://www.youtube.com/watch?v=OnSn2XEQ4MY)|
 |[230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)|Medium|[Python](./2023/Leetcode/problem230.py)|[YouTube](https://www.youtube.com/watch?v=5LUXSvjmGCw)|
-|[530. Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) / [783. Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)|Easy|[Python](./2024/Leetcode/problem530.py)|[YouTube](https://www.youtube.com/watch?v=joxx4hTYwcw)|
-|[543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)|Easy|[Python](./2024/Leetcode/problem543.py)|[YouTube](https://www.youtube.com/watch?v=bkxqA8Rfv04)|
-|[637. Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|Easy|[Python](./2024/Leetcode/problem637.py)|[YouTube](https://www.youtube.com/watch?v=NW3aCTwdXxs)|
 |[863. All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)|Medium|[Java](./2023/Leetcode/problem863.java) [Python](./2023/Leetcode/problem863.py)|[YouTube](https://www.youtube.com/watch?v=LQh2g3ygCVU)|
-|[872. Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)|Easy|[Python](./2024/Leetcode/problem872.py)|[YouTube](https://www.youtube.com/watch?v=Nr8dbnL0_cM)|
 |[1038. Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)|Medium|[C++](./2022/Leetcode/problem1038.cpp)|[YouTube](https://www.youtube.com/watch?v=4nnl3FrwEYM)|
 |[1302. Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/)|Medium|[C++](./2022/Leetcode/problem1302.cpp) [JavaScript](./2022/Leetcode/problem1302.js)|[YouTube](https://www.youtube.com/watch?v=hM9tzzlRcnM)|
 |[2265. Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/)|Medium|[Python](./2022/Leetcode/problem2265.cpp)|[YouTube](https://www.youtube.com/watch?v=U8Xt9m7pBb8)|
