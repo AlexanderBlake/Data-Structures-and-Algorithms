@@ -212,6 +212,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|Medium|[C++](./2024/Leetcode/problem53.cpp) [JavaScript](./2024/Leetcode/problem53.js) [Python](./2024/Leetcode/problem53.py)|[YouTube](https://www.youtube.com/watch?v=5WZl3MMT0Eg)|
 |[122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|Medium|[JavaScript](./2023/Leetcode/problem122.js) [Python](./2023/Leetcode/problem122.py)|[YouTube](https://www.youtube.com/watch?v=3SJ3pUkPQMc)|
 |[134. Gas Station](https://leetcode.com/problems/gas-station/)|Medium|[Python](./2023/Leetcode/problem134.py)|[YouTube](https://www.youtube.com/watch?v=lJwbPZGo05A)|
+|[2405. Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/)|Medium|[Python](./2024/Leetcode/problem2405.py)|[YouTube](https://www.youtube.com/watch?v=CKZPdiXiQf0)|
 |[2571. Minimum Operations to Reduce an Integer to 0](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/)|Medium|[Python](./2023/Leetcode/problem2571.py)|[YouTube](https://www.youtube.com/watch?v=O3VbqTLzTu8)|
 
 <a id="2-d-dp"></a>
