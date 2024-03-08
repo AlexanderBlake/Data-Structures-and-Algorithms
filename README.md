@@ -135,7 +135,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |-|-|-|-
 |[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|Medium|[C++](./2022/Leetcode/problem98.cpp)|[YouTube](https://www.youtube.com/watch?v=s6ATEkipzow)|
 |[100. Same Tree](https://leetcode.com/problems/same-tree/)|Easy|[C++](./2022/Leetcode/problem100.cpp) [JavaScript](./2024/Leetcode/problem100.js) [Python](./2024/Leetcode/problem100.py)|[YouTube](https://www.youtube.com/watch?v=vRbbcKXCxOw)|
-|[102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|Medium|[Python](./2023/Leetcode/problem102.py)|[YouTube](https://www.youtube.com/watch?v=6ZnyEApgFYg)|
+|[102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|Medium|[C++](./2024/Leetcode/problem102.cpp) [Python](./2023/Leetcode/problem102.py)|[YouTube](https://www.youtube.com/watch?v=6ZnyEApgFYg)|
 |[103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|Medium|[Python](./2023/Leetcode/problem103.py)|[YouTube](https://www.youtube.com/watch?v=igbboQbiwqw)|
 |[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|Easy|[C++](./2022/Leetcode/problem104.cpp) [JavaScript](./2023/Leetcode/problem104.js)|[YouTube](https://www.youtube.com/watch?v=hTM3phVI6YQ)|
 |[230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)|Medium|[Python](./2023/Leetcode/problem230.py)|[YouTube](https://www.youtube.com/watch?v=5LUXSvjmGCw)|
