@@ -191,6 +191,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
 |[200. Number of Islands](https://leetcode.com/problems/number-of-islands/)|Medium|[Java](./2023/Leetcode/problem200.java) [JavaScript](./2024/Leetcode/problem200.js) [Python](./2023/Leetcode/problem200.py)|[YouTube](https://www.youtube.com/watch?v=pV2kpPD66nE)|
+|[207. Course Schedule](https://leetcode.com/problems/course-schedule/)|Medium|[Python](./2024/Leetcode/problem207.py)|[YouTube](https://www.youtube.com/watch?v=EgI5nU9etnU)|
 |[399. Evaluate Divison](https://leetcode.com/problems/evaluate-division/)|Medium|[Python](./2023/Leetcode/problem399.py)|[YouTube](https://www.youtube.com/watch?v=Uei1fwDoyKk)|
 |[695. Max Area of Island](https://leetcode.com/problems/max-area-of-island/)|Medium|[Java](./2023/Leetcode/problem695.java) [Python](./2023/Leetcode/problem695.py)|[YouTube](https://www.youtube.com/watch?v=iJGr1OtmH0c)|
 
