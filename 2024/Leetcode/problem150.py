@@ -1,23 +1,7 @@
 class Solution:
-    def add(self, lVal, rVal):
-        return lVal + rVal
-
-
-    def subtract(self, lVal, rVal):
-        return lVal - rVal
-
-
-    def multiply(self, lVal, rVal):
-        return lVal * rVal
-
-
-    def divide(self, lVal, rVal):
-        return int(lVal / rVal)
-
-
     def evalRPN(self, tokens: List[str]) -> int:
         myStack = []
-        operators = {'+': self.add, '-': self.subtract, '*': self.multiply, '/': self.divide}
+        operators = {'+': lambda x, y: x + y, '-': lambda x, y: x - y, '*': lambda x, y: x * y, '/': lambda x, y: int(x / y)}
 
         for token in tokens:
             if token not in operators:
@@ -27,4 +11,3 @@ class Solution:
                 myStack.append(operators[token](myStack.pop(), rVal))
 
         return myStack[-1]
-            
