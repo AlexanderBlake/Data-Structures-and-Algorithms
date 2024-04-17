@@ -219,8 +219,16 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[2405. Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/)|Medium|[C++](./2024/Leetcode/problem2405.cpp) [Python](./2024/Leetcode/problem2405.py)|[YouTube](https://www.youtube.com/watch?v=CKZPdiXiQf0)|
 |[2571. Minimum Operations to Reduce an Integer to 0](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/)|Medium|[Python](./2023/Leetcode/problem2571.py)|[YouTube](https://www.youtube.com/watch?v=O3VbqTLzTu8)|
 
+<a id="advanced-graphs"></a>
+### 15. Advanced Graphs
+[🔼 Back to top](#top)
+
+|Problem|Difficulty|Code Solution|Video Solution
+|-|-|-|-
+|[1584. Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)|Medium|[Python](./2024/Leetcode/problem1584.py)|[YouTube](https://www.youtube.com/watch?v=f7JOBJIC-NA)|
+
 <a id="2-d-dp"></a>
-### 15. 2-D Dynamic Programming
+### 16. 2-D Dynamic Programming
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -229,7 +237,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|Medium|[Python](./2023/Leetcode/problem64.py)|[YouTube](https://www.youtube.com/watch?v=pGMsrvt0fpk)|
 
 <a id="bit-manipulation"></a>
-### 16. Bit Manipulation
+### 17. Bit Manipulation
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -243,7 +251,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[2433. Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/)|Medium|[Python](./2022/Leetcode/problem2433.py)|[YouTube](https://www.youtube.com/watch?v=idcT-p_DDrI)|
 
 <a id="math-geometry"></a>
-### 17. Math & Geometry
+### 18. Math & Geometry
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
