@@ -37,9 +37,10 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 12. [**Graphs**](#graphs)
 13. [**1-D Dynamic Programming**](#1-d-dp)
 14. [**Greedy**](#greedy)
-15. [**2-D Dynamic Programming**](#2-d-dp)
-16. [**Bit Manipulation**](#bit-manipulation)
-17. [**Math & Geometry**](#math-geometry)
+15. [**Advanced Graphs**](#advanced-graphs)
+16. [**2-D Dynamic Programming**](#2-d-dp)
+17. [**Bit Manipulation**](#bit-manipulation)
+18. [**Math & Geometry**](#math-geometry)
 
 <a id="arrays-hashing"></a>
 ### 1. Arrays & Hashing
