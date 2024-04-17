@@ -264,7 +264,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)|Medium|[Python](./2023/Leetcode/problem73.py)|[YouTube](https://www.youtube.com/watch?v=T41rL0L3Pnw)|
 |[202. Happy Number](https://leetcode.com/problems/happy-number/)|Easy|[JavaScript](./2023/Leetcode/problem202.js) [Python](./2023/Leetcode/problem202.py)|[YouTube](https://www.youtube.com/watch?v=ljz85bxOYJ0)|
 |[258. Add Digits](https://leetcode.com/problems/add-digits/)|Easy|[JavaScript](./2023/Leetcode/problem258.js) [Python](./2023/Leetcode/problem258.py)|[YouTube](https://www.youtube.com/watch?v=gGEWzsYZalM)|
-|[412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)|Easy|[C++](./2022/Leetcode/problem412.cpp) [Java](./2022/Leetcode/problem412.java) [JavaScript](./2022/Leetcode/problem412.js) [Python](./2024/Leetcode/problem412.py)|[YouTube](https://www.youtube.com/watch?v=1t1_a1BZ04o)|
+|[412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)|Easy|[C++](./2022/Leetcode/problem412.cpp) [Java](./2022/Leetcode/problem412.java) [JavaScript](./2024/Leetcode/problem412.js) [Python](./2024/Leetcode/problem412.py) [TypeScript](./2024/Leetcode/problem412.ts)|[YouTube](https://www.youtube.com/watch?v=1t1_a1BZ04o)|
 |[509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)|Easy|[C++](./2022/Leetcode/problem509.cpp) [JavaScript](./2024/Leetcode/problem509.js)|[YouTube](https://www.youtube.com/watch?v=kIzjdvU_QIU)|
 |[1492. The kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n/)|Medium|[Python](./2024/Leetcode/problem1492.py)|[YouTube](https://www.youtube.com/watch?v=UzVQ9zRVsWg)|
 
