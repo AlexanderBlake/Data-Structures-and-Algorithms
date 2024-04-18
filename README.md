@@ -50,11 +50,11 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |-|-|-|-
 |[1. Two Sum](https://leetcode.com/problems/two-sum/)|Easy|[C++](./2022/Leetcode/problem1.cpp) [JavaScript](./2023/Leetcode/2Sum.js) [Python](./2023/Leetcode/problem1.py)|[YouTube](https://www.youtube.com/watch?v=KLlXCFG5TnA)|
 |[36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)|Medium|[Python](./2023/Leetcode/problem36.py)|[YouTube](https://www.youtube.com/watch?v=TjFXEUCMqI8)|
+|[41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|Hard|[Python](./2024/Leetcode/problem41.py)|[YouTube](https://www.youtube.com/watch?v=8g78yfzMlao)|
 |[49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)|Medium|[Python](./2023/Leetcode/problem49.py)|[YouTube](https://www.youtube.com/watch?v=vzdNOK2oB2E)|
 |[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)|Easy|[Python](./2023/Leetcode/problem88.py)|[YouTube](https://www.youtube.com/watch?v=P1Ic85RarKY)|
 |[205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|Easy|[Python](./2024/Leetcode/problem205.py)|[YouTube](https://www.youtube.com/watch?v=7yF-U1hLEqQ)|
 |[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|Easy|[C++](./2024/Leetcode/problem217.cpp) [JavaScript](./2023/Leetcode/problem217.js) [Python](./2023/Leetcode/problem217.py)|[YouTube](https://www.youtube.com/watch?v=3OamzN90kPg)|
-|[228. Summary Ranges](https://leetcode.com/problems/summary-ranges/)|Easy|[Python](./2024/Leetcode/problem228.py)|[YouTube](https://www.youtube.com/watch?v=AjE4x3Yh9xc)|
 |[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)|Medium|[Python](./2023/Leetcode/problem347.py)|[YouTube](https://www.youtube.com/watch?v=YPTqKIgVk-k)|
 |[442. Find all Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)|Medium|[Python](./2022/Leetcode/problem442.py)|[YouTube](https://www.youtube.com/watch?v=aMsSF1Il3IY)|
 |[2482. Difference Between Ones and Zeros in Row and Column](https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/)|Medium|[Python](./2023/Leetcode/problem2482.py)|[YouTube](https://www.youtube.com/watch?v=zBaJewbBamw)|
