@@ -155,7 +155,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[146. LRU Cache](https://leetcode.com/problems/lru-cache/)|Medium|[Python](./2023/Leetcode/problem146.py)|[YouTube](https://www.youtube.com/watch?v=7ABFKPK2hD4)|
 |[155. Min Stack](https://leetcode.com/problems/min-stack/)|Medium|[C++](./2024/Leetcode/problem155.cpp) [Python](./2023/Leetcode/problem155.py)|[YouTube](https://www.youtube.com/watch?v=qkLl7nAwDPo)|
 |[303. Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)|Easy|[Python](./2024/Leetcode/problem303.py)|[YouTube](https://www.youtube.com/watch?v=2pndAmo_sMA)|
-|[380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)|Medium|[C++](./2024/Leetcode/problem380.cpp) [Python](./2023/Leetcode/problem380.py)|[YouTube](https://www.youtube.com/watch?v=j4KwhBziOpg)|
+|[380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)|Medium|[C++](./2024/Leetcode/problem380.cpp) [Python](./2023/Leetcode/problem380.py) [TypeScript](./2024/Leetcode/problem380.ts)|[YouTube](https://www.youtube.com/watch?v=j4KwhBziOpg)|
 |[535. Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)|Medium|[Python](./2023/Leetcode/problem535.py)|[YouTube](https://www.youtube.com/watch?v=VyBOaboQLGc)|
 |[703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|Easy|[Python](./2023/Leetcode/problem703.py)|[YouTube](https://www.youtube.com/watch?v=hOjcdrqMoQ8)|
 |[933. Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)|Easy|[Python](./2024/Leetcode/problem933.py)|[YouTube](https://www.youtube.com/watch?v=604UkiCB3oY)|
