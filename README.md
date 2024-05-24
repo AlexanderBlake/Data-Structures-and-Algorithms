@@ -208,7 +208,8 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |-|-|-|-
 |[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|Easy|[JavaScript](./2023/Leetcode/problem70.js)|[YouTube](https://www.youtube.com/watch?v=Y0lT9Fck7qI)|
 |[322. Coin Change](https://leetcode.com/problems/coin-change/)|Medium|[Python](./2024/Leetcode/problem322.py) [TypeScript](./2024/Leetcode/problem322.ts)|[YouTube](https://www.youtube.com/watch?v=H9bfqozjoqs)|
-|[392. Is Subsequence](https://leetcode.com/problems/is-subsequence/)|Easy|[Python](./2024/Leetcode/problem70.py)|[YouTube](https://www.youtube.com/watch?v=99RVfqklbCE)|
+|[392. Is Subsequence](https://leetcode.com/problems/is-subsequence/)|Easy|[Python](./2024/Leetcode/problem392.py)|[YouTube](https://www.youtube.com/watch?v=99RVfqklbCE)|
+|[746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)|Easy|[Python](./2024/Leetcode/problem746.py)|[YouTube](https://www.youtube.com/watch?v=ktmzAZWkEZ0)|
 
 <a id="greedy"></a>
 ### 14. Greedy
