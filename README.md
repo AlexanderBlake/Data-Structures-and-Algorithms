@@ -129,7 +129,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|Easy|[JavaScript](./2023/Leetcode/problem141.js) [Python](./2023/Leetcode/problem141.py)|[YouTube](https://www.youtube.com/watch?v=gBTe7lFR3vc)|
 |[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|Easy|[Python](./2024/Leetcode/problem206.py) [TypeScript](./2024/Leetcode/problem206.ts)|[YouTube](https://www.youtube.com/watch?v=G0_I-ZF0S38)|
 |[237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|Medium|[C++](./2022/Leetcode/problem237.cpp)|[YouTube](https://www.youtube.com/watch?v=urzP1YbgUnU)|
-|[287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)|Medium|[Python](./2024/Leetcode/problem287.py)|[YouTube](https://www.youtube.com/watch?v=wjYnzkAhcNk)|
+|[287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)|Medium|[Python](./2024/Leetcode/problem287.py) [TypeScript](./2024/Leetcode/problem287.ts)|[YouTube](https://www.youtube.com/watch?v=wjYnzkAhcNk)|
 
 <a id="trees"></a>
 ### 7. Trees
