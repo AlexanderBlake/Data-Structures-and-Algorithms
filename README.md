@@ -89,6 +89,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)|Easy|[JavaScript](./2024/Leetcode/problem1047.js) [Python](./2023/Leetcode/problem1047.py)|[YouTube](https://www.youtube.com/watch?v=hXEEr5WekSQ)|
 |[1209. Remove All Adjacent Duplicates In String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/)|Medium|[Python](./2023/Leetcode/problem1209.py)|[YouTube](https://www.youtube.com/watch?v=w6LcypDgC4w)|
 |[1614. Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/)|Easy|[Python](./2023/Leetcode/problem1614.py)|[YouTube](https://www.youtube.com/watch?v=kUp-gqHzk6c)|
+|[2390. Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/)|Medium|[Python](./2024/Leetcode/problem2390.py)|[YouTube](https://www.youtube.com/watch?v=pRyFZIaKegA)|
 
 <a id="binary-search"></a>
 ### 4. Binary Search
