@@ -199,6 +199,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
+|[127. Word Ladder](https://leetcode.com/problems/word-ladder/)|Hard|[Python](./2024/Leetcode/problem127.py)|[YouTube](https://www.youtube.com/watch?v=h9iTnkgv05E)|
 |[200. Number of Islands](https://leetcode.com/problems/number-of-islands/)|Medium|[Java](./2023/Leetcode/problem200.java) [JavaScript](./2024/Leetcode/problem200.js) [Python](./2023/Leetcode/problem200.py)|[YouTube](https://www.youtube.com/watch?v=pV2kpPD66nE)|
 |[207. Course Schedule](https://leetcode.com/problems/course-schedule/)|Medium|[Python](./2024/Leetcode/problem207.py)|[YouTube](https://www.youtube.com/watch?v=EgI5nU9etnU)|
 |[399. Evaluate Divison](https://leetcode.com/problems/evaluate-division/)|Medium|[Python](./2023/Leetcode/problem399.py)|[YouTube](https://www.youtube.com/watch?v=Uei1fwDoyKk)|
