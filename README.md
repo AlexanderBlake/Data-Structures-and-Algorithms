@@ -116,6 +116,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|Easy|[JavaScript](./2023/Leetcode/problem121.js) [Python](./2023/Leetcode/problem121.py)|[YouTube](https://www.youtube.com/watch?v=1pkOgXD63yU)|
 |[643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)|Easy|[Python](./2024/Leetcode/problem643.py)|[YouTube](https://www.youtube.com/watch?v=4mBuAZ2Zi0k)|
 |[1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)|Medium|[Python](./2024/Leetcode/problem1456.py)|[YouTube](https://www.youtube.com/watch?v=kEfPSzgL-Ss)|
+|[1658. Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/)|Medium|[Python](./2024/Leetcode/problem1658.py)|[YouTube](https://www.youtube.com/watch?v=xumn16n7njs)|
 
 <a id="linked-list"></a>
 ### 6. Linked List
