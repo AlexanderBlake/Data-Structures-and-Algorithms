@@ -36,11 +36,12 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 11. [**Heap / Priority Queue**](#heap-priority-queue)
 12. [**Graphs**](#graphs)
 13. [**1-D Dynamic Programming**](#1-d-dp)
-14. [**Greedy**](#greedy)
-15. [**Advanced Graphs**](#advanced-graphs)
-16. [**2-D Dynamic Programming**](#2-d-dp)
-17. [**Bit Manipulation**](#bit-manipulation)
-18. [**Math & Geometry**](#math-geometry)
+14. [**Intervals**](#intervals)
+15. [**Greedy**](#greedy)
+16. [**Advanced Graphs**](#advanced-graphs)
+17. [**2-D Dynamic Programming**](#2-d-dp)
+18. [**Bit Manipulation**](#bit-manipulation)
+19. [**Math & Geometry**](#math-geometry)
 
 <a id="arrays-hashing"></a>
 ### 1. Arrays & Hashing
@@ -218,8 +219,16 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[392. Is Subsequence](https://leetcode.com/problems/is-subsequence/)|Easy|[Python](./2024/Leetcode/problem392.py)|[YouTube](https://www.youtube.com/watch?v=99RVfqklbCE)|
 |[746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)|Easy|[Python](./2024/Leetcode/problem746.py)|[YouTube](https://www.youtube.com/watch?v=ktmzAZWkEZ0)|
 
+<a id="intervals"></a>
+### 14. Intervals
+[🔼 Back to top](#top)
+
+|Problem|Difficulty|Code Solution|Video Solution
+|-|-|-|-
+|[56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)|Medium|[Python](./2024/Leetcode/problem56.py)|[YouTube](https://www.youtube.com/watch?v=44H3cEC2fFM)|
+
 <a id="greedy"></a>
-### 14. Greedy
+### 15. Greedy
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -232,7 +241,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[2571. Minimum Operations to Reduce an Integer to 0](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/)|Medium|[Python](./2023/Leetcode/problem2571.py)|[YouTube](https://www.youtube.com/watch?v=O3VbqTLzTu8)|
 
 <a id="advanced-graphs"></a>
-### 15. Advanced Graphs
+### 16. Advanced Graphs
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -240,7 +249,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[1584. Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)|Medium|[Python](./2024/Leetcode/problem1584.py)|[YouTube](https://www.youtube.com/watch?v=f7JOBJIC-NA)|
 
 <a id="2-d-dp"></a>
-### 16. 2-D Dynamic Programming
+### 17. 2-D Dynamic Programming
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -249,7 +258,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|Medium|[Python](./2023/Leetcode/problem64.py)|[YouTube](https://www.youtube.com/watch?v=pGMsrvt0fpk)|
 
 <a id="bit-manipulation"></a>
-### 17. Bit Manipulation
+### 18. Bit Manipulation
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
@@ -264,7 +273,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[2433. Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/)|Medium|[Python](./2022/Leetcode/problem2433.py)|[YouTube](https://www.youtube.com/watch?v=idcT-p_DDrI)|
 
 <a id="math-geometry"></a>
-### 18. Math & Geometry
+### 19. Math & Geometry
 [🔼 Back to top](#top)
 
 |Problem|Difficulty|Code Solution|Video Solution
