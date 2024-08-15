@@ -1,12 +1,28 @@
 <a id="top"></a>
 
-# Table of Contents
+- [Data Structures](#data-structures)
+- [Leetcode Topic Roadmap](#leetcode-topic-roadmap)
+  - [1. Arrays \& Hashing](#1-arrays--hashing)
+  - [2. Two Pointers](#2-two-pointers)
+  - [3. Stacks](#3-stacks)
+  - [4. Binary Search](#4-binary-search)
+  - [5. Sliding Window](#5-sliding-window)
+  - [6. Linked List](#6-linked-list)
+  - [7. Trees](#7-trees)
+  - [8. Design](#8-design)
+  - [9. Tries](#9-tries)
+  - [10. Backtracking](#10-backtracking)
+  - [11. Heap / Priority Queue](#11-heap--priority-queue)
+  - [12. Graphs](#12-graphs)
+  - [13. 1-D Dynamic Programming](#13-1-d-dynamic-programming)
+  - [14. Intervals](#14-intervals)
+  - [15. Greedy](#15-greedy)
+  - [16. Advanced Graphs](#16-advanced-graphs)
+  - [17. 2-D Dynamic Programming](#17-2-d-dynamic-programming)
+  - [18. Bit Manipulation](#18-bit-manipulation)
+  - [19. Math \& Geometry](#19-math--geometry)
+- [Resources](#resources)
 
-1. [**Data Structures**](#data-structures)
-2. [**Leetcode Topic Roadmap**](#leetcode-topic-roadmap)
-3. [**Resources**](#resources)
-
-<a id="data-structures"></a>
 ## Data Structures
 [🔼 Back to top](#top)
 
@@ -20,30 +36,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 [Queue](https://visualgo.net/en/list?mode=Queue)|[JavaScript](./2020%20&%202021/Data%20Structures/queue.js)|O(n)|O(1)|FIFO / LILO (First In First Out / Last In Last Out)|C++ ([queue](https://cplusplus.com/reference/queue/queue/) / [deque](https://cplusplus.com/reference/deque/deque/)), C# ([Queue](https://learn.microsoft.com/en-us/dotnet/api/system.collections.queue?view=net-7.0)), Java ([ArrayDeque](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html)), & Python ([deque](https://docs.python.org/3/library/collections.html#collections.deque))
 [Stack](https://visualgo.net/en/list?mode=Stack)|[JavaScript](./2020%20&%202021/Data%20Structures/stack.js)|O(n)|O(1)|FILO / LIFO (First In Last Out / Last In First Out)|C++ ([deque](https://cplusplus.com/reference/deque/deque/) / [vector](https://cplusplus.com/reference/vector/vector/) / [stack](https://cplusplus.com/reference/stack/stack/)), C# ([Stack](https://learn.microsoft.com/en-us/dotnet/api/system.collections.stack?view=net-7.0) / [ArrayList](https://learn.microsoft.com/en-us/dotnet/api/system.collections.arraylist?view=net-7.0)), Java ([ArrayDeque](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html) / [ArrayList](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html) / [Stack](https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html)), JavaScript ([Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)), & Python ([list](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-stacks) / [deque](https://docs.python.org/3/library/collections.html#collections.deque))
 
-<a id="leetcode-topic-roadmap"></a>
 ## Leetcode Topic Roadmap
-
-1. [**Arrays & Hashing**](#arrays-hashing)
-2. [**Two Pointers**](#two-pointers)
-3. [**Stacks**](#stacks)
-4. [**Binary Search**](#binary-search)
-5. [**Sliding Window**](#sliding-window)
-6. [**Linked List**](#linked-list)
-7. [**Trees**](#trees)
-8. [**Design**](#design)
-9. [**Tries**](#tries)
-10. [**Backtracking**](#backtracking)
-11. [**Heap / Priority Queue**](#heap-priority-queue)
-12. [**Graphs**](#graphs)
-13. [**1-D Dynamic Programming**](#1-d-dp)
-14. [**Intervals**](#intervals)
-15. [**Greedy**](#greedy)
-16. [**Advanced Graphs**](#advanced-graphs)
-17. [**2-D Dynamic Programming**](#2-d-dp)
-18. [**Bit Manipulation**](#bit-manipulation)
-19. [**Math & Geometry**](#math-geometry)
-
-<a id="arrays-hashing"></a>
 ### 1. Arrays & Hashing
 [🔼 Back to top](#top)
 
@@ -60,7 +53,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[442. Find all Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)|Medium|[Python](./2022/Leetcode/problem442.py)|[YouTube](https://www.youtube.com/watch?v=aMsSF1Il3IY)|
 |[2482. Difference Between Ones and Zeros in Row and Column](https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/)|Medium|[Python](./2023/Leetcode/problem2482.py)|[YouTube](https://www.youtube.com/watch?v=zBaJewbBamw)|
 
-<a id="two-pointers"></a>
 ### 2. Two Pointers
 [🔼 Back to top](#top)
 
@@ -77,7 +69,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[344. Reverse String](https://leetcode.com/problems/reverse-string/)|Easy|[C++](./2022/Leetcode/problem344.cpp) [JavaScript](./2022/Leetcode/problem344.js) [Python](./2023/Leetcode/problem344.py)|[YouTube](https://www.youtube.com/watch?v=_d0T_2Lk2qA)|
 |[2130. Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/)|Medium|[Python](./2023/Leetcode/problem2130.py)|[YouTube](https://www.youtube.com/watch?v=doj95MelfSA)|
 
-<a id="stacks"></a>
 ### 3. Stacks
 [🔼 Back to top](#top)
 
@@ -92,7 +83,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[1614. Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/)|Easy|[Python](./2023/Leetcode/problem1614.py)|[YouTube](https://www.youtube.com/watch?v=kUp-gqHzk6c)|
 |[2390. Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/)|Medium|[Python](./2024/Leetcode/problem2390.py)|[YouTube](https://www.youtube.com/watch?v=pRyFZIaKegA)|
 
-<a id="binary-search"></a>
 ### 4. Binary Search
 [🔼 Back to top](#top)
 
@@ -107,7 +97,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)|Easy|[Python](./2024/Leetcode/problem700.py)|[YouTube](https://www.youtube.com/watch?v=Lr2oxJlnLMM)|
 |[704. Binary Search](https://leetcode.com/problems/binary-search/)|Easy|[JavaScript](./2023/Leetcode/problem704.js)|[YouTube](https://www.youtube.com/watch?v=s4DPM8ct1pI)|
 
-<a id="sliding-window"></a>
 ### 5. Sliding Window
 [🔼 Back to top](#top)
 
@@ -119,7 +108,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)|Medium|[Python](./2024/Leetcode/problem1456.py)|[YouTube](https://www.youtube.com/watch?v=kEfPSzgL-Ss)|
 |[1658. Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/)|Medium|[Python](./2024/Leetcode/problem1658.py)|[YouTube](https://www.youtube.com/watch?v=xumn16n7njs)|
 
-<a id="linked-list"></a>
 ### 6. Linked List
 [🔼 Back to top](#top)
 
@@ -135,7 +123,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|Medium|[C++](./2022/Leetcode/problem237.cpp)|[YouTube](https://www.youtube.com/watch?v=urzP1YbgUnU)|
 |[287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)|Medium|[Python](./2024/Leetcode/problem287.py) [TypeScript](./2024/Leetcode/problem287.ts)|[YouTube](https://www.youtube.com/watch?v=wjYnzkAhcNk)|
 
-<a id="trees"></a>
 ### 7. Trees
 [🔼 Back to top](#top)
 
@@ -152,7 +139,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[1038. Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)|Medium|[C++](./2022/Leetcode/problem1038.cpp)|[YouTube](https://www.youtube.com/watch?v=4nnl3FrwEYM)|
 |[1302. Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/)|Medium|[C++](./2022/Leetcode/problem1302.cpp) [JavaScript](./2022/Leetcode/problem1302.js)|[YouTube](https://www.youtube.com/watch?v=hM9tzzlRcnM)|
 
-<a id="design"></a>
 ### 8. Design
 [🔼 Back to top](#top)
 
@@ -167,7 +153,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[933. Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)|Easy|[Python](./2024/Leetcode/problem933.py)|[YouTube](https://www.youtube.com/watch?v=604UkiCB3oY)|
 |[1603. Design Parking System](https://leetcode.com/problems/design-parking-system/)|Easy|[C++](./2022/Leetcode/problem1603.cpp)|[YouTube](https://www.youtube.com/watch?v=d5zCHesOrSk)|
 
-<a id="tries"></a>
 ### 9. Tries
 [🔼 Back to top](#top)
 
@@ -175,7 +160,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |-|-|-|-
 |[14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|Easy|[Python](./2023/Leetcode/problem14.py)|[YouTube](https://www.youtube.com/watch?v=0sWShKIJoo4)|
 
-<a id="backtracking"></a>
 ### 10. Backtracking
 [🔼 Back to top](#top)
 
@@ -186,7 +170,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[77. Combinations](https://leetcode.com/problems/combinations/)|Medium|[Python](./2024/Leetcode/problem77.py)|[YouTube](https://www.youtube.com/watch?v=q0s6m7AiM7o)|
 |[78. Subsets](https://leetcode.com/problems/subsets/)|Medium|[Python](./2023/Leetcode/problem78.py)|[YouTube](https://www.youtube.com/watch?v=REOH22Xwdkk)|
 
-<a id="heap-priority-queue"></a>
 ### 11. Heap / Priority Queue
 [🔼 Back to top](#top)
 
@@ -195,7 +178,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|Medium|[Python](./2023/Leetcode/problem215.py)|[YouTube](https://www.youtube.com/watch?v=XEmy13g1Qxc)|
 |[973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)|Medium|[Python](./2024/Leetcode/problem973.py)|[YouTube](https://www.youtube.com/watch?v=rI2EBUEMfTk)|
 
-<a id="graphs"></a>
 ### 12. Graphs
 [🔼 Back to top](#top)
 
@@ -207,7 +189,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[399. Evaluate Divison](https://leetcode.com/problems/evaluate-division/)|Medium|[Python](./2023/Leetcode/problem399.py)|[YouTube](https://www.youtube.com/watch?v=Uei1fwDoyKk)|
 |[695. Max Area of Island](https://leetcode.com/problems/max-area-of-island/)|Medium|[Java](./2023/Leetcode/problem695.java) [Python](./2023/Leetcode/problem695.py)|[YouTube](https://www.youtube.com/watch?v=iJGr1OtmH0c)|
 
-<a id="1-d-dp"></a>
 ### 13. 1-D Dynamic Programming
 [🔼 Back to top](#top)
 
@@ -219,7 +200,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[392. Is Subsequence](https://leetcode.com/problems/is-subsequence/)|Easy|[Python](./2024/Leetcode/problem392.py)|[YouTube](https://www.youtube.com/watch?v=99RVfqklbCE)|
 |[746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)|Easy|[Python](./2024/Leetcode/problem746.py)|[YouTube](https://www.youtube.com/watch?v=ktmzAZWkEZ0)|
 
-<a id="intervals"></a>
 ### 14. Intervals
 [🔼 Back to top](#top)
 
@@ -227,7 +207,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |-|-|-|-
 |[56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)|Medium|[Python](./2024/Leetcode/problem56.py)|[YouTube](https://www.youtube.com/watch?v=44H3cEC2fFM)|
 
-<a id="greedy"></a>
 ### 15. Greedy
 [🔼 Back to top](#top)
 
@@ -240,7 +219,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[2405. Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/)|Medium|[C++](./2024/Leetcode/problem2405.cpp) [Python](./2024/Leetcode/problem2405.py)|[YouTube](https://www.youtube.com/watch?v=CKZPdiXiQf0)|
 |[2571. Minimum Operations to Reduce an Integer to 0](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/)|Medium|[Python](./2023/Leetcode/problem2571.py)|[YouTube](https://www.youtube.com/watch?v=O3VbqTLzTu8)|
 
-<a id="advanced-graphs"></a>
 ### 16. Advanced Graphs
 [🔼 Back to top](#top)
 
@@ -248,7 +226,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |-|-|-|-
 |[1584. Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)|Medium|[Python](./2024/Leetcode/problem1584.py)|[YouTube](https://www.youtube.com/watch?v=f7JOBJIC-NA)|
 
-<a id="2-d-dp"></a>
 ### 17. 2-D Dynamic Programming
 [🔼 Back to top](#top)
 
@@ -257,7 +234,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[62. Unique Paths](https://leetcode.com/problems/unique-paths/)|Medium|[Python](./2023/Leetcode/problem62.py)|[YouTube](https://www.youtube.com/watch?v=IlEsdxuD4lY)|
 |[64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|Medium|[Python](./2023/Leetcode/problem64.py)|[YouTube](https://www.youtube.com/watch?v=pGMsrvt0fpk)|
 
-<a id="bit-manipulation"></a>
 ### 18. Bit Manipulation
 [🔼 Back to top](#top)
 
@@ -272,7 +248,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[338. Counting Bits](https://leetcode.com/problems/counting-bits/)|Easy|[Python](./2024/Leetcode/problem338.py)|[YouTube](https://www.youtube.com/watch?v=RyBM56RIWrM)|
 |[2433. Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/)|Medium|[Python](./2022/Leetcode/problem2433.py)|[YouTube](https://www.youtube.com/watch?v=idcT-p_DDrI)|
 
-<a id="math-geometry"></a>
 ### 19. Math & Geometry
 [🔼 Back to top](#top)
 
@@ -289,7 +264,6 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)|Easy|[C++](./2022/Leetcode/problem509.cpp) [JavaScript](./2024/Leetcode/problem509.js)|[YouTube](https://www.youtube.com/watch?v=kIzjdvU_QIU)|
 |[1492. The kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n/)|Medium|[Python](./2024/Leetcode/problem1492.py)|[YouTube](https://www.youtube.com/watch?v=UzVQ9zRVsWg)|
 
-<a id="resources"></a>
 ## Resources
 [🔼 Back to top](#top)
 
