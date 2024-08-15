@@ -91,6 +91,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|Medium|[Python](./2023/Leetcode/problem34.py)|[YouTube](https://www.youtube.com/watch?v=4sQL7R5ySUU)|
 |[35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)|Easy|[Python](./2023/Leetcode/problem35.py)|[YouTube](https://www.youtube.com/watch?v=K-RYzDZkzCI)|
 |[69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)|Easy|[C++](./2024/Leetcode/problem69.cpp) [JavaScript](./2023/Leetcode/problem69.js) [Python](./2023/Leetcode/problem69.py)|[YouTube](https://www.youtube.com/watch?v=zdMhGxRWutQ)|
+|[74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)|Medium|[Python](./2024/Leetcode/problem74.py)|[YouTube](https://www.youtube.com/watch?v=Ber2pi2C0j0)|
 |[162. Find Peak Element](https://leetcode.com/problems/find-peak-element/)|Medium|[Python](./2024/Leetcode/problem162.py)|[YouTube](https://www.youtube.com/watch?v=kMzJy9es7Hc)|
 |[222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)|Easy|[Python](./2024/Leetcode/problem222.py)|[YouTube](https://www.youtube.com/watch?v=4wPlA_InnGY)|
 |[374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)|Easy|[JavaScript](./2022/Leetcode/problem374.js) [Python](./2022/Leetcode/problem374.py)|[YouTube](https://www.youtube.com/watch?v=xW4QsTtaCa4)|
