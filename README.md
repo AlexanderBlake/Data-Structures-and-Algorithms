@@ -195,6 +195,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 
 |Problem|Difficulty|Code Solution|Video Solution
 |-|-|-|-
+|[5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|Medium|[Python](./2024/Leetcode/problem5.py)|[YouTube](https://www.youtube.com/watch?v=XYQecbcd6_c)|
 |[32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)|Hard|[Python](./2024/Leetcode/problem32.py)|[YouTube](https://www.youtube.com/watch?v=vURq_xYGr-k)|
 |[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|Easy|[JavaScript](./2023/Leetcode/problem70.js)|[YouTube](https://www.youtube.com/watch?v=Y0lT9Fck7qI)|
 |[322. Coin Change](https://leetcode.com/problems/coin-change/)|Medium|[Python](./2024/Leetcode/problem322.py) [TypeScript](./2024/Leetcode/problem322.ts)|[YouTube](https://www.youtube.com/watch?v=H9bfqozjoqs)|
