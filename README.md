@@ -94,6 +94,7 @@ Dyanmic Array / ArrayList||Unsorted: O(n) / Sorted: O(log n)|Last Value: O(1) / 
 |[74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)|Medium|[Python](./2024/Leetcode/problem74.py)|[YouTube](https://www.youtube.com/watch?v=Ber2pi2C0j0)|
 |[162. Find Peak Element](https://leetcode.com/problems/find-peak-element/)|Medium|[Python](./2024/Leetcode/problem162.py)|[YouTube](https://www.youtube.com/watch?v=kMzJy9es7Hc)|
 |[222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)|Easy|[Python](./2024/Leetcode/problem222.py)|[YouTube](https://www.youtube.com/watch?v=4wPlA_InnGY)|
+|[349. Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|Easy|[Python](./2024/Leetcode/problem349.py)|[YouTube](https://www.youtube.com/watch?v=fwUTXaMom6U)|
 |[374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)|Easy|[JavaScript](./2022/Leetcode/problem374.js) [Python](./2022/Leetcode/problem374.py)|[YouTube](https://www.youtube.com/watch?v=xW4QsTtaCa4)|
 |[700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)|Easy|[Python](./2024/Leetcode/problem700.py)|[YouTube](https://www.youtube.com/watch?v=Lr2oxJlnLMM)|
 |[704. Binary Search](https://leetcode.com/problems/binary-search/)|Easy|[JavaScript](./2023/Leetcode/problem704.js)|[YouTube](https://www.youtube.com/watch?v=s4DPM8ct1pI)|
